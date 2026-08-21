@@ -1,5 +1,5 @@
 from __future__ import annotations
-import json, re, sys, hashlib, os
+import json, re, sys, hashlib, os, html
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -322,6 +322,38 @@ def ensure_metric_placeholders(events):
         if specs:
             e["metrics"] = merged
 
+
+def clean_market_value(value):
+    """Accept only plausible numeric economic-calendar values; reject mojibake/text."""
+    if value is None:
+        return ""
+    s = html.unescape(str(value)).strip()
+    s = s.replace("\u2212", "-").replace("\xa0", " ")
+    s = re.sub(r"\s+", "", s)
+    if not s or s in {"—", "-", "N/A", "NA", "null", "None"}:
+        return ""
+    # Allow common economic values: -0.1%, 123K, 7.2M, 4.5B, 150,000 etc.
+    if not re.fullmatch(r"[+-]?\d[\d,]*(?:\.\d+)?(?:%|K|M|B|T)?", s, flags=re.I):
+        return ""
+    return s
+
+def event_has_occurred(e):
+    """Only permit Actual after the scheduled JST release time has passed."""
+    try:
+        t = e.get("time") or "23:59"
+        dt = datetime.fromisoformat(f'{e["date"]}T{t}').replace(tzinfo=JST)
+        return datetime.now(JST) >= dt
+    except Exception:
+        return False
+
+def source_date_matches(event_date, raw_date):
+    """Require exact release-date match for market-value feeds."""
+    try:
+        d = str(raw_date or "")[:10]
+        return bool(d) and d == event_date
+    except Exception:
+        return False
+
 def safe_num(value):
     if value in (None, "", "—", "N/A"):
         return None
@@ -391,6 +423,9 @@ def aliases_match(text, aliases):
     return any(a.lower() in low for a in aliases)
 
 def merge_metric(e, label, previous="", forecast="", actual="", source=""):
+    previous = clean_market_value(previous)
+    forecast = clean_market_value(forecast)
+    actual = clean_market_value(actual) if event_has_occurred(e) else ""
     for m in e.get("metrics", []):
         if m.get("label") == label:
             if previous and not m.get("previous"):
@@ -414,17 +449,20 @@ def enrich_from_te(events, te):
                 x for x in te
                 if isinstance(x, dict)
                 and str(x.get("Country", "")).lower().startswith("united states")
+                and source_date_matches(e["date"], x.get("Date", ""))
                 and aliases_match(str(x.get("Event", "")) + " " + str(x.get("Category", "")), aliases)
             ]
             if not matches:
                 continue
-            matches.sort(key=lambda x: 0 if str(x.get("Date", ""))[:10] == e["date"] else 1)
             x = matches[0]
+            previous = clean_market_value(x.get("Previous"))
+            forecast = clean_market_value(x.get("Forecast"))
+            actual = clean_market_value(x.get("Actual")) if event_has_occurred(e) else ""
             merge_metric(
                 e, label,
-                previous=x.get("Previous") or "",
-                forecast=x.get("Forecast") or "",
-                actual=x.get("Actual") or "",
+                previous=previous,
+                forecast=forecast,
+                actual=actual,
                 source="Trading Economics",
             )
 
@@ -440,10 +478,10 @@ def enrich_from_quotestream(events, qs):
                 if aliases_match(str(row.get("event", "")), aliases):
                     merge_metric(
                         e, label,
-                        previous=row.get("previous") if row.get("previous") != "—" else "",
-                        forecast=row.get("forecast") if row.get("forecast") != "—" else "",
-                        actual=row.get("actual") if row.get("actual") != "—" else "",
-                        source="TradingView系公開カレンダー",
+                        previous=clean_market_value(row.get("previous")),
+                        forecast=clean_market_value(row.get("forecast")),
+                        actual="",
+                        source="公開経済カレンダー（補助）",
                     )
                     break
 
@@ -451,8 +489,15 @@ def calculate_signals(events):
     for e in events:
         score = 0
         has_actual = False
+        if not event_has_occurred(e):
+            e["rate_signal"] = "pending"
+            e["rate_signal_label"] = "発表待ち"
+            for m in e.get("metrics", []):
+                m["actual"] = ""
+            continue
         for m in e.get("metrics", []):
-            if m.get("actual"):
+            if clean_market_value(m.get("actual")):
+                m["actual"] = clean_market_value(m.get("actual"))
                 has_actual = True
                 score += hawkish_score(m.get("label", ""), m.get("actual"), m.get("forecast"))
         if not has_actual:
