@@ -1,280 +1,3485 @@
 {
-  "updated_at": "2026-08-21T17:15:35.399967+00:00",
+  "updated_at": "2026-08-21T20:57:27.610068+00:00",
   "events": [
     {
-      "id": "da0fb6d72903db5b",
-      "name": "PCE・コアPCE / 個人所得・支出",
-      "date": "2026-08-26",
-      "time": "21:30",
-      "importance": 5,
-      "category": "インフレ",
-      "source": "BEA",
-      "url": "https://www.bea.gov/news/schedule",
-      "up": "コアPCEや個人消費が予想を上回る",
-      "down": "コアPCEが予想を下回り、消費も減速",
-      "impact": "FRBが重視する物価指標。上振れはSBG・NASDAQ・半導体に逆風。",
-      "metrics": [
-        {
-          "label": "コアPCE 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        },
-        {
-          "label": "PCE 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        },
-        {
-          "label": "個人消費 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        }
-      ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
-    },
-    {
-      "id": "adb2525335c1c8d4",
-      "name": "米GDP",
-      "date": "2026-08-26",
-      "time": "21:30",
-      "importance": 3,
-      "category": "景気",
-      "source": "BEA",
-      "url": "https://www.bea.gov/news/schedule",
-      "up": "GDPが上方修正・需要が強い",
-      "down": "GDP下方修正・景気減速",
-      "impact": "強すぎる成長は利下げ後ずれ観測につながる。",
-      "metrics": [
-        {
-          "label": "GDP成長率",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        }
-      ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
-    },
-    {
-      "id": "bls-jolts-20260901",
+      "id": "23f1f4f47b7390cb",
       "name": "JOLTS 求人件数",
-      "date": "2026-09-01",
-      "time": "23:00",
+      "date": "2025-01-08",
+      "time": "00:00",
       "importance": 3,
       "category": "雇用",
       "source": "BLS",
-      "url": "https://www.bls.gov/schedule/news_release/jolts.htm",
-      "up": "求人件数が予想より多い",
-      "down": "求人減少・労働市場の緩み",
-      "impact": "求人増は賃金インフレ懸念を強めやすい。",
-      "metrics": [
-        {
-          "label": "JOLTS求人件数",
-          "unit": "件",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        }
-      ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
-    },
-    {
-      "id": "2c306d5048e5818d",
-      "name": "米貿易収支",
-      "date": "2026-09-03",
-      "time": "21:30",
-      "importance": 2,
-      "category": "景気",
-      "source": "BEA",
-      "url": "https://www.bea.gov/news/schedule",
-      "up": "需要の強さや輸入物価圧力が意識される",
-      "down": "景気減速が意識される",
-      "impact": "補助材料。単独での金利インパクトは通常小さめ。"
-    },
-    {
-      "id": "bls-jobs-20260904",
-      "name": "米雇用統計",
-      "date": "2026-09-04",
-      "time": "21:30",
-      "importance": 5,
-      "category": "雇用",
-      "source": "BLS",
-      "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
-      "up": "雇用者数・平均時給が強く、失業率が低下",
-      "down": "雇用・賃金が鈍化し、失業率が上昇",
-      "impact": "強い雇用は利下げ後ずれ観測を強めやすい。",
-      "metrics": [
-        {
-          "label": "非農業部門雇用者数",
-          "unit": "人",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        },
-        {
-          "label": "平均時給 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        },
-        {
-          "label": "失業率",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        }
-      ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
-    },
-    {
-      "id": "bls-ppi-20260910",
-      "name": "米PPI",
-      "date": "2026-09-10",
-      "time": "21:30",
-      "importance": 4,
-      "category": "インフレ",
-      "source": "BLS",
-      "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
-      "up": "PPI・コアPPIが予想を上回る",
-      "down": "PPIが予想を下回る",
-      "impact": "CPIやPCEに先行して金利が反応することがある。",
-      "metrics": [
-        {
-          "label": "PPI 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        },
-        {
-          "label": "コアPPI 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        }
-      ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
-    },
-    {
-      "id": "bls-cpi-20260911",
-      "name": "米CPI・コアCPI",
-      "date": "2026-09-11",
-      "time": "21:30",
-      "importance": 5,
-      "category": "インフレ",
-      "source": "BLS",
-      "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
-      "up": "特にコアCPI前月比が予想を上回る",
-      "down": "コアCPIが予想を下回る",
-      "impact": "最重要。上振れなら長期金利↑、SBG・NASDAQ・半導体↓になりやすい。",
-      "metrics": [
-        {
-          "label": "コアCPI 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        },
-        {
-          "label": "CPI 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
-        }
-      ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
-    },
-    {
-      "name": "FOMC・政策金利発表",
-      "date": "2026-09-17",
-      "time": "03:00",
-      "importance": 5,
-      "category": "FRB",
-      "source": "FRB",
-      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-      "up": "タカ派声明、利下げ後ずれ、ドット上振れ",
-      "down": "ハト派声明、利下げ示唆",
-      "impact": "米金利とNASDAQを同時に大きく動かしやすい。"
-    },
-    {
-      "name": "FRB議長会見",
-      "date": "2026-09-17",
-      "time": "03:30",
-      "importance": 5,
-      "category": "FRB",
-      "source": "FRB",
-      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-      "up": "インフレ警戒・追加引き締め示唆",
-      "down": "景気減速・利下げ余地を強調",
-      "impact": "FOMC発表後に方向が変わることもある。"
-    },
-    {
-      "name": "JOLTS 求人件数",
-      "date": "2026-09-29",
-      "time": "23:00",
-      "importance": 3,
-      "category": "雇用",
-      "source": "BLS",
-      "url": "https://www.bls.gov/schedule/news_release/jolts.htm",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "up": "求人件数が予想より多い",
       "down": "求人件数が予想より少ない",
       "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
       "metrics": [
         {
           "label": "JOLTS求人件数",
-          "unit": "件",
+          "unit": "M",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
         }
       ],
       "rate_signal": "pending",
       "rate_signal_label": "発表待ち"
     },
     {
-      "id": "c57da911d35fd5d0",
+      "id": "b37f75a8f3231c38",
+      "name": "米雇用統計",
+      "date": "2025-01-10",
+      "time": "22:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "92fb5e8c4c8691cb",
+      "name": "米PPI",
+      "date": "2025-01-14",
+      "time": "22:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "cc39f7411dac25b5",
+      "name": "米CPI・コアCPI",
+      "date": "2025-01-15",
+      "time": "22:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "bf845469917fb32a",
+      "name": "輸出入物価指数",
+      "date": "2025-01-16",
+      "time": "22:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "86c02843a46cfb17",
+      "name": "JOLTS 求人件数",
+      "date": "2025-02-05",
+      "time": "00:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "5d83ee08b3867c2a",
+      "name": "生産性・単位労働コスト",
+      "date": "2025-02-06",
+      "time": "22:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "05e8e993d02f06b7",
+      "name": "米雇用統計",
+      "date": "2025-02-07",
+      "time": "22:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "147844cc6d3578a6",
+      "name": "米CPI・コアCPI",
+      "date": "2025-02-12",
+      "time": "22:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "319a64da871ecfe2",
+      "name": "米PPI",
+      "date": "2025-02-13",
+      "time": "22:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "f354b144c984cbaf",
+      "name": "輸出入物価指数",
+      "date": "2025-02-14",
+      "time": "22:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "12a67e216fff10e6",
+      "name": "生産性・単位労働コスト",
+      "date": "2025-03-06",
+      "time": "22:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "9fe5860dcfc7169d",
+      "name": "米雇用統計",
+      "date": "2025-03-07",
+      "time": "22:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "02cd46bcd6a15588",
+      "name": "JOLTS 求人件数",
+      "date": "2025-03-11",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "b6395dbadec6db40",
+      "name": "米CPI・コアCPI",
+      "date": "2025-03-12",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "2803033524cfd0bf",
+      "name": "米PPI",
+      "date": "2025-03-13",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "2b173dee418b4ce1",
+      "name": "輸出入物価指数",
+      "date": "2025-03-18",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "d4f4a330ada0d001",
+      "name": "米雇用統計",
+      "date": "2025-03-20",
+      "time": "23:00",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "01aefc984d10ffd5",
+      "name": "JOLTS 求人件数",
+      "date": "2025-04-01",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "b4efcd8c32aaa9c7",
+      "name": "米雇用統計",
+      "date": "2025-04-04",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "210b1fa28fd27aa4",
+      "name": "米CPI・コアCPI",
+      "date": "2025-04-10",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "e7d148467c3daf44",
+      "name": "米PPI",
+      "date": "2025-04-11",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "071cd24a3cd1e0dd",
+      "name": "輸出入物価指数",
+      "date": "2025-04-15",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "ba8886c567cbef86",
+      "name": "生産性・単位労働コスト",
+      "date": "2025-04-24",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "929496ca7853e474",
+      "name": "JOLTS 求人件数",
+      "date": "2025-04-29",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "3b455e5f00f2cd95",
+      "name": "米雇用統計",
+      "date": "2025-05-02",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "52625bff16739669",
+      "name": "生産性・単位労働コスト",
+      "date": "2025-05-08",
+      "time": "21:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "c7c542f4bd150624",
+      "name": "米CPI・コアCPI",
+      "date": "2025-05-13",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "5b4e4c713bf845d0",
+      "name": "米PPI",
+      "date": "2025-05-15",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "6aa36cfe3822c648",
+      "name": "輸出入物価指数",
+      "date": "2025-05-16",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "3538d75637819497",
+      "name": "生産性・単位労働コスト",
+      "date": "2025-05-29",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "84b18e9513e7a45c",
+      "name": "JOLTS 求人件数",
+      "date": "2025-06-03",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "b2618d8e1fda8a66",
+      "name": "生産性・単位労働コスト",
+      "date": "2025-06-05",
+      "time": "21:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "16a816cce690b7cf",
+      "name": "米雇用統計",
+      "date": "2025-06-06",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "398ae217b07d3d09",
+      "name": "米CPI・コアCPI",
+      "date": "2025-06-11",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "ead0bdf809808270",
+      "name": "米PPI",
+      "date": "2025-06-12",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "f9113b1fe3671a5d",
+      "name": "輸出入物価指数",
+      "date": "2025-06-17",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "ade5b0d864819b07",
+      "name": "生産性・単位労働コスト",
+      "date": "2025-06-26",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "e7cc7ee3110be517",
+      "name": "JOLTS 求人件数",
+      "date": "2025-07-01",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "6d509dac4a597c69",
+      "name": "米雇用統計",
+      "date": "2025-07-03",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "1e205172139aeddc",
+      "name": "米CPI・コアCPI",
+      "date": "2025-07-15",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "3371282e559c8b55",
+      "name": "米PPI",
+      "date": "2025-07-16",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "34fc3bc401d89cb0",
+      "name": "輸出入物価指数",
+      "date": "2025-07-17",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "f7b78c4a5c50ca43",
+      "name": "JOLTS 求人件数",
+      "date": "2025-07-29",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "89bbc54bed6cf7cb",
+      "name": "米雇用統計",
+      "date": "2025-08-01",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "04d6ad89b69712a0",
+      "name": "生産性・単位労働コスト",
+      "date": "2025-08-07",
+      "time": "21:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "5f3d6cb944d0c4ac",
+      "name": "米CPI・コアCPI",
+      "date": "2025-08-12",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "1907f907c98fead4",
+      "name": "米PPI",
+      "date": "2025-08-14",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "1ebe476b555b8871",
+      "name": "輸出入物価指数",
+      "date": "2025-08-15",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "b3f1082c9d395808",
+      "name": "JOLTS 求人件数",
+      "date": "2025-09-03",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "50766310bf2b1805",
+      "name": "生産性・単位労働コスト",
+      "date": "2025-09-04",
+      "time": "21:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "1f8e73321d9bd4f7",
+      "name": "米雇用統計",
+      "date": "2025-09-05",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "b7caf9b708ed1090",
+      "name": "米PPI",
+      "date": "2025-09-10",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "d952709c3d7dc2d7",
+      "name": "米CPI・コアCPI",
+      "date": "2025-09-11",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "c759d51920c4c8bb",
+      "name": "輸出入物価指数",
+      "date": "2025-09-16",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "763b4d4b9b91963d",
+      "name": "JOLTS 求人件数",
+      "date": "2025-09-30",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "ed9c67cf5d3e457b",
+      "name": "米CPI・コアCPI",
+      "date": "2025-10-24",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "baabdd9a4b8e64aa",
+      "name": "米雇用統計",
+      "date": "2025-11-20",
+      "time": "22:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "98d0ce0b994ef06d",
+      "name": "米PPI",
+      "date": "2025-11-25",
+      "time": "22:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "75a14ef9ea5981cd",
+      "name": "輸出入物価指数",
+      "date": "2025-12-03",
+      "time": "22:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "36921a4f6f80f1e5",
+      "name": "JOLTS 求人件数",
+      "date": "2025-12-10",
+      "time": "00:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "e3481f48eba3b18d",
+      "name": "米雇用統計",
+      "date": "2025-12-16",
+      "time": "22:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "d2f415911464420c",
+      "name": "米CPI・コアCPI",
+      "date": "2025-12-18",
+      "time": "22:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "e8bccded71825722",
+      "name": "JOLTS 求人件数",
+      "date": "2026-01-08",
+      "time": "00:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "9780b4118893b809",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-01-08",
+      "time": "22:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "05d5553378ac1c7c",
+      "name": "米雇用統計",
+      "date": "2026-01-09",
+      "time": "22:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "a5a7b4d36358f73d",
+      "name": "米CPI・コアCPI",
+      "date": "2026-01-13",
+      "time": "22:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "ac70369db7022f0b",
+      "name": "米PPI",
+      "date": "2026-01-14",
+      "time": "22:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "80387fa164226caf",
+      "name": "輸出入物価指数",
+      "date": "2026-01-15",
+      "time": "22:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "3b70e8b2a71d95ff",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-01-29",
+      "time": "22:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "2ace519b8cf8144d",
+      "name": "米PPI",
+      "date": "2026-01-30",
+      "time": "22:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "c206f2f7963386f1",
+      "name": "JOLTS 求人件数",
+      "date": "2026-02-06",
+      "time": "00:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "d036f940cf6e929f",
+      "name": "輸出入物価指数",
+      "date": "2026-02-10",
+      "time": "22:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "a9b08f5db7e9e86e",
+      "name": "米雇用統計",
+      "date": "2026-02-11",
+      "time": "22:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "4c98b9dcb9327a4c",
+      "name": "米CPI・コアCPI",
+      "date": "2026-02-13",
+      "time": "22:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "d0aac64229ed6294",
+      "name": "米PPI",
+      "date": "2026-02-27",
+      "time": "22:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "19d0e20aa86d432e",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-03-05",
+      "time": "22:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "4814502eb3984029",
+      "name": "輸出入物価指数",
+      "date": "2026-03-05",
+      "time": "22:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "7f20896e64ca2bd1",
+      "name": "米雇用統計",
+      "date": "2026-03-06",
+      "time": "22:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "08a1012e7f524482",
+      "name": "米CPI・コアCPI",
+      "date": "2026-03-11",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "efa9f580a5c769e4",
+      "name": "JOLTS 求人件数",
+      "date": "2026-03-13",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "212a591079fe2fae",
+      "name": "米PPI",
+      "date": "2026-03-18",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "05e7f179778e7677",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-03-24",
+      "time": "21:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "2cfd905c1664279d",
+      "name": "輸出入物価指数",
+      "date": "2026-03-25",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "3c6bbdbc0c40333f",
+      "name": "JOLTS 求人件数",
+      "date": "2026-03-31",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "3bf8503d8fa874df",
+      "name": "米雇用統計",
+      "date": "2026-04-03",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "b98520409d7255a6",
+      "name": "米CPI・コアCPI",
+      "date": "2026-04-10",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "40848cf0ed6f5bbd",
+      "name": "米PPI",
+      "date": "2026-04-14",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "81aafbf044fdceaa",
+      "name": "輸出入物価指数",
+      "date": "2026-04-15",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "71ab75c31a7c3dfb",
+      "name": "米雇用統計",
+      "date": "2026-04-28",
+      "time": "23:00",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "e9475a785b03e0c7",
+      "name": "JOLTS 求人件数",
+      "date": "2026-05-05",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "0e0be86c5c42e746",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-05-07",
+      "time": "21:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "5a45a04a3bf0d291",
+      "name": "米雇用統計",
+      "date": "2026-05-08",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "73864c07fa8154c7",
+      "name": "米CPI・コアCPI",
+      "date": "2026-05-12",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "1457a54be7d7bbda",
+      "name": "米PPI",
+      "date": "2026-05-13",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "e0a6b1d20790151c",
+      "name": "輸出入物価指数",
+      "date": "2026-05-14",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "9923a58beb6cc4e3",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-05-28",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "be665c2c1e0b1bd7",
+      "name": "JOLTS 求人件数",
+      "date": "2026-06-02",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "a874fe5eef118e5a",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-06-04",
+      "time": "21:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "830ecb861280a000",
+      "name": "米雇用統計",
+      "date": "2026-06-05",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "3b5b54658102a8e2",
+      "name": "米CPI・コアCPI",
+      "date": "2026-06-10",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "bef74e8e4da64879",
+      "name": "米PPI",
+      "date": "2026-06-11",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "eb3f15e8e396ee8d",
+      "name": "輸出入物価指数",
+      "date": "2026-06-16",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "ebcad34287c80f6c",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-06-24",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "8f96f2ef7e232437",
+      "name": "JOLTS 求人件数",
+      "date": "2026-06-30",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "be6c91f10858cb6b",
+      "name": "米雇用統計",
+      "date": "2026-07-02",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "e4c772e04bba4bb5",
+      "name": "米CPI・コアCPI",
+      "date": "2026-07-14",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "f1b4922e515cf1d9",
+      "name": "米PPI",
+      "date": "2026-07-15",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "3b6202c76bd22b27",
+      "name": "輸出入物価指数",
+      "date": "2026-07-17",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "10529625dcc0bae3",
+      "name": "JOLTS 求人件数",
+      "date": "2026-08-04",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "635725f9959a7576",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-08-06",
+      "time": "21:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "6823ede06793ab42",
+      "name": "米雇用統計",
+      "date": "2026-08-07",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "ccb773fecc35a5a8",
+      "name": "米CPI・コアCPI",
+      "date": "2026-08-12",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "c468238a0f0c4372",
+      "name": "米PPI",
+      "date": "2026-08-13",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "06f750fc07308154",
+      "name": "輸出入物価指数",
+      "date": "2026-08-18",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "28391189dd79afd8",
+      "name": "PCE・コアPCE / 個人所得・支出",
+      "date": "2026-08-26",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "コアPCEや個人消費が予想を上回る",
+      "down": "コアPCEが予想を下回り、消費も減速",
+      "impact": "FRBが重視する物価指標。上振れはSBG・NASDAQ・半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアPCE 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "PCE 前月比",
+          "unit": "%",
+          "previous": "-0.10%",
+          "forecast": "0.10%",
+          "actual": "â",
+          "source": "TradingView系公開カレンダー"
+        },
+        {
+          "label": "個人消費 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
+    },
+    {
+      "id": "ea1ecc724fb608cd",
+      "name": "米GDP",
+      "date": "2026-08-26",
+      "time": "21:30",
+      "importance": 3,
+      "category": "景気",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "GDPが上方修正・需要が強い",
+      "down": "GDP下方修正・景気減速",
+      "impact": "強すぎる成長は利下げ後ずれ観測につながる。",
+      "metrics": [
+        {
+          "label": "GDP成長率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "GDP価格指数",
+          "unit": "%",
+          "previous": "3.60%",
+          "forecast": "6.30%",
+          "actual": "â",
+          "source": "TradingView系公開カレンダー"
+        }
+      ],
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
+    },
+    {
+      "id": "803b10b4c70597da",
+      "name": "JOLTS 求人件数",
+      "date": "2026-09-01",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "70b5b0a2e28e53af",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-09-03",
+      "time": "21:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "3499bd34d8d2b3b4",
+      "name": "米雇用統計",
+      "date": "2026-09-04",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "7ca8903c877d0651",
+      "name": "米PPI",
+      "date": "2026-09-10",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "9d00cc6d67757baa",
+      "name": "米CPI・コアCPI",
+      "date": "2026-09-11",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "71a0a200f86486d4",
+      "name": "輸出入物価指数",
+      "date": "2026-09-16",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "d446b7b715f92050",
+      "name": "FOMC・政策金利発表",
+      "date": "2026-09-17",
+      "time": "03:00",
+      "importance": 5,
+      "category": "FRB",
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "up": "タカ派声明・利下げ後ずれ・インフレ警戒",
+      "down": "ハト派声明・利下げ余地を示唆",
+      "impact": "米長期金利とNASDAQを大きく動かす最重要イベント。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "9387cd1eb7a0e85d",
+      "name": "FRB議長会見",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "importance": 5,
+      "category": "FRB",
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "up": "インフレ警戒・引き締め長期化を示唆",
+      "down": "景気減速・利下げ余地を強調",
+      "impact": "声明後に金利・株価の方向が反転することもある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "7dcf5306cf329a7b",
+      "name": "JOLTS 求人件数",
+      "date": "2026-09-29",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "22a8a6b6a2177a83",
       "name": "PCE・コアPCE / 個人所得・支出",
       "date": "2026-09-30",
       "time": "21:30",
@@ -288,37 +3493,34 @@
       "metrics": [
         {
           "label": "コアPCE 前月比",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
         },
         {
           "label": "PCE 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "unit": "%",
+          "previous": "-0.10%",
+          "forecast": "0.10%",
+          "actual": "â",
+          "source": "TradingView系公開カレンダー"
         },
         {
           "label": "個人消費 前月比",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
     },
     {
-      "id": "7aa35da0c0e4986a",
+      "id": "ed3a4682c6b1274d",
       "name": "米GDP",
       "date": "2026-09-30",
       "time": "21:30",
@@ -332,32 +3534,149 @@
       "metrics": [
         {
           "label": "GDP成長率",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
+        },
+        {
+          "label": "GDP価格指数",
+          "unit": "%",
+          "previous": "3.60%",
+          "forecast": "6.30%",
+          "actual": "â",
+          "source": "TradingView系公開カレンダー"
+        }
+      ],
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
+    },
+    {
+      "id": "06a88a53c61af3dd",
+      "name": "米雇用統計",
+      "date": "2026-10-02",
+      "time": "21:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
         }
       ],
       "rate_signal": "pending",
       "rate_signal_label": "発表待ち"
     },
     {
-      "id": "21ab8081772059ee",
-      "name": "米貿易収支",
-      "date": "2026-10-06",
+      "id": "6757539c6a0eccdb",
+      "name": "米CPI・コアCPI",
+      "date": "2026-10-14",
       "time": "21:30",
-      "importance": 2,
-      "category": "景気",
-      "source": "BEA",
-      "url": "https://www.bea.gov/news/schedule",
-      "up": "需要の強さや輸入物価圧力が意識される",
-      "down": "景気減速が意識される",
-      "impact": "補助材料。単独での金利インパクトは通常小さめ。"
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
-      "id": "d9a09e37b45ef57a",
+      "id": "f3ca7c9254bca5ad",
+      "name": "米PPI",
+      "date": "2026-10-15",
+      "time": "21:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "41bc87f4d34e713b",
+      "name": "輸出入物価指数",
+      "date": "2026-10-16",
+      "time": "21:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "dc05e26738cf9603",
       "name": "PCE・コアPCE / 個人所得・支出",
       "date": "2026-10-29",
       "time": "21:30",
@@ -371,37 +3690,34 @@
       "metrics": [
         {
           "label": "コアPCE 前月比",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
         },
         {
           "label": "PCE 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "unit": "%",
+          "previous": "-0.10%",
+          "forecast": "0.10%",
+          "actual": "â",
+          "source": "TradingView系公開カレンダー"
         },
         {
           "label": "個人消費 前月比",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
     },
     {
-      "id": "1aa21865d9fb77cf",
+      "id": "e2a2acdf91a9da90",
       "name": "米GDP",
       "date": "2026-10-29",
       "time": "21:30",
@@ -415,32 +3731,190 @@
       "metrics": [
         {
           "label": "GDP成長率",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
+        },
+        {
+          "label": "GDP価格指数",
+          "unit": "%",
+          "previous": "3.60%",
+          "forecast": "6.30%",
+          "actual": "â",
+          "source": "TradingView系公開カレンダー"
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
     },
     {
-      "id": "0b69f4e264d655b2",
-      "name": "米貿易収支",
+      "id": "1b15e7abdf1e7a6c",
+      "name": "JOLTS 求人件数",
       "date": "2026-11-04",
-      "time": "22:30",
-      "importance": 2,
-      "category": "景気",
-      "source": "BEA",
-      "url": "https://www.bea.gov/news/schedule",
-      "up": "需要の強さや輸入物価圧力が意識される",
-      "down": "景気減速が意識される",
-      "impact": "補助材料。単独での金利インパクトは通常小さめ。"
+      "time": "00:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
-      "id": "c6bb5101259162c2",
+      "id": "34ec9b5205695eba",
+      "name": "生産性・単位労働コスト",
+      "date": "2026-11-05",
+      "time": "22:30",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "e8708097eeb3ee1e",
+      "name": "米雇用統計",
+      "date": "2026-11-06",
+      "time": "22:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "d12f42509fd2db29",
+      "name": "米CPI・コアCPI",
+      "date": "2026-11-10",
+      "time": "22:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "50fecc42d05fbd12",
+      "name": "米PPI",
+      "date": "2026-11-13",
+      "time": "22:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "80b4b169ea786bf1",
+      "name": "輸出入物価指数",
+      "date": "2026-11-17",
+      "time": "22:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "511776b49bda72ed",
       "name": "PCE・コアPCE / 個人所得・支出",
       "date": "2026-11-25",
       "time": "22:30",
@@ -454,37 +3928,34 @@
       "metrics": [
         {
           "label": "コアPCE 前月比",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
         },
         {
           "label": "PCE 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "unit": "%",
+          "previous": "-0.10%",
+          "forecast": "0.10%",
+          "actual": "â",
+          "source": "TradingView系公開カレンダー"
         },
         {
           "label": "個人消費 前月比",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
     },
     {
-      "id": "8e118cac7db2834d",
+      "id": "37a7ce786bf42039",
       "name": "米GDP",
       "date": "2026-11-25",
       "time": "22:30",
@@ -498,32 +3969,190 @@
       "metrics": [
         {
           "label": "GDP成長率",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
+        },
+        {
+          "label": "GDP価格指数",
+          "unit": "%",
+          "previous": "3.60%",
+          "forecast": "6.30%",
+          "actual": "â",
+          "source": "TradingView系公開カレンダー"
+        }
+      ],
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
+    },
+    {
+      "id": "3cb345552b79f166",
+      "name": "JOLTS 求人件数",
+      "date": "2026-12-02",
+      "time": "00:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。",
+      "metrics": [
+        {
+          "label": "JOLTS求人件数",
+          "unit": "M",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
         }
       ],
       "rate_signal": "pending",
       "rate_signal_label": "発表待ち"
     },
     {
-      "id": "65bd944f90534bb6",
-      "name": "米貿易収支",
+      "id": "c9d8fa680f946b1b",
+      "name": "米雇用統計",
+      "date": "2026-12-04",
+      "time": "22:30",
+      "importance": 5,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "雇用者数・平均時給が強く、失業率が低下",
+      "down": "雇用・賃金が鈍化し、失業率が上昇",
+      "impact": "平均時給の上振れは長期金利上昇要因。",
+      "metrics": [
+        {
+          "label": "非農業部門雇用者数",
+          "unit": "K",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "平均時給 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "失業率",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "da9687cf9b6df0c9",
+      "name": "生産性・単位労働コスト",
       "date": "2026-12-08",
       "time": "22:30",
-      "importance": 2,
-      "category": "景気",
-      "source": "BEA",
-      "url": "https://www.bea.gov/news/schedule",
-      "up": "需要の強さや輸入物価圧力が意識される",
-      "down": "景気減速が意識される",
-      "impact": "補助材料。単独での金利インパクトは通常小さめ。"
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
-      "id": "89dc7bb3b0a1e342",
+      "id": "cf5bb81383a57a5f",
+      "name": "米CPI・コアCPI",
+      "date": "2026-12-10",
+      "time": "22:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "特にコアCPI前月比が予想を上回る",
+      "down": "コアCPIが予想を下回る",
+      "impact": "上振れは米長期金利上昇→SBG・NASDAQ・高PER半導体に逆風。",
+      "metrics": [
+        {
+          "label": "コアCPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "CPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "dba8966471ff41fe",
+      "name": "米PPI",
+      "date": "2026-12-15",
+      "time": "22:30",
+      "importance": 4,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "PPI・コアPPIが予想を上回る",
+      "down": "PPIが予想を下回る",
+      "impact": "CPI/PCEに先行して金利が反応することがある。",
+      "metrics": [
+        {
+          "label": "PPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        },
+        {
+          "label": "コアPPI 前月比",
+          "unit": "%",
+          "previous": "",
+          "forecast": "",
+          "actual": "",
+          "source": ""
+        }
+      ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "9fb0930debcd9379",
+      "name": "輸出入物価指数",
+      "date": "2026-12-17",
+      "time": "22:30",
+      "importance": 3,
+      "category": "インフレ",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "up": "強い結果は金利上昇要因",
+      "down": "弱い結果は金利低下要因",
+      "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "825d0c3901cae947",
       "name": "PCE・コアPCE / 個人所得・支出",
       "date": "2026-12-23",
       "time": "22:30",
@@ -537,37 +4166,34 @@
       "metrics": [
         {
           "label": "コアPCE 前月比",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
         },
         {
           "label": "PCE 前月比",
-          "unit": "％",
-          "previous": "",
-          "forecast": "",
-          "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "unit": "%",
+          "previous": "-0.10%",
+          "forecast": "0.10%",
+          "actual": "â",
+          "source": "TradingView系公開カレンダー"
         },
         {
           "label": "個人消費 前月比",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
     },
     {
-      "id": "e6845ff4e156fcd9",
+      "id": "69d121cfe87200af",
       "name": "米GDP",
       "date": "2026-12-23",
       "time": "22:30",
@@ -581,20 +4207,38 @@
       "metrics": [
         {
           "label": "GDP成長率",
-          "unit": "％",
+          "unit": "%",
           "previous": "",
           "forecast": "",
           "actual": "",
-          "te_forecast": "",
-          "reference": ""
+          "source": ""
+        },
+        {
+          "label": "GDP価格指数",
+          "unit": "%",
+          "previous": "3.60%",
+          "forecast": "6.30%",
+          "actual": "â",
+          "source": "TradingView系公開カレンダー"
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
     }
   ],
   "errors": [
-    "BLS: 403 Client Error: Forbidden for url: https://www.bls.gov/schedule/news_release/bls.ics",
-    "MarketData: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-07-07/2026-12-19?c=guest%3Aguest&f=json"
-  ]
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-08-11/2026-10-05?c=guest%3Aguest&f=json"
+  ],
+  "data_sources": {
+    "schedule": [
+      "BLS",
+      "BEA",
+      "Federal Reserve",
+      "fixed fallback"
+    ],
+    "market_values": [
+      "Trading Economics",
+      "TradingView-backed public calendar"
+    ]
+  }
 }
