@@ -1,6 +1,32 @@
 {
-  "updated_at": "2026-08-21T16:44:53.082842+00:00",
+  "updated_at": "2026-08-21T16:54:21.297400+00:00",
   "events": [
+    {
+      "id": "da0fb6d72903db5b",
+      "name": "PCE・コアPCE / 個人所得・支出",
+      "date": "2026-08-26",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "コアPCEや個人消費が予想を上回る",
+      "down": "コアPCEが予想を下回り、消費も減速",
+      "impact": "FRBが重視する物価指標。上振れはSBG・NASDAQ・半導体に逆風。"
+    },
+    {
+      "id": "adb2525335c1c8d4",
+      "name": "米GDP",
+      "date": "2026-08-26",
+      "time": "21:30",
+      "importance": 3,
+      "category": "景気",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "GDPが上方修正・需要が強い",
+      "down": "GDP下方修正・景気減速",
+      "impact": "強すぎる成長は利下げ後ずれ観測につながる。"
+    },
     {
       "id": "bls-jolts-20260901",
       "name": "JOLTS 求人件数",
@@ -13,6 +39,19 @@
       "up": "求人件数が予想より多い",
       "down": "求人減少・労働市場の緩み",
       "impact": "求人増は賃金インフレ懸念を強めやすい。"
+    },
+    {
+      "id": "2c306d5048e5818d",
+      "name": "米貿易収支",
+      "date": "2026-09-03",
+      "time": "21:30",
+      "importance": 2,
+      "category": "景気",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "需要の強さや輸入物価圧力が意識される",
+      "down": "景気減速が意識される",
+      "impact": "補助材料。単独での金利インパクトは通常小さめ。"
     },
     {
       "id": "bls-jobs-20260904",
@@ -52,9 +91,189 @@
       "up": "特にコアCPI前月比が予想を上回る",
       "down": "コアCPIが予想を下回る",
       "impact": "最重要。上振れなら長期金利↑、SBG・NASDAQ・半導体↓になりやすい。"
+    },
+    {
+      "name": "FOMC・政策金利発表",
+      "date": "2026-09-17",
+      "time": "03:00",
+      "importance": 5,
+      "category": "FRB",
+      "source": "FRB",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "up": "タカ派声明、利下げ後ずれ、ドット上振れ",
+      "down": "ハト派声明、利下げ示唆",
+      "impact": "米金利とNASDAQを同時に大きく動かしやすい。"
+    },
+    {
+      "name": "FRB議長会見",
+      "date": "2026-09-17",
+      "time": "03:30",
+      "importance": 5,
+      "category": "FRB",
+      "source": "FRB",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "up": "インフレ警戒・追加引き締め示唆",
+      "down": "景気減速・利下げ余地を強調",
+      "impact": "FOMC発表後に方向が変わることもある。"
+    },
+    {
+      "name": "JOLTS 求人件数",
+      "date": "2026-09-29",
+      "time": "23:00",
+      "importance": 3,
+      "category": "雇用",
+      "source": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/jolts.htm",
+      "up": "求人件数が予想より多い",
+      "down": "求人件数が予想より少ない",
+      "impact": "求人増は賃金インフレ懸念→金利上昇要因。"
+    },
+    {
+      "id": "c57da911d35fd5d0",
+      "name": "PCE・コアPCE / 個人所得・支出",
+      "date": "2026-09-30",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "コアPCEや個人消費が予想を上回る",
+      "down": "コアPCEが予想を下回り、消費も減速",
+      "impact": "FRBが重視する物価指標。上振れはSBG・NASDAQ・半導体に逆風。"
+    },
+    {
+      "id": "7aa35da0c0e4986a",
+      "name": "米GDP",
+      "date": "2026-09-30",
+      "time": "21:30",
+      "importance": 3,
+      "category": "景気",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "GDPが上方修正・需要が強い",
+      "down": "GDP下方修正・景気減速",
+      "impact": "強すぎる成長は利下げ後ずれ観測につながる。"
+    },
+    {
+      "id": "21ab8081772059ee",
+      "name": "米貿易収支",
+      "date": "2026-10-06",
+      "time": "21:30",
+      "importance": 2,
+      "category": "景気",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "需要の強さや輸入物価圧力が意識される",
+      "down": "景気減速が意識される",
+      "impact": "補助材料。単独での金利インパクトは通常小さめ。"
+    },
+    {
+      "id": "d9a09e37b45ef57a",
+      "name": "PCE・コアPCE / 個人所得・支出",
+      "date": "2026-10-29",
+      "time": "21:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "コアPCEや個人消費が予想を上回る",
+      "down": "コアPCEが予想を下回り、消費も減速",
+      "impact": "FRBが重視する物価指標。上振れはSBG・NASDAQ・半導体に逆風。"
+    },
+    {
+      "id": "1aa21865d9fb77cf",
+      "name": "米GDP",
+      "date": "2026-10-29",
+      "time": "21:30",
+      "importance": 3,
+      "category": "景気",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "GDPが上方修正・需要が強い",
+      "down": "GDP下方修正・景気減速",
+      "impact": "強すぎる成長は利下げ後ずれ観測につながる。"
+    },
+    {
+      "id": "0b69f4e264d655b2",
+      "name": "米貿易収支",
+      "date": "2026-11-04",
+      "time": "22:30",
+      "importance": 2,
+      "category": "景気",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "需要の強さや輸入物価圧力が意識される",
+      "down": "景気減速が意識される",
+      "impact": "補助材料。単独での金利インパクトは通常小さめ。"
+    },
+    {
+      "id": "c6bb5101259162c2",
+      "name": "PCE・コアPCE / 個人所得・支出",
+      "date": "2026-11-25",
+      "time": "22:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "コアPCEや個人消費が予想を上回る",
+      "down": "コアPCEが予想を下回り、消費も減速",
+      "impact": "FRBが重視する物価指標。上振れはSBG・NASDAQ・半導体に逆風。"
+    },
+    {
+      "id": "8e118cac7db2834d",
+      "name": "米GDP",
+      "date": "2026-11-25",
+      "time": "22:30",
+      "importance": 3,
+      "category": "景気",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "GDPが上方修正・需要が強い",
+      "down": "GDP下方修正・景気減速",
+      "impact": "強すぎる成長は利下げ後ずれ観測につながる。"
+    },
+    {
+      "id": "65bd944f90534bb6",
+      "name": "米貿易収支",
+      "date": "2026-12-08",
+      "time": "22:30",
+      "importance": 2,
+      "category": "景気",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "需要の強さや輸入物価圧力が意識される",
+      "down": "景気減速が意識される",
+      "impact": "補助材料。単独での金利インパクトは通常小さめ。"
+    },
+    {
+      "id": "89dc7bb3b0a1e342",
+      "name": "PCE・コアPCE / 個人所得・支出",
+      "date": "2026-12-23",
+      "time": "22:30",
+      "importance": 5,
+      "category": "インフレ",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "コアPCEや個人消費が予想を上回る",
+      "down": "コアPCEが予想を下回り、消費も減速",
+      "impact": "FRBが重視する物価指標。上振れはSBG・NASDAQ・半導体に逆風。"
+    },
+    {
+      "id": "e6845ff4e156fcd9",
+      "name": "米GDP",
+      "date": "2026-12-23",
+      "time": "22:30",
+      "importance": 3,
+      "category": "景気",
+      "source": "BEA",
+      "url": "https://www.bea.gov/news/schedule",
+      "up": "GDPが上方修正・需要が強い",
+      "down": "GDP下方修正・景気減速",
+      "impact": "強すぎる成長は利下げ後ずれ観測につながる。"
     }
   ],
   "errors": [
-    "BLS: 403 Client Error: Forbidden for url: https://www.bls.gov/schedule/news_release/bls.ics"
+    "BLS: 403 Client Error: Forbidden for url: https://www.bls.gov/schedule/news_release/bls.ics",
+    "MarketData: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-07-07/2026-12-19?c=guest%3Aguest&f=json"
   ]
 }
