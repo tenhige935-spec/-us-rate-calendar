@@ -53,6 +53,14 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
 .condition-box{margin-top:8px;padding:8px 10px;border-radius:10px;background:#f8fafc;font-size:11px;line-height:1.5;color:#475467}
 .condition-box b{color:#101828}
 
+
+.result-summary{margin-top:8px;padding:9px 10px;border-radius:10px;background:#fff7ed;border:1px solid #fed7aa;font-size:11px;line-height:1.5}
+.result-summary.up{background:#fef2f2;border-color:#fecaca;color:#991b1b}
+.result-summary.down{background:#ecfdf5;border-color:#a7f3d0;color:#065f46}
+.result-summary.neutral{background:#f8fafc;border-color:#e2e8f0;color:#475569}
+.result-head{font-weight:800;margin-bottom:3px}
+.result-stocks{margin-top:5px;font-weight:700}
+
 </style>
 </head>
 <body>
@@ -135,6 +143,41 @@ function weeklyConditionText(e){
   return "強い結果 → 米金利↑なら逆風<br>弱い結果 → 米金利↓なら追い風";
 }
 
+
+function firstComparableMetric(e){
+  if(!e.metrics) return null;
+  for(const m of e.metrics){
+    if(m && m.forecast && (m.actual_first_seen || m.actual)){
+      return m;
+    }
+  }
+  return null;
+}
+function weeklyResultSummary(e){
+  const m=firstComparableMetric(e);
+  if(!m) return '';
+  const actual=m.actual_first_seen || m.actual || '';
+  const forecast=m.forecast || '';
+  const signal=e.rate_signal || '';
+  const label=e.rate_signal_label || '';
+  let cls='neutral';
+  let stock='影響判定：保留';
+  if(signal==='up'){
+    cls='up';
+    stock='SBG：▼強い逆風 / キオクシア：▼逆風 / アドバンテスト：▼強い逆風';
+  }else if(signal==='down'){
+    cls='down';
+    stock='SBG：▲追い風 / キオクシア：▲追い風 / アドバンテスト：▲強い追い風';
+  }else if(signal==='neutral'){
+    stock='SBG：→中立寄り / キオクシア：→中立寄り / アドバンテスト：→中立寄り';
+  }
+  return `<div class="result-summary ${cls}">
+    <div class="result-head">${m.label}　予想 ${forecast} → 結果 ${actual}</div>
+    <div>${label||'判定保留'}</div>
+    <div class="result-stocks">${stock}</div>
+  </div>`;
+}
+
 function renderWeeklyWatch(){
   const box=document.getElementById("weeklyWatch");
   if(!box) return;
@@ -162,6 +205,7 @@ function renderWeeklyWatch(){
         <div class="weekly-name">${e.name}</div>
         <div class="weekly-date">${e.date.slice(5).replace("-","/")} ${e.time||""}</div>
       </div>
+      ${weeklyResultSummary(e)}
       <div class="stock-stars">
         <div class="direction-row"><span class="stock-name">SBG</span><span><span class="starline">${starsOnly(s.sbg)}</span> <span class="direction-badge direction-down">金利↑なら↓</span></span></div>
         <div class="direction-row"><span class="stock-name">キオクシア</span><span><span class="starline">${starsOnly(s.kioxia)}</span> <span class="direction-badge direction-down">金利↑なら↓</span></span></div>
