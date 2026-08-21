@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T21:30:57.930555+00:00",
+  "updated_at": "2026-08-21T21:48:16.000975+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -20,6 +20,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -45,6 +46,7 @@
           "previous": "134K",
           "forecast": "",
           "actual": "237K",
+          "actual_first_seen": "237K",
           "source": "BLS公式API"
         },
         {
@@ -53,6 +55,7 @@
           "previous": "0.39%",
           "forecast": "",
           "actual": "0.25%",
+          "actual_first_seen": "0.25%",
           "source": "BLS公式API"
         },
         {
@@ -61,11 +64,12 @@
           "previous": "4.2%",
           "forecast": "",
           "actual": "4.1%",
+          "actual_first_seen": "4.1%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "92fb5e8c4c8691cb",
@@ -86,6 +90,7 @@
           "previous": "0.10%",
           "forecast": "",
           "actual": "0.41%",
+          "actual_first_seen": "0.41%",
           "source": "BLS公式API"
         },
         {
@@ -94,11 +99,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "cc39f7411dac25b5",
@@ -119,6 +125,7 @@
           "previous": "0.29%",
           "forecast": "",
           "actual": "0.19%",
+          "actual_first_seen": "0.19%",
           "source": "BLS公式API"
         },
         {
@@ -127,11 +134,12 @@
           "previous": "0.28%",
           "forecast": "",
           "actual": "0.34%",
+          "actual_first_seen": "0.34%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "bf845469917fb32a",
@@ -146,8 +154,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "86c02843a46cfb17",
@@ -168,6 +176,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -187,8 +196,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "05e8e993d02f06b7",
@@ -209,6 +218,7 @@
           "previous": "237K",
           "forecast": "",
           "actual": "-48K",
+          "actual_first_seen": "-48K",
           "source": "BLS公式API"
         },
         {
@@ -217,6 +227,7 @@
           "previous": "0.25%",
           "forecast": "",
           "actual": "0.42%",
+          "actual_first_seen": "0.42%",
           "source": "BLS公式API"
         },
         {
@@ -225,11 +236,12 @@
           "previous": "4.1%",
           "forecast": "",
           "actual": "4.0%",
+          "actual_first_seen": "4.0%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "147844cc6d3578a6",
@@ -250,6 +262,7 @@
           "previous": "0.19%",
           "forecast": "",
           "actual": "0.43%",
+          "actual_first_seen": "0.43%",
           "source": "BLS公式API"
         },
         {
@@ -258,11 +271,12 @@
           "previous": "0.34%",
           "forecast": "",
           "actual": "0.43%",
+          "actual_first_seen": "0.43%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "319a64da871ecfe2",
@@ -283,6 +297,7 @@
           "previous": "0.41%",
           "forecast": "",
           "actual": "0.63%",
+          "actual_first_seen": "0.63%",
           "source": "BLS公式API"
         },
         {
@@ -291,11 +306,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "f354b144c984cbaf",
@@ -310,8 +326,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "12a67e216fff10e6",
@@ -326,8 +342,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "9fe5860dcfc7169d",
@@ -348,6 +364,7 @@
           "previous": "-48K",
           "forecast": "",
           "actual": "42K",
+          "actual_first_seen": "42K",
           "source": "BLS公式API"
         },
         {
@@ -356,6 +373,7 @@
           "previous": "0.42%",
           "forecast": "",
           "actual": "0.28%",
+          "actual_first_seen": "0.28%",
           "source": "BLS公式API"
         },
         {
@@ -364,11 +382,12 @@
           "previous": "4.0%",
           "forecast": "",
           "actual": "4.2%",
+          "actual_first_seen": "4.2%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "02cd46bcd6a15588",
@@ -389,6 +408,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -414,6 +434,7 @@
           "previous": "0.43%",
           "forecast": "",
           "actual": "0.25%",
+          "actual_first_seen": "0.25%",
           "source": "BLS公式API"
         },
         {
@@ -422,11 +443,12 @@
           "previous": "0.43%",
           "forecast": "",
           "actual": "0.23%",
+          "actual_first_seen": "0.23%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "2803033524cfd0bf",
@@ -447,6 +469,7 @@
           "previous": "0.63%",
           "forecast": "",
           "actual": "0.17%",
+          "actual_first_seen": "0.17%",
           "source": "BLS公式API"
         },
         {
@@ -455,11 +478,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "2b173dee418b4ce1",
@@ -474,8 +498,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "d4f4a330ada0d001",
@@ -496,6 +520,7 @@
           "previous": "-48K",
           "forecast": "",
           "actual": "42K",
+          "actual_first_seen": "42K",
           "source": "BLS公式API"
         },
         {
@@ -504,6 +529,7 @@
           "previous": "0.42%",
           "forecast": "",
           "actual": "0.28%",
+          "actual_first_seen": "0.28%",
           "source": "BLS公式API"
         },
         {
@@ -512,11 +538,12 @@
           "previous": "4.0%",
           "forecast": "",
           "actual": "4.2%",
+          "actual_first_seen": "4.2%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "01aefc984d10ffd5",
@@ -537,6 +564,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -562,6 +590,7 @@
           "previous": "42K",
           "forecast": "",
           "actual": "67K",
+          "actual_first_seen": "67K",
           "source": "BLS公式API"
         },
         {
@@ -570,6 +599,7 @@
           "previous": "0.28%",
           "forecast": "",
           "actual": "0.47%",
+          "actual_first_seen": "0.47%",
           "source": "BLS公式API"
         },
         {
@@ -578,11 +608,12 @@
           "previous": "4.2%",
           "forecast": "",
           "actual": "4.2%",
+          "actual_first_seen": "4.2%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "210b1fa28fd27aa4",
@@ -603,6 +634,7 @@
           "previous": "0.25%",
           "forecast": "",
           "actual": "0.07%",
+          "actual_first_seen": "0.07%",
           "source": "BLS公式API"
         },
         {
@@ -611,11 +643,12 @@
           "previous": "0.23%",
           "forecast": "",
           "actual": "0.03%",
+          "actual_first_seen": "0.03%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "e7d148467c3daf44",
@@ -636,6 +669,7 @@
           "previous": "0.17%",
           "forecast": "",
           "actual": "-0.12%",
+          "actual_first_seen": "-0.12%",
           "source": "BLS公式API"
         },
         {
@@ -644,11 +678,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "071cd24a3cd1e0dd",
@@ -663,8 +698,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "ba8886c567cbef86",
@@ -679,8 +714,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "929496ca7853e474",
@@ -701,6 +736,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -726,6 +762,7 @@
           "previous": "67K",
           "forecast": "",
           "actual": "108K",
+          "actual_first_seen": "108K",
           "source": "BLS公式API"
         },
         {
@@ -734,6 +771,7 @@
           "previous": "0.47%",
           "forecast": "",
           "actual": "0.03%",
+          "actual_first_seen": "0.03%",
           "source": "BLS公式API"
         },
         {
@@ -742,11 +780,12 @@
           "previous": "4.2%",
           "forecast": "",
           "actual": "4.2%",
+          "actual_first_seen": "4.2%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "52625bff16739669",
@@ -761,8 +800,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "c7c542f4bd150624",
@@ -783,6 +822,7 @@
           "previous": "0.07%",
           "forecast": "",
           "actual": "0.24%",
+          "actual_first_seen": "0.24%",
           "source": "BLS公式API"
         },
         {
@@ -791,11 +831,12 @@
           "previous": "0.03%",
           "forecast": "",
           "actual": "0.16%",
+          "actual_first_seen": "0.16%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "5b4e4c713bf845d0",
@@ -816,6 +857,7 @@
           "previous": "-0.12%",
           "forecast": "",
           "actual": "-0.27%",
+          "actual_first_seen": "-0.27%",
           "source": "BLS公式API"
         },
         {
@@ -824,11 +866,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "6aa36cfe3822c648",
@@ -843,8 +886,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "3538d75637819497",
@@ -859,8 +902,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "84b18e9513e7a45c",
@@ -881,6 +924,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -900,8 +944,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "16a816cce690b7cf",
@@ -922,6 +966,7 @@
           "previous": "108K",
           "forecast": "",
           "actual": "13K",
+          "actual_first_seen": "13K",
           "source": "BLS公式API"
         },
         {
@@ -930,6 +975,7 @@
           "previous": "0.03%",
           "forecast": "",
           "actual": "0.44%",
+          "actual_first_seen": "0.44%",
           "source": "BLS公式API"
         },
         {
@@ -938,11 +984,12 @@
           "previous": "4.2%",
           "forecast": "",
           "actual": "4.3%",
+          "actual_first_seen": "4.3%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "398ae217b07d3d09",
@@ -963,6 +1010,7 @@
           "previous": "0.24%",
           "forecast": "",
           "actual": "0.13%",
+          "actual_first_seen": "0.13%",
           "source": "BLS公式API"
         },
         {
@@ -971,11 +1019,12 @@
           "previous": "0.16%",
           "forecast": "",
           "actual": "0.10%",
+          "actual_first_seen": "0.10%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "ead0bdf809808270",
@@ -996,6 +1045,7 @@
           "previous": "-0.27%",
           "forecast": "",
           "actual": "0.34%",
+          "actual_first_seen": "0.34%",
           "source": "BLS公式API"
         },
         {
@@ -1004,11 +1054,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "f9113b1fe3671a5d",
@@ -1023,8 +1074,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "ade5b0d864819b07",
@@ -1039,8 +1090,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "e7cc7ee3110be517",
@@ -1061,6 +1112,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -1086,6 +1138,7 @@
           "previous": "13K",
           "forecast": "",
           "actual": "-20K",
+          "actual_first_seen": "-20K",
           "source": "BLS公式API"
         },
         {
@@ -1094,6 +1147,7 @@
           "previous": "0.44%",
           "forecast": "",
           "actual": "0.22%",
+          "actual_first_seen": "0.22%",
           "source": "BLS公式API"
         },
         {
@@ -1102,11 +1156,12 @@
           "previous": "4.3%",
           "forecast": "",
           "actual": "4.1%",
+          "actual_first_seen": "4.1%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "1e205172139aeddc",
@@ -1127,6 +1182,7 @@
           "previous": "0.13%",
           "forecast": "",
           "actual": "0.23%",
+          "actual_first_seen": "0.23%",
           "source": "BLS公式API"
         },
         {
@@ -1135,11 +1191,12 @@
           "previous": "0.10%",
           "forecast": "",
           "actual": "0.25%",
+          "actual_first_seen": "0.25%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "3371282e559c8b55",
@@ -1160,6 +1217,7 @@
           "previous": "0.34%",
           "forecast": "",
           "actual": "0.16%",
+          "actual_first_seen": "0.16%",
           "source": "BLS公式API"
         },
         {
@@ -1168,11 +1226,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "34fc3bc401d89cb0",
@@ -1187,8 +1246,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "f7b78c4a5c50ca43",
@@ -1209,6 +1268,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -1234,6 +1294,7 @@
           "previous": "-20K",
           "forecast": "",
           "actual": "64K",
+          "actual_first_seen": "64K",
           "source": "BLS公式API"
         },
         {
@@ -1242,6 +1303,7 @@
           "previous": "0.22%",
           "forecast": "",
           "actual": "0.30%",
+          "actual_first_seen": "0.30%",
           "source": "BLS公式API"
         },
         {
@@ -1250,11 +1312,12 @@
           "previous": "4.1%",
           "forecast": "",
           "actual": "4.3%",
+          "actual_first_seen": "4.3%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "04d6ad89b69712a0",
@@ -1269,8 +1332,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "5f3d6cb944d0c4ac",
@@ -1291,6 +1354,7 @@
           "previous": "0.23%",
           "forecast": "",
           "actual": "0.31%",
+          "actual_first_seen": "0.31%",
           "source": "BLS公式API"
         },
         {
@@ -1299,11 +1363,12 @@
           "previous": "0.25%",
           "forecast": "",
           "actual": "0.23%",
+          "actual_first_seen": "0.23%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "1907f907c98fead4",
@@ -1324,6 +1389,7 @@
           "previous": "0.16%",
           "forecast": "",
           "actual": "0.81%",
+          "actual_first_seen": "0.81%",
           "source": "BLS公式API"
         },
         {
@@ -1332,11 +1398,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "1ebe476b555b8871",
@@ -1351,8 +1418,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "b3f1082c9d395808",
@@ -1373,6 +1440,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -1392,8 +1460,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "1f8e73321d9bd4f7",
@@ -1414,6 +1482,7 @@
           "previous": "64K",
           "forecast": "",
           "actual": "-70K",
+          "actual_first_seen": "-70K",
           "source": "BLS公式API"
         },
         {
@@ -1422,6 +1491,7 @@
           "previous": "0.30%",
           "forecast": "",
           "actual": "0.41%",
+          "actual_first_seen": "0.41%",
           "source": "BLS公式API"
         },
         {
@@ -1430,11 +1500,12 @@
           "previous": "4.3%",
           "forecast": "",
           "actual": "4.3%",
+          "actual_first_seen": "4.3%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "b7caf9b708ed1090",
@@ -1455,6 +1526,7 @@
           "previous": "0.81%",
           "forecast": "",
           "actual": "-0.18%",
+          "actual_first_seen": "-0.18%",
           "source": "BLS公式API"
         },
         {
@@ -1463,11 +1535,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "d952709c3d7dc2d7",
@@ -1488,6 +1561,7 @@
           "previous": "0.31%",
           "forecast": "",
           "actual": "0.31%",
+          "actual_first_seen": "0.31%",
           "source": "BLS公式API"
         },
         {
@@ -1496,11 +1570,12 @@
           "previous": "0.23%",
           "forecast": "",
           "actual": "0.35%",
+          "actual_first_seen": "0.35%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "c759d51920c4c8bb",
@@ -1515,8 +1590,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "763b4d4b9b91963d",
@@ -1537,6 +1612,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -1562,6 +1638,7 @@
           "previous": "0.31%",
           "forecast": "",
           "actual": "0.22%",
+          "actual_first_seen": "0.22%",
           "source": "BLS公式API"
         },
         {
@@ -1570,11 +1647,12 @@
           "previous": "0.35%",
           "forecast": "",
           "actual": "0.30%",
+          "actual_first_seen": "0.30%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "baabdd9a4b8e64aa",
@@ -1595,6 +1673,7 @@
           "previous": "76K",
           "forecast": "",
           "actual": "-140K",
+          "actual_first_seen": "-140K",
           "source": "BLS公式API"
         },
         {
@@ -1603,6 +1682,7 @@
           "previous": "0.22%",
           "forecast": "",
           "actual": "0.41%",
+          "actual_first_seen": "0.41%",
           "source": "BLS公式API"
         },
         {
@@ -1611,11 +1691,12 @@
           "previous": "4.4%",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "98d0ce0b994ef06d",
@@ -1636,6 +1717,7 @@
           "previous": "0.61%",
           "forecast": "",
           "actual": "0.13%",
+          "actual_first_seen": "0.13%",
           "source": "BLS公式API"
         },
         {
@@ -1644,11 +1726,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "75a14ef9ea5981cd",
@@ -1663,8 +1746,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "36921a4f6f80f1e5",
@@ -1685,6 +1768,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -1710,6 +1794,7 @@
           "previous": "-140K",
           "forecast": "",
           "actual": "41K",
+          "actual_first_seen": "41K",
           "source": "BLS公式API"
         },
         {
@@ -1718,6 +1803,7 @@
           "previous": "0.41%",
           "forecast": "",
           "actual": "0.41%",
+          "actual_first_seen": "0.41%",
           "source": "BLS公式API"
         },
         {
@@ -1726,11 +1812,12 @@
           "previous": "",
           "forecast": "",
           "actual": "4.5%",
+          "actual_first_seen": "4.5%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "d2f415911464420c",
@@ -1751,6 +1838,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -1759,6 +1847,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -1784,6 +1873,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -1803,8 +1893,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "05d5553378ac1c7c",
@@ -1825,6 +1915,7 @@
           "previous": "41K",
           "forecast": "",
           "actual": "-17K",
+          "actual_first_seen": "-17K",
           "source": "BLS公式API"
         },
         {
@@ -1833,6 +1924,7 @@
           "previous": "0.41%",
           "forecast": "",
           "actual": "0.05%",
+          "actual_first_seen": "0.05%",
           "source": "BLS公式API"
         },
         {
@@ -1841,11 +1933,12 @@
           "previous": "4.5%",
           "forecast": "",
           "actual": "4.4%",
+          "actual_first_seen": "4.4%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "a5a7b4d36358f73d",
@@ -1866,6 +1959,7 @@
           "previous": "",
           "forecast": "",
           "actual": "0.23%",
+          "actual_first_seen": "0.23%",
           "source": "BLS公式API"
         },
         {
@@ -1874,11 +1968,12 @@
           "previous": "",
           "forecast": "",
           "actual": "0.30%",
+          "actual_first_seen": "0.30%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "ac70369db7022f0b",
@@ -1899,6 +1994,7 @@
           "previous": "0.41%",
           "forecast": "",
           "actual": "0.36%",
+          "actual_first_seen": "0.36%",
           "source": "BLS公式API"
         },
         {
@@ -1907,11 +2003,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "80387fa164226caf",
@@ -1926,8 +2023,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "3b70e8b2a71d95ff",
@@ -1942,8 +2039,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "2ace519b8cf8144d",
@@ -1964,6 +2061,7 @@
           "previous": "0.41%",
           "forecast": "",
           "actual": "0.36%",
+          "actual_first_seen": "0.36%",
           "source": "BLS公式API"
         },
         {
@@ -1972,11 +2070,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "c206f2f7963386f1",
@@ -1997,6 +2096,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -2016,8 +2116,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "a9b08f5db7e9e86e",
@@ -2038,6 +2138,7 @@
           "previous": "-17K",
           "forecast": "",
           "actual": "160K",
+          "actual_first_seen": "160K",
           "source": "BLS公式API"
         },
         {
@@ -2046,6 +2147,7 @@
           "previous": "0.05%",
           "forecast": "",
           "actual": "0.35%",
+          "actual_first_seen": "0.35%",
           "source": "BLS公式API"
         },
         {
@@ -2054,11 +2156,12 @@
           "previous": "4.4%",
           "forecast": "",
           "actual": "4.3%",
+          "actual_first_seen": "4.3%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "4c98b9dcb9327a4c",
@@ -2079,6 +2182,7 @@
           "previous": "0.23%",
           "forecast": "",
           "actual": "0.30%",
+          "actual_first_seen": "0.30%",
           "source": "BLS公式API"
         },
         {
@@ -2087,11 +2191,12 @@
           "previous": "0.30%",
           "forecast": "",
           "actual": "0.17%",
+          "actual_first_seen": "0.17%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "d0aac64229ed6294",
@@ -2112,6 +2217,7 @@
           "previous": "0.36%",
           "forecast": "",
           "actual": "0.58%",
+          "actual_first_seen": "0.58%",
           "source": "BLS公式API"
         },
         {
@@ -2120,11 +2226,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "19d0e20aa86d432e",
@@ -2139,8 +2246,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "4814502eb3984029",
@@ -2155,8 +2262,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "7f20896e64ca2bd1",
@@ -2177,6 +2284,7 @@
           "previous": "160K",
           "forecast": "",
           "actual": "-156K",
+          "actual_first_seen": "-156K",
           "source": "BLS公式API"
         },
         {
@@ -2185,6 +2293,7 @@
           "previous": "0.35%",
           "forecast": "",
           "actual": "0.32%",
+          "actual_first_seen": "0.32%",
           "source": "BLS公式API"
         },
         {
@@ -2193,11 +2302,12 @@
           "previous": "4.3%",
           "forecast": "",
           "actual": "4.4%",
+          "actual_first_seen": "4.4%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "08a1012e7f524482",
@@ -2218,6 +2328,7 @@
           "previous": "0.30%",
           "forecast": "",
           "actual": "0.22%",
+          "actual_first_seen": "0.22%",
           "source": "BLS公式API"
         },
         {
@@ -2226,11 +2337,12 @@
           "previous": "0.17%",
           "forecast": "",
           "actual": "0.27%",
+          "actual_first_seen": "0.27%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "efa9f580a5c769e4",
@@ -2251,6 +2363,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -2276,6 +2389,7 @@
           "previous": "0.58%",
           "forecast": "",
           "actual": "0.48%",
+          "actual_first_seen": "0.48%",
           "source": "BLS公式API"
         },
         {
@@ -2284,11 +2398,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "05e7f179778e7677",
@@ -2303,8 +2418,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "2cfd905c1664279d",
@@ -2319,8 +2434,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "3c6bbdbc0c40333f",
@@ -2341,6 +2456,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -2366,6 +2482,7 @@
           "previous": "-156K",
           "forecast": "",
           "actual": "214K",
+          "actual_first_seen": "214K",
           "source": "BLS公式API"
         },
         {
@@ -2374,6 +2491,7 @@
           "previous": "0.32%",
           "forecast": "",
           "actual": "0.21%",
+          "actual_first_seen": "0.21%",
           "source": "BLS公式API"
         },
         {
@@ -2382,11 +2500,12 @@
           "previous": "4.4%",
           "forecast": "",
           "actual": "4.3%",
+          "actual_first_seen": "4.3%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "b98520409d7255a6",
@@ -2407,6 +2526,7 @@
           "previous": "0.22%",
           "forecast": "",
           "actual": "0.20%",
+          "actual_first_seen": "0.20%",
           "source": "BLS公式API"
         },
         {
@@ -2415,11 +2535,12 @@
           "previous": "0.27%",
           "forecast": "",
           "actual": "0.87%",
+          "actual_first_seen": "0.87%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "40848cf0ed6f5bbd",
@@ -2440,6 +2561,7 @@
           "previous": "0.48%",
           "forecast": "",
           "actual": "0.78%",
+          "actual_first_seen": "0.78%",
           "source": "BLS公式API"
         },
         {
@@ -2448,11 +2570,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "81aafbf044fdceaa",
@@ -2467,8 +2590,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "71ab75c31a7c3dfb",
@@ -2489,6 +2612,7 @@
           "previous": "-156K",
           "forecast": "",
           "actual": "214K",
+          "actual_first_seen": "214K",
           "source": "BLS公式API"
         },
         {
@@ -2497,6 +2621,7 @@
           "previous": "0.32%",
           "forecast": "",
           "actual": "0.21%",
+          "actual_first_seen": "0.21%",
           "source": "BLS公式API"
         },
         {
@@ -2505,11 +2630,12 @@
           "previous": "4.4%",
           "forecast": "",
           "actual": "4.3%",
+          "actual_first_seen": "4.3%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "e9475a785b03e0c7",
@@ -2530,6 +2656,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -2549,8 +2676,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "5a45a04a3bf0d291",
@@ -2571,6 +2698,7 @@
           "previous": "214K",
           "forecast": "",
           "actual": "148K",
+          "actual_first_seen": "148K",
           "source": "BLS公式API"
         },
         {
@@ -2579,6 +2707,7 @@
           "previous": "0.21%",
           "forecast": "",
           "actual": "0.16%",
+          "actual_first_seen": "0.16%",
           "source": "BLS公式API"
         },
         {
@@ -2587,11 +2716,12 @@
           "previous": "4.3%",
           "forecast": "",
           "actual": "4.3%",
+          "actual_first_seen": "4.3%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "73864c07fa8154c7",
@@ -2612,6 +2742,7 @@
           "previous": "0.20%",
           "forecast": "",
           "actual": "0.38%",
+          "actual_first_seen": "0.38%",
           "source": "BLS公式API"
         },
         {
@@ -2620,11 +2751,12 @@
           "previous": "0.87%",
           "forecast": "",
           "actual": "0.64%",
+          "actual_first_seen": "0.64%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "1457a54be7d7bbda",
@@ -2645,6 +2777,7 @@
           "previous": "0.78%",
           "forecast": "",
           "actual": "1.09%",
+          "actual_first_seen": "1.09%",
           "source": "BLS公式API"
         },
         {
@@ -2653,11 +2786,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "e0a6b1d20790151c",
@@ -2672,8 +2806,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "9923a58beb6cc4e3",
@@ -2688,8 +2822,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "be665c2c1e0b1bd7",
@@ -2710,6 +2844,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -2729,8 +2864,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "830ecb861280a000",
@@ -2751,6 +2886,7 @@
           "previous": "148K",
           "forecast": "",
           "actual": "63K",
+          "actual_first_seen": "63K",
           "source": "BLS公式API"
         },
         {
@@ -2759,6 +2895,7 @@
           "previous": "0.16%",
           "forecast": "",
           "actual": "0.21%",
+          "actual_first_seen": "0.21%",
           "source": "BLS公式API"
         },
         {
@@ -2767,11 +2904,12 @@
           "previous": "4.3%",
           "forecast": "",
           "actual": "4.3%",
+          "actual_first_seen": "4.3%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "3b5b54658102a8e2",
@@ -2792,6 +2930,7 @@
           "previous": "0.38%",
           "forecast": "",
           "actual": "0.21%",
+          "actual_first_seen": "0.21%",
           "source": "BLS公式API"
         },
         {
@@ -2800,11 +2939,12 @@
           "previous": "0.64%",
           "forecast": "",
           "actual": "0.47%",
+          "actual_first_seen": "0.47%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "bef74e8e4da64879",
@@ -2825,6 +2965,7 @@
           "previous": "1.09%",
           "forecast": "",
           "actual": "0.45%",
+          "actual_first_seen": "0.45%",
           "source": "BLS公式API"
         },
         {
@@ -2833,11 +2974,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "eb3f15e8e396ee8d",
@@ -2852,8 +2994,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "ebcad34287c80f6c",
@@ -2868,8 +3010,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "8f96f2ef7e232437",
@@ -2890,6 +3032,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -2915,6 +3058,7 @@
           "previous": "63K",
           "forecast": "",
           "actual": "20K",
+          "actual_first_seen": "20K",
           "source": "BLS公式API"
         },
         {
@@ -2923,6 +3067,7 @@
           "previous": "0.21%",
           "forecast": "",
           "actual": "0.29%",
+          "actual_first_seen": "0.29%",
           "source": "BLS公式API"
         },
         {
@@ -2931,11 +3076,12 @@
           "previous": "4.3%",
           "forecast": "",
           "actual": "4.2%",
+          "actual_first_seen": "4.2%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "e4c772e04bba4bb5",
@@ -2956,6 +3102,7 @@
           "previous": "0.21%",
           "forecast": "",
           "actual": "-0.02%",
+          "actual_first_seen": "-0.02%",
           "source": "BLS公式API"
         },
         {
@@ -2964,11 +3111,12 @@
           "previous": "0.47%",
           "forecast": "",
           "actual": "-0.42%",
+          "actual_first_seen": "-0.42%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "f1b4922e515cf1d9",
@@ -2989,6 +3137,7 @@
           "previous": "0.45%",
           "forecast": "",
           "actual": "-0.11%",
+          "actual_first_seen": "-0.11%",
           "source": "BLS公式API"
         },
         {
@@ -2997,11 +3146,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "3b6202c76bd22b27",
@@ -3016,8 +3166,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "10529625dcc0bae3",
@@ -3038,6 +3188,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3057,8 +3208,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "6823ede06793ab42",
@@ -3079,6 +3230,7 @@
           "previous": "20K",
           "forecast": "",
           "actual": "-23K",
+          "actual_first_seen": "-23K",
           "source": "BLS公式API"
         },
         {
@@ -3087,6 +3239,7 @@
           "previous": "0.29%",
           "forecast": "",
           "actual": "0.05%",
+          "actual_first_seen": "0.05%",
           "source": "BLS公式API"
         },
         {
@@ -3095,11 +3248,12 @@
           "previous": "4.2%",
           "forecast": "",
           "actual": "4.1%",
+          "actual_first_seen": "4.1%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "ccb773fecc35a5a8",
@@ -3120,6 +3274,7 @@
           "previous": "-0.02%",
           "forecast": "",
           "actual": "0.22%",
+          "actual_first_seen": "0.22%",
           "source": "BLS公式API"
         },
         {
@@ -3128,11 +3283,12 @@
           "previous": "-0.42%",
           "forecast": "",
           "actual": "0.07%",
+          "actual_first_seen": "0.07%",
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "c468238a0f0c4372",
@@ -3153,6 +3309,7 @@
           "previous": "-0.11%",
           "forecast": "",
           "actual": "-0.03%",
+          "actual_first_seen": "-0.03%",
           "source": "BLS公式API"
         },
         {
@@ -3161,11 +3318,12 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "no_forecast",
+      "rate_signal_label": "予想未取得・判定保留"
     },
     {
       "id": "06f750fc07308154",
@@ -3180,8 +3338,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "28391189dd79afd8",
@@ -3202,6 +3360,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3210,6 +3369,7 @@
           "previous": "-0.10%",
           "forecast": "0.10%",
           "actual": "",
+          "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
         },
         {
@@ -3218,6 +3378,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3243,6 +3404,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3251,6 +3413,7 @@
           "previous": "3.60%",
           "forecast": "6.30%",
           "actual": "",
+          "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
         }
       ],
@@ -3276,6 +3439,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3317,6 +3481,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3325,6 +3490,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3333,6 +3499,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3358,6 +3525,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3366,6 +3534,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3391,6 +3560,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3399,6 +3569,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3472,6 +3643,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3497,6 +3669,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3505,6 +3678,7 @@
           "previous": "-0.10%",
           "forecast": "0.10%",
           "actual": "",
+          "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
         },
         {
@@ -3513,6 +3687,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3538,6 +3713,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3546,6 +3722,7 @@
           "previous": "3.60%",
           "forecast": "6.30%",
           "actual": "",
+          "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
         }
       ],
@@ -3571,6 +3748,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3579,6 +3757,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3587,6 +3766,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3612,6 +3792,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3620,6 +3801,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3645,6 +3827,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3653,6 +3836,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3694,6 +3878,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3702,6 +3887,7 @@
           "previous": "-0.10%",
           "forecast": "0.10%",
           "actual": "",
+          "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
         },
         {
@@ -3710,6 +3896,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3735,6 +3922,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3743,6 +3931,7 @@
           "previous": "3.60%",
           "forecast": "6.30%",
           "actual": "",
+          "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
         }
       ],
@@ -3768,6 +3957,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3809,6 +3999,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3817,6 +4008,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3825,6 +4017,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3850,6 +4043,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3858,6 +4052,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3883,6 +4078,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3891,6 +4087,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3932,6 +4129,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3940,6 +4138,7 @@
           "previous": "-0.10%",
           "forecast": "0.10%",
           "actual": "",
+          "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
         },
         {
@@ -3948,6 +4147,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -3973,6 +4173,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -3981,6 +4182,7 @@
           "previous": "3.60%",
           "forecast": "6.30%",
           "actual": "",
+          "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
         }
       ],
@@ -4006,6 +4208,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -4031,6 +4234,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -4039,6 +4243,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -4047,6 +4252,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -4088,6 +4294,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -4096,6 +4303,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -4121,6 +4329,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -4129,6 +4338,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -4170,6 +4380,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -4178,6 +4389,7 @@
           "previous": "-0.10%",
           "forecast": "0.10%",
           "actual": "",
+          "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
         },
         {
@@ -4186,6 +4398,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         }
       ],
@@ -4211,6 +4424,7 @@
           "previous": "",
           "forecast": "",
           "actual": "",
+          "actual_first_seen": "",
           "source": ""
         },
         {
@@ -4219,6 +4433,7 @@
           "previous": "3.60%",
           "forecast": "6.30%",
           "actual": "",
+          "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
         }
       ],
