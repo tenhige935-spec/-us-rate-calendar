@@ -41,7 +41,7 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
   <div class="today-row"><button class="btn" id="today">今月へ戻る</button><div class="legend">赤★★★★★　橙★★★★　青★★★</div></div>
   <section class="calendar"><div class="dow"><div>日</div><div>月</div><div>火</div><div>水</div><div>木</div><div>金</div><div>土</div></div><div class="grid" id="grid"></div></section>
   <section class="section"><div class="section-title"><h2>選択日のイベント</h2><div class="date-title" id="selectedDate"></div></div><div id="dayEvents"></div></section>
-  <section class="section"><div class="section-title"><h2>今月の重要イベント</h2><div class="date-title" id="count"></div></div><div id="monthEvents"></div><button class="btn refresh" id="refresh">最新データを再読み込み</button><div class="note">日程はBLS・BEA・FRBなど公式発表元を優先して自動更新し、最重要指標は固定バックアップでも保持します。市場予想・結果は取得できた場合に表示し、取得できない項目は「—」と表示します。発表日時は変更される場合があります。</div></section>
+  <section class="section"><div class="section-title"><h2>今月の重要イベント</h2><div class="date-title" id="count"></div></div><div id="monthEvents"></div><button class="btn refresh" id="refresh">最新データを再読み込み</button><div class="note">日程はBLS・BEA・FRBなど公式発表元を優先して自動更新し、最重要指標は固定バックアップでも保持します。前回値・市場予想・結果は対象指標で常時表示します。自動取得できない値は「未取得」と明記します。発表日時は変更される場合があります。</div></section>
   <section class="install"><b>iPhoneでアプリのように使う</b>Safariでこのページを開き、共有ボタン →「ホーム画面に追加」。次回からホーム画面のアイコンで起動できます。<div class="small">GitHub Pages等に置けば、毎日自動更新された日程をそのまま表示します。</div></section>
 </main>
 <script>
@@ -64,8 +64,12 @@ function renderCal(){ $('month').textContent=`${view.getFullYear()}年${view.get
 function marketHtml(e){
   if(!e.metrics||!e.metrics.length) return '';
   const cls='signal-'+(e.rate_signal||'pending');
-  const rows=e.metrics.map(m=>`<div class="metric"><div>${m.label}</div><div class="val">${m.previous||'—'}</div><div class="val">${m.forecast||'—'}</div><div class="val"><b>${m.actual||'—'}</b></div></div>`).join('');
-  return `<div class="market"><div class="market-title"><span>市場予想・結果</span><span class="signal ${cls}">${e.rate_signal_label||'発表待ち'}</span></div><div class="metric metric-head"><div>項目</div><div class="val">前回</div><div class="val">予想</div><div class="val">結果</div></div>${rows}<div class="market-note">市場予想: Trading Economics コンセンサス / 実績: 公式発表元データ</div></div>`;
+  const fmt=v => (v===null||v===undefined||v==='') ? '未取得' : String(v);
+  const rows=e.metrics.map(m=>`<div class="metric"><div>${m.label}</div><div class="val">${fmt(m.previous)}</div><div class="val">${fmt(m.forecast)}</div><div class="val"><b>${fmt(m.actual)}</b></div></div>`).join('');
+  const note=e.market_data_source
+    ? '市場予想: Trading Economics コンセンサス / 実績: 公式発表元ベース'
+    : '市場予想・実績値は取得できた項目のみ自動反映。未取得は推測しません。';
+  return `<div class="market"><div class="market-title"><span>前回・予想・結果</span><span class="signal ${cls}">${e.rate_signal_label||'発表待ち'}</span></div><div class="metric metric-head"><div>項目</div><div class="val">前回</div><div class="val">予想</div><div class="val">結果</div></div>${rows}<div class="market-note">${note}</div></div>`;
 }
 function eventHtml(e){const stars='★'.repeat(e.importance);return `<article class="event"><div class="event-head"><div class="event-name">${e.name}</div><div class="time">${e.time||'時刻未定'}</div></div><div class="meta"><span class="tag i${e.importance}">${stars}</span><span class="tag">${e.category}</span><span class="tag">${e.source||'公式'}</span></div>${marketHtml(e)}<div class="analysis"><div class="impact up"><b>金利↑になりやすい</b><br>${e.up}</div><div class="impact down"><b>金利↓になりやすい</b><br>${e.down}</div><div class="impact stock"><b>株への見方</b><br>${e.impact}</div></div>${e.url?`<div class="source"><a href="${e.url}" target="_blank" rel="noopener">公式ソースを開く</a></div>`:''}</article>`}
 function renderDay(){const key=iso(selected),es=filtered().filter(e=>e.date===key).sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99'));$('selectedDate').textContent=`${selected.getMonth()+1}/${selected.getDate()} (${['日','月','火','水','木','金','土'][selected.getDay()]})`;$('dayEvents').innerHTML=es.length?es.map(eventHtml).join(''):'<div class="empty">この日の重要イベントはありません</div>'}

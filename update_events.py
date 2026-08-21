@@ -213,6 +213,7 @@ def enrich_with_market_data(events, errors):
         te=fetch_te_calendar()
     except Exception as ex:
         errors.append(f"MarketData: {ex}")
+        ensure_metric_placeholders(events)
         return
 
     def matches(te_item, aliases):
@@ -224,15 +225,29 @@ def enrich_with_market_data(events, errors):
 
     for e in events:
         specs=TE_PATTERNS.get(e["name"], [])
-        metrics=[]
+        if not specs:
+            continue
+
+        found={}
         score=0
+        any_actual=False
+
         for label,aliases in specs:
             candidates=[x for x in te if matches(x,aliases)]
-            if not candidates: continue
-            # Prefer the calendar item closest to the official release date.
+            if not candidates:
+                continue
+
             target=e["date"]
-            candidates.sort(key=lambda x: (0 if str(x.get("Date",""))[:10]==target else 1, str(x.get("Date",""))))
+            candidates.sort(
+                key=lambda x: (
+                    0 if str(x.get("Date",""))[:10]==target else 1,
+                    abs((datetime.fromisoformat(str(x.get("Date","")).replace("Z","+00:00")).date()
+                         - datetime.fromisoformat(target).date()).days)
+                    if str(x.get("Date",""))[:10] else 9999
+                )
+            )
             x=candidates[0]
+
             metric={
                 "label": label,
                 "actual": x.get("Actual") or "",
@@ -241,18 +256,53 @@ def enrich_with_market_data(events, errors):
                 "te_forecast": x.get("TEForecast") or "",
                 "reference": x.get("Reference") or "",
             }
-            metrics.append(metric)
-            score += _hawkish_for_metric(e["name"], label, metric["actual"], metric["forecast"])
-        if metrics:
-            e["metrics"]=metrics
-            if any(m.get("actual") for m in metrics):
-                e["rate_signal"] = "up" if score>0 else ("down" if score<0 else "neutral")
-                e["rate_signal_label"] = "金利上昇警戒" if score>0 else ("金利低下方向" if score<0 else "中立・まちまち")
-            else:
-                e["rate_signal"]="pending"
-                e["rate_signal_label"]="発表待ち"
+            found[label]=metric
+
+            if metric["actual"]:
+                any_actual=True
+                score += _hawkish_for_metric(
+                    e["name"], label, metric["actual"], metric["forecast"]
+                )
+
+        if found:
+            current={m.get("label"):m for m in e.get("metrics",[]) if isinstance(m,dict)}
+            current.update(found)
+            e["metrics"]=list(current.values())
+
+        if any_actual:
+            e["rate_signal"] = "up" if score>0 else ("down" if score<0 else "neutral")
+            e["rate_signal_label"] = "金利上昇警戒" if score>0 else ("金利低下方向" if score<0 else "中立・まちまち")
+        else:
+            e["rate_signal"]="pending"
+            e["rate_signal_label"]="発表待ち"
+
+        if found:
             e["market_data_source"]="Trading Economics consensus / official-source actuals"
 
+    ensure_metric_placeholders(events)
+
+def ensure_metric_placeholders(events):
+    for e in events:
+        specs = DEFAULT_METRICS.get(e.get("name"))
+        if not specs:
+            continue
+        existing = {m.get("label"): m for m in e.get("metrics", []) if isinstance(m, dict)}
+        merged = []
+        for label, unit in specs:
+            m = existing.get(label, {})
+            merged.append({
+                "label": label,
+                "unit": unit,
+                "previous": m.get("previous") or "",
+                "forecast": m.get("forecast") or "",
+                "actual": m.get("actual") or "",
+                "te_forecast": m.get("te_forecast") or "",
+                "reference": m.get("reference") or "",
+            })
+        e["metrics"] = merged
+        if not e.get("rate_signal"):
+            e["rate_signal"] = "pending"
+            e["rate_signal_label"] = "発表待ち"
 
 FALLBACK_EVENTS = [
     # BEA / BLS / FRB important releases (JST). These act only as a safety net.
@@ -328,6 +378,7 @@ def main():
                 events.extend([e for e in old if e.get('source')==src])
         except Exception: pass
     ensure_fallback_events(events)
+    ensure_metric_placeholders(events)
     enrich_with_market_data(events, errors)
     events=dedupe(events)
     payload={'updated_at':datetime.now(tz=ZoneInfo('UTC')).isoformat(),'events':events,'errors':errors}
