@@ -1,0 +1,14 @@
+{
+  "updated_at": "2026-08-21T15:26:00+00:00",
+  "events": [
+    {"id":"bea-pce-20260826","name":"PCE・コアPCE / 個人所得・支出","date":"2026-08-26","time":"21:30","importance":5,"category":"インフレ","source":"BEA","url":"https://www.bea.gov/news/schedule","up":"コアPCEや個人消費が予想を上回る","down":"コアPCEが予想を下回り、消費も減速","impact":"FRBが重視する物価指標。上振れはSBG・NASDAQ・高PER半導体に逆風。"},
+    {"id":"bea-gdp-20260826","name":"米GDP 2Q 改定値","date":"2026-08-26","time":"21:30","importance":3,"category":"景気","source":"BEA","url":"https://www.bea.gov/news/schedule","up":"GDPが上方修正・需要が強い","down":"GDP下方修正・景気減速","impact":"強すぎる成長は利下げ後ずれ観測につながる。"},
+    {"id":"bls-jolts-20260901","name":"JOLTS 求人件数","date":"2026-09-01","time":"23:00","importance":3,"category":"雇用","source":"BLS","url":"https://www.bls.gov/schedule/news_release/jolts.htm","up":"求人件数が予想より多い","down":"求人減少・労働市場の緩み","impact":"求人増は賃金インフレ懸念を強めやすい。"},
+    {"id":"bls-jobs-20260904","name":"米雇用統計","date":"2026-09-04","time":"21:30","importance":5,"category":"雇用","source":"BLS","url":"https://www.bls.gov/schedule/news_release/empsit.htm","up":"雇用者数・平均時給が強く、失業率が低下","down":"雇用・賃金が鈍化し、失業率が上昇","impact":"強い雇用は利下げ後ずれ観測を強めやすい。"},
+    {"id":"bls-ppi-20260910","name":"米PPI","date":"2026-09-10","time":"21:30","importance":4,"category":"インフレ","source":"BLS","url":"https://www.bls.gov/schedule/news_release/ppi.htm","up":"PPI・コアPPIが予想を上回る","down":"PPIが予想を下回る","impact":"CPIやPCEに先行して金利が反応することがある。"},
+    {"id":"bls-cpi-20260911","name":"米CPI・コアCPI","date":"2026-09-11","time":"21:30","importance":5,"category":"インフレ","source":"BLS","url":"https://www.bls.gov/schedule/news_release/cpi.htm","up":"特にコアCPI前月比が予想を上回る","down":"コアCPIが予想を下回る","impact":"最重要。上振れなら長期金利↑、SBG・NASDAQ・半導体↓になりやすい。"},
+    {"id":"fomc-20260917","name":"FOMC 政策金利・声明","date":"2026-09-17","time":"03:00","importance":5,"category":"FRB","source":"Federal Reserve","url":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm","up":"タカ派声明・利下げ後ずれ・インフレ警戒","down":"ハト派声明・利下げ余地を示唆","impact":"米長期金利とNASDAQを大きく動かす最重要イベント。"},
+    {"id":"fomcpc-20260917","name":"FRB議長会見","date":"2026-09-17","time":"03:30","importance":5,"category":"FRB","source":"Federal Reserve","url":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm","up":"インフレ警戒・引き締め長期化を示唆","down":"景気減速・利下げ余地を強調","impact":"声明後に金利・株価の方向が反転することもある。"}
+  ],
+  "errors": []
+}
