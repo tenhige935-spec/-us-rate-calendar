@@ -107,6 +107,120 @@ def fetch_fed(events):
         add(events,'FRB議長会見',dt+timedelta(minutes=30),5,'FRB','Federal Reserve',FED,
             'インフレ警戒・引き締め長期化を示唆','景気減速・利下げ余地を強調','声明後に金利・株価の方向が反転することもある。')
 
+
+TE_CAL = "https://api.tradingeconomics.com/calendar/country/united%20states"
+
+TE_PATTERNS = {
+    "米CPI・コアCPI": [
+        ("コアCPI 前月比", ["Core Inflation Rate MoM", "Core CPI MoM"]),
+        ("CPI 前月比", ["Inflation Rate MoM", "CPI MoM"]),
+    ],
+    "米雇用統計": [
+        ("非農業部門雇用者数", ["Non Farm Payrolls", "Nonfarm Payrolls"]),
+        ("平均時給 前月比", ["Average Hourly Earnings MoM"]),
+        ("失業率", ["Unemployment Rate"]),
+    ],
+    "米PPI": [
+        ("PPI 前月比", ["Producer Prices MoM", "PPI MoM"]),
+        ("コアPPI 前月比", ["Core Producer Prices MoM", "Core PPI MoM"]),
+    ],
+    "JOLTS 求人件数": [
+        ("JOLTS求人件数", ["JOLTs Job Openings", "JOLTS Job Openings"]),
+    ],
+    "PCE・コアPCE / 個人所得・支出": [
+        ("コアPCE 前月比", ["Core PCE Price Index MoM"]),
+        ("PCE 前月比", ["PCE Price Index MoM"]),
+        ("個人消費 前月比", ["Personal Spending MoM"]),
+    ],
+    "米GDP": [
+        ("GDP成長率", ["GDP Growth Rate", "GDP Growth Rate QoQ"]),
+    ],
+    "輸出入物価指数": [
+        ("輸入物価 前月比", ["Import Prices MoM"]),
+    ],
+    "生産性・単位労働コスト": [
+        ("単位労働コスト", ["Unit Labour Costs", "Unit Labor Costs"]),
+        ("非農業部門生産性", ["Nonfarm Productivity", "Non Farm Productivity"]),
+    ],
+}
+
+def _num(v):
+    if v in (None, "", "N/A", "NaN"): return None
+    s=str(v).strip().replace(",", "")
+    mult=1
+    if s.endswith("K"): mult=1_000; s=s[:-1]
+    elif s.endswith("M"): mult=1_000_000; s=s[:-1]
+    elif s.endswith("B"): mult=1_000_000_000; s=s[:-1]
+    s=s.replace("%","")
+    try: return float(s)*mult
+    except Exception: return None
+
+def _hawkish_for_metric(event_name, metric_label, actual, forecast):
+    a,f=_num(actual),_num(forecast)
+    if a is None or f is None: return 0
+    # Higher values are normally more hawkish, except unemployment/jobless claims.
+    inverse = any(k in metric_label.lower() for k in ["失業率","失業保険","jobless","unemployment"])
+    # Productivity is generally disinflationary when stronger.
+    if "生産性" in metric_label:
+        inverse=True
+    if abs(a-f) < 1e-12: return 0
+    higher = a > f
+    return (-1 if higher else 1) if inverse else (1 if higher else -1)
+
+def fetch_te_calendar():
+    # guest:guest is intentionally used as a no-signup fallback.
+    # If Trading Economics limits the guest feed, the app simply shows "未取得".
+    params={"c":"guest:guest","f":"json"}
+    r=requests.get(TE_CAL,params=params,headers=UA,timeout=25)
+    r.raise_for_status()
+    data=r.json()
+    return data if isinstance(data,list) else []
+
+def enrich_with_market_data(events, errors):
+    try:
+        te=fetch_te_calendar()
+    except Exception as ex:
+        errors.append(f"MarketData: {ex}")
+        return
+
+    def matches(te_item, aliases):
+        hay=(" ".join([
+            str(te_item.get("Event","")),
+            str(te_item.get("Category","")),
+        ])).lower()
+        return any(a.lower() in hay for a in aliases)
+
+    for e in events:
+        specs=TE_PATTERNS.get(e["name"], [])
+        metrics=[]
+        score=0
+        for label,aliases in specs:
+            candidates=[x for x in te if matches(x,aliases)]
+            if not candidates: continue
+            # Prefer the calendar item closest to the official release date.
+            target=e["date"]
+            candidates.sort(key=lambda x: (0 if str(x.get("Date",""))[:10]==target else 1, str(x.get("Date",""))))
+            x=candidates[0]
+            metric={
+                "label": label,
+                "actual": x.get("Actual") or "",
+                "forecast": x.get("Forecast") or "",
+                "previous": x.get("Previous") or "",
+                "te_forecast": x.get("TEForecast") or "",
+                "reference": x.get("Reference") or "",
+            }
+            metrics.append(metric)
+            score += _hawkish_for_metric(e["name"], label, metric["actual"], metric["forecast"])
+        if metrics:
+            e["metrics"]=metrics
+            if any(m.get("actual") for m in metrics):
+                e["rate_signal"] = "up" if score>0 else ("down" if score<0 else "neutral")
+                e["rate_signal_label"] = "金利上昇警戒" if score>0 else ("金利低下方向" if score<0 else "中立・まちまち")
+            else:
+                e["rate_signal"]="pending"
+                e["rate_signal_label"]="発表待ち"
+            e["market_data_source"]="Trading Economics consensus / official-source actuals"
+
 def dedupe(events):
     seen=set(); out=[]
     for e in sorted(events,key=lambda x:(x['date'],x['time'],x['name'])):
@@ -130,6 +244,7 @@ def main():
                 src=source_map.get(fail)
                 events.extend([e for e in old if e.get('source')==src])
         except Exception: pass
+    enrich_with_market_data(events, errors)
     events=dedupe(events)
     payload={'updated_at':datetime.now(tz=ZoneInfo('UTC')).isoformat(),'events':events,'errors':errors}
     OUT.parent.mkdir(parents=True,exist_ok=True)
