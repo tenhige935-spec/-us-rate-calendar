@@ -31,6 +31,20 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
 .source{font-size:11px;color:var(--muted);margin-top:6px}.source a{color:inherit}.empty{color:var(--muted);font-size:13px;padding:14px 0;text-align:center}
 .note{font-size:12px;color:var(--muted);margin-top:9px;line-height:1.55}.refresh{width:100%;margin-top:9px}.install{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:10px;font-size:13px;line-height:1.55}.install b{display:block;margin-bottom:3px}.small{font-size:11px;color:var(--muted)}
 @media(min-width:520px){.day{min-height:86px}.analysis{grid-template-columns:1fr 1fr}.stock{grid-column:1/-1}}
+
+.weekly-watch{margin:12px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}
+.weekly-watch h2{margin:0 0 10px;font-size:17px}
+.weekly-item{padding:10px 0;border-top:1px solid var(--line)}
+.weekly-item:first-of-type{border-top:0}
+.weekly-top{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.weekly-name{font-weight:800}
+.weekly-date{font-size:12px;color:var(--muted);white-space:nowrap}
+.stock-stars{display:grid;grid-template-columns:1fr;gap:5px;margin-top:8px}
+.stock-row{display:flex;justify-content:space-between;gap:8px;font-size:12px}
+.stock-name{color:var(--muted)}
+.starline{letter-spacing:1px}
+.weekly-empty{font-size:13px;color:var(--muted);padding:4px 0}
+
 </style>
 </head>
 <body>
@@ -39,6 +53,11 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
   <div class="controls"><button class="btn" id="prev" aria-label="前の月">‹</button><div class="month" id="month"></div><button class="btn" id="next" aria-label="次の月">›</button></div>
   <div class="filters"><select id="importance"><option value="3">★★★以上</option><option value="4">★★★★以上</option><option value="5">★★★★★のみ</option><option value="1">すべて</option></select><select id="category"><option value="">全カテゴリ</option><option>インフレ</option><option>雇用</option><option>景気</option><option>FRB</option><option>国債</option></select></div>
   <div class="today-row"><button class="btn" id="today">今月へ戻る</button><div class="legend">赤★★★★★　橙★★★★　青★★★</div></div>
+  <section class="weekly-watch">
+    <h2>今日〜7日以内の最重要イベント</h2>
+    <div id="weeklyWatch"></div>
+  </section>
+
   <section class="calendar"><div class="dow"><div>日</div><div>月</div><div>火</div><div>水</div><div>木</div><div>金</div><div>土</div></div><div class="grid" id="grid"></div></section>
   <section class="section"><div class="section-title"><h2>選択日のイベント</h2><div class="date-title" id="selectedDate"></div></div><div id="dayEvents"></div></section>
   <section class="section"><div class="section-title"><h2>今月の重要イベント</h2><div class="date-title" id="count"></div></div><div id="monthEvents"></div><button class="btn refresh" id="refresh">最新データを再読み込み</button><div class="note">日程はBLS・BEA・FRBなど公式発表元を優先して自動更新し、最重要指標は固定バックアップでも保持します。前回値・市場予想・結果は対象指標で常時表示します。自動取得できない値は「未取得」と明記します。発表日時は変更される場合があります。</div></section>
@@ -59,7 +78,75 @@ const $=id=>document.getElementById(id);const pad=n=>String(n).padStart(2,'0');c
 function cleanEvent(e){return {...e,importance:Number(e.importance||3),time:e.time||'',category:e.category||'景気',up:e.up||'強い結果・インフレ上振れは金利上昇要因',down:e.down||'弱い結果・インフレ鈍化は金利低下要因',impact:e.impact||'長期金利上昇は高PERグロース株に逆風。',metrics:Array.isArray(e.metrics)?e.metrics:[]}}
 async function loadData(force=false){$('status').textContent='公式日程を確認中…';try{const r=await fetch(`events.json?${force?Date.now():'v=1'}`,{cache:force?'no-store':'default'});if(!r.ok)throw new Error();const d=await r.json();if(Array.isArray(d.events)&&d.events.length)events=d.events.map(cleanEvent);const updated=d.updated_at?new Date(d.updated_at):null;$('status').innerHTML=updated?`<strong>自動更新</strong><br>${updated.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}`:'<strong>自動更新データ</strong>'; }catch(e){events=FALLBACK;$('status').textContent='内蔵データで表示';}render();}
 function filtered(){const imp=+$('importance').value,cat=$('category').value;return events.filter(e=>e.importance>=imp&&(!cat||e.category===cat));}
-function render(){renderCal();renderDay();renderMonth();}
+
+function clampStar(n){return Math.max(1,Math.min(5,Math.round(n)))}
+function starsOnly(n){return "★".repeat(clampStar(n))+"☆".repeat(5-clampStar(n))}
+function stockImpactStars(e){
+  const imp=Number(e.importance||3);
+  const name=(e.name||"");
+  const cat=(e.category||"");
+  let sbg=imp, kioxia=Math.max(1,imp-1), adv=imp;
+
+  if(cat==="インフレ" || cat==="FRB"){
+    sbg=Math.min(5,imp+1);
+    adv=Math.min(5,imp+1);
+    kioxia=Math.min(5,imp);
+  }
+  if(cat==="雇用" || cat==="景気"){
+    sbg=imp;
+    adv=Math.min(5,imp);
+    kioxia=Math.min(5,imp);
+  }
+  if(/CPI|PCE|FOMC|雇用統計/.test(name)){
+    sbg=5;
+    adv=5;
+    kioxia=Math.max(kioxia,4);
+  }
+  if(/PPI|ISM|JOLTS|GDP/.test(name)){
+    sbg=Math.max(sbg,4);
+    adv=Math.max(adv,4);
+    kioxia=Math.max(kioxia,3);
+  }
+  return {sbg:clampStar(sbg),kioxia:clampStar(kioxia),adv:clampStar(adv)};
+}
+function renderWeeklyWatch(){
+  const box=document.getElementById("weeklyWatch");
+  if(!box) return;
+
+  const now=new Date();
+  const today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  const end=new Date(today); end.setDate(end.getDate()+7);
+
+  const list=events
+    .filter(e=>{
+      const d=new Date(e.date+"T00:00:00");
+      return d>=today && d<=end && Number(e.importance)>=4;
+    })
+    .sort((a,b)=>(a.date+(a.time||"")).localeCompare(b.date+(b.time||"")));
+
+  if(!list.length){
+    box.innerHTML='<div class="weekly-empty">今後7日間に★★★★以上のイベントはありません。</div>';
+    return;
+  }
+
+  box.innerHTML=list.map(e=>{
+    const s=stockImpactStars(e);
+    return `<div class="weekly-item">
+      <div class="weekly-top">
+        <div class="weekly-name">${e.name}</div>
+        <div class="weekly-date">${e.date.slice(5).replace("-","/")} ${e.time||""}</div>
+      </div>
+      <div class="stock-stars">
+        <div class="stock-row"><span class="stock-name">SBG</span><span class="starline">${starsOnly(s.sbg)}</span></div>
+        <div class="stock-row"><span class="stock-name">キオクシア</span><span class="starline">${starsOnly(s.kioxia)}</span></div>
+        <div class="stock-row"><span class="stock-name">アドバンテスト</span><span class="starline">${starsOnly(s.adv)}</span></div>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function render(){
+  renderWeeklyWatch();renderCal();renderDay();renderMonth();}
 function renderCal(){ $('month').textContent=`${view.getFullYear()}年${view.getMonth()+1}月`;const first=new Date(view.getFullYear(),view.getMonth(),1),start=new Date(first);start.setDate(1-first.getDay());const arr=filtered();$('grid').innerHTML='';for(let i=0;i<42;i++){const d=new Date(start);d.setDate(start.getDate()+i);const b=document.createElement('button');b.className='day';if(d.getMonth()!==view.getMonth())b.classList.add('dim');if(iso(d)===iso(new Date()))b.classList.add('today');if(iso(d)===iso(selected))b.classList.add('selected');const es=arr.filter(e=>e.date===iso(d)).sort((a,b)=>b.importance-a.importance);b.innerHTML=`<span class="num">${d.getDate()}</span><span class="markers"></span>`;const m=b.querySelector('.markers');es.slice(0,3).forEach(e=>{const x=document.createElement('span');x.className=`marker m${Math.min(5,e.importance)}`;m.appendChild(x)});if(es.length>3){const x=document.createElement('span');x.className='more';x.textContent=`+${es.length-3}`;m.appendChild(x)}b.addEventListener('click',()=>{selected=d;render()});$('grid').appendChild(b)}}
 function marketHtml(e){
   if(!e.metrics||!e.metrics.length) return '';
