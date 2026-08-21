@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T16:33:23.193548+00:00",
+  "updated_at": "2026-08-21T16:44:53.082842+00:00",
   "events": [
     {
       "id": "bls-jolts-20260901",
@@ -55,7 +55,6 @@
     }
   ],
   "errors": [
-    "BLS: 403 Client Error: Forbidden for url: https://www.bls.gov/schedule/news_release/bls.ics",
-    "MarketData: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states?c=guest%3Aguest&f=json"
+    "BLS: 403 Client Error: Forbidden for url: https://www.bls.gov/schedule/news_release/bls.ics"
   ]
 }
