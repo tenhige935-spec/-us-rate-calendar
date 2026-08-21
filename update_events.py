@@ -383,7 +383,7 @@ def hawkish_score(label, actual, forecast):
 def fetch_te(errors):
     try:
         now = datetime.now(ET)
-        start = (now - timedelta(days=10)).strftime("%Y-%m-%d")
+        start = (now - timedelta(days=180)).strftime("%Y-%m-%d")
         end = (now + timedelta(days=45)).strftime("%Y-%m-%d")
         key = os.environ.get("TE_API_KEY", "").strip() or "guest:guest"
         url = f"{TE_URL}/{start}/{end}"
@@ -528,7 +528,91 @@ def merge_duplicates(events):
                 cur["url"] = e["url"]
     return list(out.values())
 
+
+def load_previous_payload():
+    try:
+        if not OUT.exists():
+            return {"events": []}
+        data = json.loads(OUT.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {"events": []}
+    except Exception:
+        return {"events": []}
+
+def merge_saved_history(events, previous_payload):
+    """Keep any previously captured Previous/Forecast/Actual values permanently."""
+    old_events = previous_payload.get("events", []) if isinstance(previous_payload, dict) else []
+    old_map = {}
+    for e in old_events:
+        if not isinstance(e, dict):
+            continue
+        key = (e.get("name"), e.get("date"), e.get("time"))
+        old_map[key] = e
+
+    for e in events:
+        key = (e.get("name"), e.get("date"), e.get("time"))
+        old = old_map.get(key)
+        if not old:
+            continue
+
+        old_metrics = {
+            m.get("label"): m
+            for m in old.get("metrics", [])
+            if isinstance(m, dict) and m.get("label")
+        }
+
+        for m in e.get("metrics", []):
+            om = old_metrics.get(m.get("label"))
+            if not om:
+                continue
+
+            # Never erase values already captured in prior runs.
+            for fld in ("previous", "forecast", "actual"):
+                if not m.get(fld) and om.get(fld):
+                    m[fld] = om.get(fld)
+
+            if not m.get("source") and om.get("source"):
+                m["source"] = om.get("source")
+
+        # Preserve a completed rate signal as historical record.
+        if old.get("rate_signal") in {"up", "down", "neutral"}:
+            e["rate_signal"] = old.get("rate_signal")
+            e["rate_signal_label"] = old.get("rate_signal_label") or e.get("rate_signal_label")
+
+def append_historical_only_events(events, previous_payload):
+    """Keep old calendar events that have rolled outside current source windows."""
+    existing = {(e.get("name"), e.get("date"), e.get("time")) for e in events}
+    for old in previous_payload.get("events", []) if isinstance(previous_payload, dict) else []:
+        if not isinstance(old, dict):
+            continue
+        key = (old.get("name"), old.get("date"), old.get("time"))
+        if key in existing:
+            continue
+        try:
+            d = datetime.fromisoformat(str(old.get("date")))
+            age = (datetime.now(JST).date() - d.date()).days
+        except Exception:
+            continue
+        # Retain the last 365 days in the app even if upstream calendars stop returning them.
+        if 0 <= age <= 365:
+            events.append(old)
+            existing.add(key)
+
+def set_missing_result_status(events):
+    now = datetime.now(JST)
+    for e in events:
+        try:
+            t = e.get("time") or "23:59"
+            dt = datetime.fromisoformat(f'{e["date"]}T{t}').replace(tzinfo=JST)
+        except Exception:
+            continue
+
+        has_actual = any(clean_market_value(m.get("actual")) for m in e.get("metrics", []))
+        if dt <= now and not has_actual and e.get("metrics"):
+            e["rate_signal"] = "missing"
+            e["rate_signal_label"] = "結果未取得"
+
 def main():
+    previous_payload = load_previous_payload()
     events = []
     errors = []
 
@@ -542,12 +626,24 @@ def main():
     events = merge_duplicates(events)
     ensure_metric_placeholders(events)
 
+    # Keep previously captured historical data before trying today's sources.
+    merge_saved_history(events, previous_payload)
+    append_historical_only_events(events, previous_payload)
+
     te = fetch_te(errors)
     qs = fetch_quotestream(errors)
 
     enrich_from_te(events, te)
     enrich_from_quotestream(events, qs)
+
+    # Re-merge to make sure transient upstream gaps never erase saved values.
+    ensure_metric_placeholders(events)
+    merge_saved_history(events, previous_payload)
+
     calculate_signals(events)
+    set_missing_result_status(events)
+
+    events = sorted(events, key=lambda e: (e.get("date",""), e.get("time",""), e.get("name","")))
 
     payload = {
         "updated_at": datetime.now(UTC).isoformat(),
@@ -555,7 +651,8 @@ def main():
         "errors": errors,
         "data_sources": {
             "schedule": ["BLS", "BEA", "Federal Reserve", "fixed fallback"],
-            "market_values": ["Trading Economics", "TradingView-backed public calendar"],
+            "market_values": ["Trading Economics", "public economic-calendar fallback"],
+            "history_policy": "Captured values are retained for 365 days and are never erased by a later failed fetch.",
         },
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
