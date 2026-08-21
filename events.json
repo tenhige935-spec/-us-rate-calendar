@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T20:57:27.610068+00:00",
+  "updated_at": "2026-08-21T21:03:13.891606+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -3209,8 +3209,8 @@
           "unit": "%",
           "previous": "-0.10%",
           "forecast": "0.10%",
-          "actual": "â",
-          "source": "TradingView系公開カレンダー"
+          "actual": "",
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "個人消費 前月比",
@@ -3221,8 +3221,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
       "id": "ea1ecc724fb608cd",
@@ -3250,12 +3250,12 @@
           "unit": "%",
           "previous": "3.60%",
           "forecast": "6.30%",
-          "actual": "â",
-          "source": "TradingView系公開カレンダー"
+          "actual": "",
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
       "id": "803b10b4c70597da",
@@ -3504,8 +3504,8 @@
           "unit": "%",
           "previous": "-0.10%",
           "forecast": "0.10%",
-          "actual": "â",
-          "source": "TradingView系公開カレンダー"
+          "actual": "",
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "個人消費 前月比",
@@ -3516,8 +3516,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
       "id": "ed3a4682c6b1274d",
@@ -3545,12 +3545,12 @@
           "unit": "%",
           "previous": "3.60%",
           "forecast": "6.30%",
-          "actual": "â",
-          "source": "TradingView系公開カレンダー"
+          "actual": "",
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
       "id": "06a88a53c61af3dd",
@@ -3701,8 +3701,8 @@
           "unit": "%",
           "previous": "-0.10%",
           "forecast": "0.10%",
-          "actual": "â",
-          "source": "TradingView系公開カレンダー"
+          "actual": "",
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "個人消費 前月比",
@@ -3713,8 +3713,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
       "id": "e2a2acdf91a9da90",
@@ -3742,12 +3742,12 @@
           "unit": "%",
           "previous": "3.60%",
           "forecast": "6.30%",
-          "actual": "â",
-          "source": "TradingView系公開カレンダー"
+          "actual": "",
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
       "id": "1b15e7abdf1e7a6c",
@@ -3939,8 +3939,8 @@
           "unit": "%",
           "previous": "-0.10%",
           "forecast": "0.10%",
-          "actual": "â",
-          "source": "TradingView系公開カレンダー"
+          "actual": "",
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "個人消費 前月比",
@@ -3951,8 +3951,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
       "id": "37a7ce786bf42039",
@@ -3980,12 +3980,12 @@
           "unit": "%",
           "previous": "3.60%",
           "forecast": "6.30%",
-          "actual": "â",
-          "source": "TradingView系公開カレンダー"
+          "actual": "",
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
       "id": "3cb345552b79f166",
@@ -4177,8 +4177,8 @@
           "unit": "%",
           "previous": "-0.10%",
           "forecast": "0.10%",
-          "actual": "â",
-          "source": "TradingView系公開カレンダー"
+          "actual": "",
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "個人消費 前月比",
@@ -4189,8 +4189,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     },
     {
       "id": "69d121cfe87200af",
@@ -4218,12 +4218,12 @@
           "unit": "%",
           "previous": "3.60%",
           "forecast": "6.30%",
-          "actual": "â",
-          "source": "TradingView系公開カレンダー"
+          "actual": "",
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     }
   ],
   "errors": [
