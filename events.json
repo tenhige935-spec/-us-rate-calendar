@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T21:03:13.891606+00:00",
+  "updated_at": "2026-08-21T21:22:34.969666+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -23,8 +23,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "b37f75a8f3231c38",
@@ -64,8 +64,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "92fb5e8c4c8691cb",
@@ -97,8 +97,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "cc39f7411dac25b5",
@@ -130,8 +130,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "bf845469917fb32a",
@@ -171,8 +171,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "5d83ee08b3867c2a",
@@ -228,8 +228,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "147844cc6d3578a6",
@@ -261,8 +261,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "319a64da871ecfe2",
@@ -294,8 +294,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "f354b144c984cbaf",
@@ -367,8 +367,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "02cd46bcd6a15588",
@@ -392,8 +392,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "b6395dbadec6db40",
@@ -425,8 +425,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "2803033524cfd0bf",
@@ -458,8 +458,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "2b173dee418b4ce1",
@@ -515,8 +515,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "01aefc984d10ffd5",
@@ -540,8 +540,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "b4efcd8c32aaa9c7",
@@ -581,8 +581,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "210b1fa28fd27aa4",
@@ -614,8 +614,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "e7d148467c3daf44",
@@ -647,8 +647,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "071cd24a3cd1e0dd",
@@ -704,8 +704,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "3b455e5f00f2cd95",
@@ -745,8 +745,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "52625bff16739669",
@@ -794,8 +794,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "5b4e4c713bf845d0",
@@ -827,8 +827,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "6aa36cfe3822c648",
@@ -884,8 +884,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "b2618d8e1fda8a66",
@@ -941,8 +941,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "398ae217b07d3d09",
@@ -974,8 +974,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "ead0bdf809808270",
@@ -1007,8 +1007,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "f9113b1fe3671a5d",
@@ -1064,8 +1064,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "6d509dac4a597c69",
@@ -1105,8 +1105,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "1e205172139aeddc",
@@ -1138,8 +1138,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "3371282e559c8b55",
@@ -1171,8 +1171,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "34fc3bc401d89cb0",
@@ -1212,8 +1212,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "89bbc54bed6cf7cb",
@@ -1253,8 +1253,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "04d6ad89b69712a0",
@@ -1302,8 +1302,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "1907f907c98fead4",
@@ -1335,8 +1335,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "1ebe476b555b8871",
@@ -1376,8 +1376,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "50766310bf2b1805",
@@ -1433,8 +1433,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "b7caf9b708ed1090",
@@ -1466,8 +1466,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "d952709c3d7dc2d7",
@@ -1499,8 +1499,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "c759d51920c4c8bb",
@@ -1540,8 +1540,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "ed9c67cf5d3e457b",
@@ -1573,8 +1573,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "baabdd9a4b8e64aa",
@@ -1614,8 +1614,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "98d0ce0b994ef06d",
@@ -1647,8 +1647,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "75a14ef9ea5981cd",
@@ -1688,8 +1688,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "e3481f48eba3b18d",
@@ -1729,8 +1729,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "d2f415911464420c",
@@ -1762,8 +1762,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "e8bccded71825722",
@@ -1787,8 +1787,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "9780b4118893b809",
@@ -1844,8 +1844,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "a5a7b4d36358f73d",
@@ -1877,8 +1877,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "ac70369db7022f0b",
@@ -1910,8 +1910,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "80387fa164226caf",
@@ -1975,8 +1975,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "c206f2f7963386f1",
@@ -2000,8 +2000,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "d036f940cf6e929f",
@@ -2057,8 +2057,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "4c98b9dcb9327a4c",
@@ -2090,8 +2090,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "d0aac64229ed6294",
@@ -2123,8 +2123,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "19d0e20aa86d432e",
@@ -2196,8 +2196,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "08a1012e7f524482",
@@ -2229,8 +2229,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "efa9f580a5c769e4",
@@ -2254,8 +2254,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "212a591079fe2fae",
@@ -2287,8 +2287,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "05e7f179778e7677",
@@ -2344,8 +2344,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "3bf8503d8fa874df",
@@ -2385,8 +2385,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "b98520409d7255a6",
@@ -2418,8 +2418,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "40848cf0ed6f5bbd",
@@ -2451,8 +2451,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "81aafbf044fdceaa",
@@ -2508,8 +2508,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "e9475a785b03e0c7",
@@ -2533,8 +2533,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "0e0be86c5c42e746",
@@ -2590,8 +2590,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "73864c07fa8154c7",
@@ -2623,8 +2623,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "1457a54be7d7bbda",
@@ -2656,8 +2656,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "e0a6b1d20790151c",
@@ -2713,8 +2713,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "a874fe5eef118e5a",
@@ -2770,8 +2770,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "3b5b54658102a8e2",
@@ -2803,8 +2803,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "bef74e8e4da64879",
@@ -2836,8 +2836,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "eb3f15e8e396ee8d",
@@ -2893,8 +2893,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "be6c91f10858cb6b",
@@ -2934,8 +2934,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "e4c772e04bba4bb5",
@@ -2967,8 +2967,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "f1b4922e515cf1d9",
@@ -3000,8 +3000,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "3b6202c76bd22b27",
@@ -3041,8 +3041,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "635725f9959a7576",
@@ -3098,8 +3098,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "ccb773fecc35a5a8",
@@ -3131,8 +3131,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "c468238a0f0c4372",
@@ -3164,8 +3164,8 @@
           "source": ""
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "06f750fc07308154",
@@ -4227,7 +4227,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-08-11/2026-10-05?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-02-22/2026-10-05?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
@@ -4238,7 +4238,8 @@
     ],
     "market_values": [
       "Trading Economics",
-      "TradingView-backed public calendar"
-    ]
+      "public economic-calendar fallback"
+    ],
+    "history_policy": "Captured values are retained for 365 days and are never erased by a later failed fetch."
   }
 }
