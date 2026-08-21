@@ -529,6 +529,167 @@ def merge_duplicates(events):
     return list(out.values())
 
 
+
+BLS_API = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+
+BLS_SERIES = {
+    "cpi": "CUSR0000SA0",
+    "core_cpi": "CUSR0000SA0L1E",
+    "nonfarm": "CES0000000001",
+    "ahe": "CES0500000003",
+    "unemployment": "LNS14000000",
+    "ppi": "WPSFD4",
+}
+
+def _month_shift(year, month, delta):
+    total = year * 12 + (month - 1) + delta
+    return total // 12, total % 12 + 1
+
+def _period_key(year, month):
+    return (int(year), int(month))
+
+def fetch_bls_series(series_ids, start_year, end_year, errors):
+    try:
+        payload = {
+            "seriesid": list(series_ids),
+            "startyear": str(start_year),
+            "endyear": str(end_year),
+        }
+        r = requests.post(BLS_API, json=payload, headers=UA, timeout=30)
+        r.raise_for_status()
+        data = r.json()
+        if data.get("status") != "REQUEST_SUCCEEDED":
+            errors.append("BLS API: " + "; ".join(data.get("message", [])))
+            return {}
+        out = {}
+        for s in data.get("Results", {}).get("series", []):
+            sid = s.get("seriesID")
+            vals = {}
+            for row in s.get("data", []):
+                period = str(row.get("period", ""))
+                if not period.startswith("M") or period == "M13":
+                    continue
+                try:
+                    month = int(period[1:])
+                    year = int(row.get("year"))
+                    value = float(str(row.get("value")).replace(",", ""))
+                except Exception:
+                    continue
+                vals[(year, month)] = value
+            out[sid] = vals
+        return out
+    except Exception as ex:
+        errors.append(f"BLS API: {ex}")
+        return {}
+
+def _pct_change(cur, prev):
+    if cur is None or prev in (None, 0):
+        return ""
+    return f"{((cur / prev) - 1) * 100:.2f}%"
+
+def _fmt_pct(v):
+    if v is None:
+        return ""
+    return f"{v:.1f}%"
+
+def _fmt_k(v):
+    if v is None:
+        return ""
+    return f"{v:.0f}K"
+
+def enrich_from_bls_official(events, errors):
+    # Fetch enough monthly history to backfill the last 365 days.
+    now = datetime.now(JST)
+    data = fetch_bls_series(BLS_SERIES.values(), now.year - 2, now.year, errors)
+    if not data:
+        return
+
+    def val(series_name, year, month):
+        return data.get(BLS_SERIES[series_name], {}).get((year, month))
+
+    for e in events:
+        if not event_has_occurred(e):
+            continue
+
+        try:
+            release = datetime.fromisoformat(e["date"])
+        except Exception:
+            continue
+
+        # CPI / Employment / PPI releases normally describe the previous calendar month.
+        ry, rm = _month_shift(release.year, release.month, -1)
+        py, pm = _month_shift(ry, rm, -1)
+        ppy, ppm = _month_shift(ry, rm, -2)
+
+        if e.get("name") == "米CPI・コアCPI":
+            cpi = val("cpi", ry, rm)
+            cpi_prev = val("cpi", py, pm)
+            cpi_prev2 = val("cpi", ppy, ppm)
+
+            core = val("core_cpi", ry, rm)
+            core_prev = val("core_cpi", py, pm)
+            core_prev2 = val("core_cpi", ppy, ppm)
+
+            merge_metric(
+                e, "CPI 前月比",
+                previous=_pct_change(cpi_prev, cpi_prev2),
+                actual=_pct_change(cpi, cpi_prev),
+                source="BLS公式API",
+            )
+            merge_metric(
+                e, "コアCPI 前月比",
+                previous=_pct_change(core_prev, core_prev2),
+                actual=_pct_change(core, core_prev),
+                source="BLS公式API",
+            )
+
+        elif e.get("name") == "米雇用統計":
+            nf = val("nonfarm", ry, rm)
+            nf_prev = val("nonfarm", py, pm)
+            nf_prev2 = val("nonfarm", ppy, ppm)
+
+            ahe = val("ahe", ry, rm)
+            ahe_prev = val("ahe", py, pm)
+            ahe_prev2 = val("ahe", ppy, ppm)
+
+            ur = val("unemployment", ry, rm)
+            ur_prev = val("unemployment", py, pm)
+
+            # CES employment levels are in thousands; report monthly change in K.
+            actual_nf = _fmt_k(nf - nf_prev) if nf is not None and nf_prev is not None else ""
+            previous_nf = _fmt_k(nf_prev - nf_prev2) if nf_prev is not None and nf_prev2 is not None else ""
+
+            merge_metric(
+                e, "非農業部門雇用者数",
+                previous=previous_nf,
+                actual=actual_nf,
+                source="BLS公式API",
+            )
+            merge_metric(
+                e, "平均時給 前月比",
+                previous=_pct_change(ahe_prev, ahe_prev2),
+                actual=_pct_change(ahe, ahe_prev),
+                source="BLS公式API",
+            )
+            merge_metric(
+                e, "失業率",
+                previous=_fmt_pct(ur_prev),
+                actual=_fmt_pct(ur),
+                source="BLS公式API",
+            )
+
+        elif e.get("name") == "米PPI":
+            ppi = val("ppi", ry, rm)
+            ppi_prev = val("ppi", py, pm)
+            ppi_prev2 = val("ppi", ppy, ppm)
+
+            merge_metric(
+                e, "PPI 前月比",
+                previous=_pct_change(ppi_prev, ppi_prev2),
+                actual=_pct_change(ppi, ppi_prev),
+                source="BLS公式API",
+            )
+
 def load_previous_payload():
     try:
         if not OUT.exists():
@@ -630,9 +791,13 @@ def main():
     merge_saved_history(events, previous_payload)
     append_historical_only_events(events, previous_payload)
 
+    # Official historical actual/previous values first.
+    enrich_from_bls_official(events, errors)
+
     te = fetch_te(errors)
     qs = fetch_quotestream(errors)
 
+    # Market sources mainly supplement forecasts; official BLS actuals are retained.
     enrich_from_te(events, te)
     enrich_from_quotestream(events, qs)
 
@@ -651,7 +816,7 @@ def main():
         "errors": errors,
         "data_sources": {
             "schedule": ["BLS", "BEA", "Federal Reserve", "fixed fallback"],
-            "market_values": ["Trading Economics", "public economic-calendar fallback"],
+            "market_values": ["BLS official API (historical actual/previous)", "Trading Economics", "public economic-calendar fallback"],
             "history_policy": "Captured values are retained for 365 days and are never erased by a later failed fetch.",
         },
     }
