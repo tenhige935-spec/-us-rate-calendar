@@ -208,6 +208,24 @@ def fetch_te_calendar():
     data=r.json()
     return data if isinstance(data,list) else []
 
+
+def _date_distance(value, target):
+    try:
+        s=str(value or "").strip()
+        if not s:
+            return 9999
+        # Accept common ISO-ish forms, including trailing Z and space-separated timestamps.
+        s=s.replace("Z","+00:00")
+        dt=datetime.fromisoformat(s)
+        td=datetime.fromisoformat(target)
+        return abs((dt.date()-td.date()).days)
+    except Exception:
+        try:
+            d=str(value or "")[:10]
+            return abs((datetime.strptime(d,"%Y-%m-%d").date()-datetime.strptime(target,"%Y-%m-%d").date()).days)
+        except Exception:
+            return 9999
+
 def enrich_with_market_data(events, errors):
     try:
         te=fetch_te_calendar()
@@ -233,7 +251,10 @@ def enrich_with_market_data(events, errors):
         any_actual=False
 
         for label,aliases in specs:
-            candidates=[x for x in te if matches(x,aliases)]
+            try:
+                candidates=[x for x in te if isinstance(x,dict) and matches(x,aliases)]
+            except Exception:
+                candidates=[]
             if not candidates:
                 continue
 
@@ -241,9 +262,7 @@ def enrich_with_market_data(events, errors):
             candidates.sort(
                 key=lambda x: (
                     0 if str(x.get("Date",""))[:10]==target else 1,
-                    abs((datetime.fromisoformat(str(x.get("Date","")).replace("Z","+00:00")).date()
-                         - datetime.fromisoformat(target).date()).days)
-                    if str(x.get("Date",""))[:10] else 9999
+                    _date_distance(x.get("Date",""), target)
                 )
             )
             x=candidates[0]
