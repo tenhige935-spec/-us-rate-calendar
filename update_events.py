@@ -300,6 +300,41 @@ def enrich_with_market_data(events, errors):
 
     ensure_metric_placeholders(events)
 
+
+DEFAULT_METRICS = {
+    "PCE・コアPCE / 個人所得・支出": [
+        ("コアPCE 前月比", "％"),
+        ("PCE 前月比", "％"),
+        ("個人消費 前月比", "％"),
+    ],
+    "米CPI・コアCPI": [
+        ("コアCPI 前月比", "％"),
+        ("CPI 前月比", "％"),
+    ],
+    "米雇用統計": [
+        ("非農業部門雇用者数", "人"),
+        ("平均時給 前月比", "％"),
+        ("失業率", "％"),
+    ],
+    "米PPI": [
+        ("PPI 前月比", "％"),
+        ("コアPPI 前月比", "％"),
+    ],
+    "JOLTS 求人件数": [
+        ("JOLTS求人件数", "件"),
+    ],
+    "米GDP": [
+        ("GDP成長率", "％"),
+    ],
+    "輸出入物価指数": [
+        ("輸入物価 前月比", "％"),
+    ],
+    "生産性・単位労働コスト": [
+        ("単位労働コスト", "％"),
+        ("非農業部門生産性", "％"),
+    ],
+}
+
 def ensure_metric_placeholders(events):
     for e in events:
         specs = DEFAULT_METRICS.get(e.get("name"))
