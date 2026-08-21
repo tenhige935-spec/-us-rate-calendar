@@ -317,6 +317,7 @@ def ensure_metric_placeholders(events):
                 "previous": m.get("previous") or "",
                 "forecast": m.get("forecast") or "",
                 "actual": m.get("actual") or "",
+                "actual_first_seen": m.get("actual_first_seen") or "",
                 "source": m.get("source") or "",
             })
         if specs:
@@ -434,7 +435,11 @@ def merge_metric(e, label, previous="", forecast="", actual="", source=""):
             if forecast and not m.get("forecast"):
                 m["forecast"] = forecast
                 m["source"] = source
-            if actual and not m.get("actual"):
+            if actual:
+                # Save the first value this app ever observed.
+                if not m.get("actual_first_seen"):
+                    m["actual_first_seen"] = actual
+                # Current official value can change after revisions.
                 m["actual"] = actual
                 m["source"] = source
             return
@@ -487,22 +492,38 @@ def enrich_from_quotestream(events, qs):
 
 def calculate_signals(events):
     for e in events:
-        score = 0
-        has_actual = False
         if not event_has_occurred(e):
             e["rate_signal"] = "pending"
             e["rate_signal_label"] = "発表待ち"
             for m in e.get("metrics", []):
                 m["actual"] = ""
             continue
+
+        comparable = 0
+        score = 0
+        has_actual = False
+
         for m in e.get("metrics", []):
-            if clean_market_value(m.get("actual")):
-                m["actual"] = clean_market_value(m.get("actual"))
+            actual = clean_market_value(m.get("actual"))
+            forecast = clean_market_value(m.get("forecast"))
+
+            if actual:
                 has_actual = True
-                score += hawkish_score(m.get("label", ""), m.get("actual"), m.get("forecast"))
+                m["actual"] = actual
+                if not m.get("actual_first_seen"):
+                    m["actual_first_seen"] = actual
+
+            # Only compare when both Actual and Forecast are available.
+            if actual and forecast:
+                comparable += 1
+                score += hawkish_score(m.get("label", ""), actual, forecast)
+
         if not has_actual:
-            e["rate_signal"] = "pending"
-            e["rate_signal_label"] = "発表待ち"
+            e["rate_signal"] = "missing"
+            e["rate_signal_label"] = "結果未取得"
+        elif comparable == 0:
+            e["rate_signal"] = "no_forecast"
+            e["rate_signal_label"] = "予想未取得・判定保留"
         elif score > 0:
             e["rate_signal"] = "up"
             e["rate_signal_label"] = "金利上昇警戒"
@@ -727,7 +748,7 @@ def merge_saved_history(events, previous_payload):
                 continue
 
             # Never erase values already captured in prior runs.
-            for fld in ("previous", "forecast", "actual"):
+            for fld in ("previous", "forecast", "actual", "actual_first_seen"):
                 if not m.get(fld) and om.get(fld):
                     m[fld] = om.get(fld)
 

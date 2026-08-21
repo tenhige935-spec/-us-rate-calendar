@@ -27,7 +27,7 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
 .market-title{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:8px 9px;background:#f8fafc;font-size:12px;font-weight:700}
 .signal{padding:4px 7px;border-radius:999px;font-size:11px;white-space:nowrap}.signal-up{background:var(--redbg);color:#7a271a}.signal-down{background:var(--greenbg);color:#05603a}.signal-neutral,.signal-pending{background:#f2f4f7;color:#475467}
 .metric{display:grid;grid-template-columns:1.35fr repeat(3,.8fr);gap:4px;padding:7px 9px;border-top:1px solid var(--line);font-size:11px;align-items:center}
-.metric-head{color:var(--muted);font-weight:600}.metric .val{text-align:right}.market-note{font-size:10px;color:var(--muted);padding:6px 9px;border-top:1px solid var(--line)}
+.metric-head{color:var(--muted);font-weight:600}.metric .val{text-align:right}.market-note{font-size:10px;color:var(--muted);padding:6px 9px;border-top:1px solid var(--line)}.revision-note{display:block;font-size:9px;color:var(--muted);margin-top:2px}
 .source{font-size:11px;color:var(--muted);margin-top:6px}.source a{color:inherit}.empty{color:var(--muted);font-size:13px;padding:14px 0;text-align:center}
 .note{font-size:12px;color:var(--muted);margin-top:9px;line-height:1.55}.refresh{width:100%;margin-top:9px}.install{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:10px;font-size:13px;line-height:1.55}.install b{display:block;margin-bottom:3px}.small{font-size:11px;color:var(--muted)}
 @media(min-width:520px){.day{min-height:86px}.analysis{grid-template-columns:1fr 1fr}.stock{grid-column:1/-1}}
@@ -65,10 +65,19 @@ function marketHtml(e){
   if(!e.metrics||!e.metrics.length) return '';
   const cls='signal-'+(e.rate_signal||'pending');
   const fmt=v => (v===null||v===undefined||v==='') ? '未取得' : String(v);
-  const rows=e.metrics.map(m=>`<div class="metric"><div>${m.label}</div><div class="val">${fmt(m.previous)}</div><div class="val">${fmt(m.forecast)}</div><div class="val"><b>${fmt(m.actual)}</b></div></div>`).join('');
+  const resultHtml=m=>{
+    const first=m.actual_first_seen||'';
+    const current=m.actual||'';
+    if(!current && !first) return '未取得';
+    if(first && current && first!==current){
+      return `<b>${fmt(first)}</b><span class="revision-note">現在 ${fmt(current)}（改定後）</span>`;
+    }
+    return `<b>${fmt(first||current)}</b>`;
+  };
+  const rows=e.metrics.map(m=>`<div class="metric"><div>${m.label}</div><div class="val">${fmt(m.previous)}</div><div class="val">${fmt(m.forecast)}</div><div class="val">${resultHtml(m)}</div></div>`).join('');
   const note=e.market_data_source
-    ? '市場予想: Trading Economics コンセンサス / 実績: 公式発表元ベース'
-    : '市場予想・実績値は取得できた項目のみ自動反映。未取得は推測しません。';
+    ? '予想: 市場コンセンサス / 結果: 初回取得値を保存。改定された場合は現在値も併記します。'
+    : '結果は初回取得値を保存します。市場予想を取得できない場合は判定を保留します。';
   return `<div class="market"><div class="market-title"><span>前回・予想・結果</span><span class="signal ${cls}">${e.rate_signal_label||'発表待ち'}</span></div><div class="metric metric-head"><div>項目</div><div class="val">前回</div><div class="val">予想</div><div class="val">結果</div></div>${rows}<div class="market-note">${note}</div></div>`;
 }
 function eventHtml(e){const stars='★'.repeat(e.importance);return `<article class="event"><div class="event-head"><div class="event-name">${e.name}</div><div class="time">${e.time||'時刻未定'}</div></div><div class="meta"><span class="tag i${e.importance}">${stars}</span><span class="tag">${e.category}</span><span class="tag">${e.source||'公式'}</span></div>${marketHtml(e)}<div class="analysis"><div class="impact up"><b>金利↑になりやすい</b><br>${e.up}</div><div class="impact down"><b>金利↓になりやすい</b><br>${e.down}</div><div class="impact stock"><b>株への見方</b><br>${e.impact}</div></div>${e.url?`<div class="source"><a href="${e.url}" target="_blank" rel="noopener">公式ソースを開く</a></div>`:''}</article>`}
