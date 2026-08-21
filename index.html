@@ -45,6 +45,14 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
 .starline{letter-spacing:1px}
 .weekly-empty{font-size:13px;color:var(--muted);padding:4px 0}
 
+
+.direction-row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12px}
+.direction-badge{font-weight:800;white-space:nowrap}
+.direction-down{color:#b42318}
+.direction-up{color:#067647}
+.condition-box{margin-top:8px;padding:8px 10px;border-radius:10px;background:#f8fafc;font-size:11px;line-height:1.5;color:#475467}
+.condition-box b{color:#101828}
+
 </style>
 </head>
 <body>
@@ -109,6 +117,24 @@ function stockImpactStars(e){
   }
   return {sbg:clampStar(sbg),kioxia:clampStar(kioxia),adv:clampStar(adv)};
 }
+
+function weeklyConditionText(e){
+  const name=e.name||"";
+  if(/CPI|PCE|PPI/.test(name)){
+    return "予想より上振れ → インフレ警戒 → 米金利↑ → SBG・半導体に逆風<br>予想より下振れ → インフレ鈍化 → 米金利↓ → 追い風";
+  }
+  if(/FOMC|FRB/.test(name)){
+    return "タカ派・利下げ後ずれ → 米金利↑ → SBG・半導体に逆風<br>ハト派・利下げ示唆 → 米金利↓ → 追い風";
+  }
+  if(/雇用統計|JOLTS/.test(name)){
+    return "雇用・賃金が強い → 利下げ後ずれ → 米金利↑ → 逆風<br>雇用が弱い → 利下げ期待 → 米金利↓ → 追い風";
+  }
+  if(/GDP|ISM/.test(name)){
+    return "景気が予想以上に強い → 米金利↑になりやすい → 逆風<br>景気減速 → 米金利↓になりやすい → 追い風";
+  }
+  return "強い結果 → 米金利↑なら逆風<br>弱い結果 → 米金利↓なら追い風";
+}
+
 function renderWeeklyWatch(){
   const box=document.getElementById("weeklyWatch");
   if(!box) return;
@@ -137,10 +163,11 @@ function renderWeeklyWatch(){
         <div class="weekly-date">${e.date.slice(5).replace("-","/")} ${e.time||""}</div>
       </div>
       <div class="stock-stars">
-        <div class="stock-row"><span class="stock-name">SBG</span><span class="starline">${starsOnly(s.sbg)}</span></div>
-        <div class="stock-row"><span class="stock-name">キオクシア</span><span class="starline">${starsOnly(s.kioxia)}</span></div>
-        <div class="stock-row"><span class="stock-name">アドバンテスト</span><span class="starline">${starsOnly(s.adv)}</span></div>
+        <div class="direction-row"><span class="stock-name">SBG</span><span><span class="starline">${starsOnly(s.sbg)}</span> <span class="direction-badge direction-down">金利↑なら↓</span></span></div>
+        <div class="direction-row"><span class="stock-name">キオクシア</span><span><span class="starline">${starsOnly(s.kioxia)}</span> <span class="direction-badge direction-down">金利↑なら↓</span></span></div>
+        <div class="direction-row"><span class="stock-name">アドバンテスト</span><span><span class="starline">${starsOnly(s.adv)}</span> <span class="direction-badge direction-down">金利↑なら↓</span></span></div>
       </div>
+      <div class="condition-box">${weeklyConditionText(e)}</div>
     </div>`;
   }).join("");
 }
