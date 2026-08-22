@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T23:49:54.021806+00:00",
+  "updated_at": "2026-08-22T05:22:57.764154+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -3375,11 +3375,11 @@
         {
           "label": "個人消費 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.30%",
+          "forecast": "0.20%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -3401,11 +3401,11 @@
         {
           "label": "GDP成長率",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "2.10%",
+          "forecast": "1.50%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "GDP価格指数",
@@ -3684,11 +3684,11 @@
         {
           "label": "個人消費 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.30%",
+          "forecast": "0.20%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -3710,11 +3710,11 @@
         {
           "label": "GDP成長率",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "2.10%",
+          "forecast": "1.50%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "GDP価格指数",
@@ -3893,11 +3893,11 @@
         {
           "label": "個人消費 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.30%",
+          "forecast": "0.20%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -3919,11 +3919,11 @@
         {
           "label": "GDP成長率",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "2.10%",
+          "forecast": "1.50%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "GDP価格指数",
@@ -4144,11 +4144,11 @@
         {
           "label": "個人消費 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.30%",
+          "forecast": "0.20%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -4170,11 +4170,11 @@
         {
           "label": "GDP成長率",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "2.10%",
+          "forecast": "1.50%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "GDP価格指数",
@@ -4395,11 +4395,11 @@
         {
           "label": "個人消費 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.30%",
+          "forecast": "0.20%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -4421,11 +4421,11 @@
         {
           "label": "GDP成長率",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "2.10%",
+          "forecast": "1.50%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "GDP価格指数",
@@ -4442,7 +4442,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-02-22/2026-10-05?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-02-23/2026-10-06?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
