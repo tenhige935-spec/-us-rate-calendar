@@ -73,13 +73,19 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
   .legend-wrap{gap:4px}
   .legend-chip{font-size:10px;padding:5px 6px}
 }
+
+.tag-earnings{background:#f3e8ff!important;color:#7e22ce!important}
+.tag-world{background:#ecfdf3!important;color:#067647!important}
+.marker-earnings{background:#9333ea!important}
+.marker-world{background:#12b76a!important}
+
 </style>
 </head>
 <body>
 <header><div class="header-row"><div class="appname">米金利イベントカレンダー</div><div class="status" id="status">公式日程を確認中…</div></div></header>
 <main>
   <div class="controls"><button class="btn" id="prev" aria-label="前の月">‹</button><div class="month" id="month"></div><button class="btn" id="next" aria-label="次の月">›</button></div>
-  <div class="filters"><select id="importance"><option value="3">★★★以上</option><option value="4">★★★★以上</option><option value="5">★★★★★のみ</option><option value="1">すべて</option></select><select id="category"><option value="">全カテゴリ</option><option>インフレ</option><option>雇用</option><option>景気</option><option>FRB</option><option>国債</option></select></div>
+  <div class="filters"><select id="importance"><option value="3">★★★以上</option><option value="4">★★★★以上</option><option value="5">★★★★★のみ</option><option value="1">すべて</option></select><select id="category"><option value="">全カテゴリ</option><option>インフレ</option><option>雇用</option><option>景気</option><option>FRB</option><option>国債</option><option>大型決算</option><option>世界イベント</option></select></div>
   <div class="today-row"><button class="btn" id="today">今月へ戻る</button><div class="legend"><span class="legend-wrap">
   <span class="legend-chip legend-red">赤 ★★★★★</span>
   <span class="legend-chip legend-orange">橙 ★★★★</span>
@@ -97,6 +103,9 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
 </main>
 <script>
 const FALLBACK=[
+{id:'nvda-earnings-20260827',name:'NVIDIA 決算（FY2027 Q2）',date:'2026-08-27',time:'05:20',importance:5,category:'大型決算',source:'NVIDIA',url:'https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Second-Quarter-Financial-Results/default.aspx',up:'売上・データセンター成長・粗利率・次四半期ガイダンスが市場期待を上回る',down:'AI需要、粗利率、ガイダンスが市場期待を下回る',impact:'AI・半導体全体のセンチメントを大きく動かしやすい。SBG・キオクシア・アドバンテストにも波及しやすい。'},
+{id:'jackson-hole-20260827',name:'ジャクソンホール経済政策シンポジウム',date:'2026-08-27',time:'終日',importance:5,category:'世界イベント',source:'Kansas City Fed',url:'https://www.kansascityfed.org/research/jackson-hole-economic-symposium/',up:'FRB高官がインフレ警戒や利下げ慎重姿勢を示す',down:'景気下振れや利下げ余地を強調する',impact:'米長期金利・ドル・NASDAQを大きく動かす可能性。8月27〜29日開催。'},
+{id:'broadcom-earnings-20260903',name:'Broadcom 決算（FY2026 Q3）',date:'2026-09-03',time:'06:00',importance:5,category:'大型決算',source:'Broadcom',url:'https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial',up:'AI半導体・ネットワーク・カスタムアクセラレータの売上とガイダンスが市場期待を上回る',down:'AI関連売上や次四半期ガイダンスが市場期待を下回る',impact:'AIインフラ・半導体需要の確認イベント。アドバンテストやメモリ関連にも波及しやすい。'},
 {id:'bea-pce-20260826',name:'PCE・コアPCE / 個人所得・支出',date:'2026-08-26',time:'21:30',importance:5,category:'インフレ',source:'BEA',url:'https://www.bea.gov/news/schedule',up:'コアPCEや個人消費が予想を上回る',down:'コアPCEが予想を下回り、消費も減速',impact:'金利上昇はSBG・NASDAQ・高PER半導体に逆風。'},
 {id:'bea-gdp-20260826',name:'米GDP 2Q 改定値',date:'2026-08-26',time:'21:30',importance:3,category:'景気',source:'BEA',url:'https://www.bea.gov/news/schedule',up:'GDP上方修正・需要が強い',down:'GDP下方修正・景気減速',impact:'強すぎる成長は利下げ後ずれ観測。'},
 {id:'bls-jolts-20260901',name:'JOLTS 求人件数',date:'2026-09-01',time:'23:00',importance:3,category:'雇用',source:'BLS',url:'https://www.bls.gov/schedule/news_release/jolts.htm',up:'求人が市場予想より多い',down:'求人減少・労働市場の緩み',impact:'求人増→賃金インフレ懸念→金利上昇要因。'},
@@ -118,6 +127,15 @@ function stockImpactStars(e){
   const name=(e.name||"");
   const cat=(e.category||"");
   let sbg=imp, kioxia=Math.max(1,imp-1), adv=imp;
+
+  if(cat==="大型決算"){
+    if(/NVIDIA/.test(name)) return {sbg:5,kioxia:5,adv:5};
+    if(/Broadcom/.test(name)) return {sbg:4,kioxia:4,adv:5};
+    return {sbg:4,kioxia:4,adv:5};
+  }
+  if(cat==="世界イベント"){
+    return {sbg:5,kioxia:4,adv:5};
+  }
 
   if(cat==="インフレ" || cat==="FRB"){
     sbg=Math.min(5,imp+1);
@@ -144,6 +162,12 @@ function stockImpactStars(e){
 
 function weeklyConditionText(e){
   const name=e.name||"";
+  if(e.category==="大型決算"){
+    return "市場予想・会社ガイダンスを上回る → AI/半導体株に追い風<br>下振れ・弱いガイダンス → AI/半導体株に逆風";
+  }
+  if(e.category==="世界イベント"){
+    return "タカ派発言 → 米金利↑ → SBG・半導体に逆風<br>ハト派発言 → 米金利↓ → グロース株に追い風";
+  }
   if(/CPI|PCE|PPI/.test(name)){
     return "予想より上振れ → インフレ警戒 → 米金利↑ → SBG・半導体に逆風<br>予想より下振れ → インフレ鈍化 → 米金利↓ → 追い風";
   }
@@ -223,18 +247,49 @@ function renderWeeklyWatch(){
       </div>
       ${weeklyResultSummary(e)}
       <div class="stock-stars">
-        <div class="direction-row"><span class="stock-name">SBG</span><span><span class="starline">${starsOnly(s.sbg)}</span> <span class="direction-badge direction-down">金利↑なら↓</span></span></div>
-        <div class="direction-row"><span class="stock-name">キオクシア</span><span><span class="starline">${starsOnly(s.kioxia)}</span> <span class="direction-badge direction-down">金利↑なら↓</span></span></div>
-        <div class="direction-row"><span class="stock-name">アドバンテスト</span><span><span class="starline">${starsOnly(s.adv)}</span> <span class="direction-badge direction-down">金利↑なら↓</span></span></div>
+        <div class="direction-row"><span class="stock-name">SBG</span><span><span class="starline">${starsOnly(s.sbg)}</span> <span class="direction-badge direction-down">${weeklyDirectionLabel(e)}</span></span></div>
+        <div class="direction-row"><span class="stock-name">キオクシア</span><span><span class="starline">${starsOnly(s.kioxia)}</span> <span class="direction-badge direction-down">${weeklyDirectionLabel(e)}</span></span></div>
+        <div class="direction-row"><span class="stock-name">アドバンテスト</span><span><span class="starline">${starsOnly(s.adv)}</span> <span class="direction-badge direction-down">${weeklyDirectionLabel(e)}</span></span></div>
       </div>
       <div class="condition-box">${weeklyConditionText(e)}</div>
     </div>`;
   }).join("");
 }
 
+
+function categoryTagClass(e){
+  if(e.category==="大型決算") return "tag tag-earnings";
+  if(e.category==="世界イベント") return "tag tag-world";
+  return "tag";
+}
+function markerClass(e){
+  if(e.category==="大型決算") return "marker marker-earnings";
+  if(e.category==="世界イベント") return "marker marker-world";
+  return `marker m${Math.min(5,e.importance)}`;
+}
+function weeklyDirectionLabel(e){
+  if(e.category==="大型決算") return "好決算なら↑";
+  if(e.category==="世界イベント") return "タカ派なら↓";
+  return "金利↑なら↓";
+}
+function eventAnalysisHtml(e){
+  if(e.category==="大型決算"){
+    return `<div class="analysis">
+      <div class="impact down"><b>株高になりやすい</b><br>${e.up}</div>
+      <div class="impact up"><b>株安になりやすい</b><br>${e.down}</div>
+      <div class="impact stock"><b>株への見方</b><br>${e.impact}</div>
+    </div>`;
+  }
+  return `<div class="analysis">
+    <div class="impact up"><b>金利↑になりやすい</b><br>${e.up}</div>
+    <div class="impact down"><b>金利↓になりやすい</b><br>${e.down}</div>
+    <div class="impact stock"><b>株への見方</b><br>${e.impact}</div>
+  </div>`;
+}
+
 function render(){
   renderWeeklyWatch();renderCal();renderDay();renderMonth();}
-function renderCal(){ $('month').textContent=`${view.getFullYear()}年${view.getMonth()+1}月`;const first=new Date(view.getFullYear(),view.getMonth(),1),start=new Date(first);start.setDate(1-first.getDay());const arr=filtered();$('grid').innerHTML='';for(let i=0;i<42;i++){const d=new Date(start);d.setDate(start.getDate()+i);const b=document.createElement('button');b.className='day';if(d.getMonth()!==view.getMonth())b.classList.add('dim');if(iso(d)===iso(new Date()))b.classList.add('today');if(iso(d)===iso(selected))b.classList.add('selected');const es=arr.filter(e=>e.date===iso(d)).sort((a,b)=>b.importance-a.importance);b.innerHTML=`<span class="num">${d.getDate()}</span><span class="markers"></span>`;const m=b.querySelector('.markers');es.slice(0,3).forEach(e=>{const x=document.createElement('span');x.className=`marker m${Math.min(5,e.importance)}`;m.appendChild(x)});if(es.length>3){const x=document.createElement('span');x.className='more';x.textContent=`+${es.length-3}`;m.appendChild(x)}b.addEventListener('click',()=>{selected=d;render()});$('grid').appendChild(b)}}
+function renderCal(){ $('month').textContent=`${view.getFullYear()}年${view.getMonth()+1}月`;const first=new Date(view.getFullYear(),view.getMonth(),1),start=new Date(first);start.setDate(1-first.getDay());const arr=filtered();$('grid').innerHTML='';for(let i=0;i<42;i++){const d=new Date(start);d.setDate(start.getDate()+i);const b=document.createElement('button');b.className='day';if(d.getMonth()!==view.getMonth())b.classList.add('dim');if(iso(d)===iso(new Date()))b.classList.add('today');if(iso(d)===iso(selected))b.classList.add('selected');const es=arr.filter(e=>e.date===iso(d)).sort((a,b)=>b.importance-a.importance);b.innerHTML=`<span class="num">${d.getDate()}</span><span class="markers"></span>`;const m=b.querySelector('.markers');es.slice(0,3).forEach(e=>{const x=document.createElement('span');x.className=markerClass(e);m.appendChild(x)});if(es.length>3){const x=document.createElement('span');x.className='more';x.textContent=`+${es.length-3}`;m.appendChild(x)}b.addEventListener('click',()=>{selected=d;render()});$('grid').appendChild(b)}}
 function marketHtml(e){
   if(!e.metrics||!e.metrics.length) return '';
   const cls='signal-'+(e.rate_signal||'pending');
@@ -254,9 +309,9 @@ function marketHtml(e){
     : '結果は初回取得値を保存します。市場予想を取得できない場合は判定を保留します。';
   return `<div class="market"><div class="market-title"><span>前回・予想・結果</span><span class="signal ${cls}">${e.rate_signal_label||'発表待ち'}</span></div><div class="metric metric-head"><div>項目</div><div class="val">前回</div><div class="val">予想</div><div class="val">結果</div></div>${rows}<div class="market-note">${note}</div></div>`;
 }
-function eventHtml(e){const stars='★'.repeat(e.importance);return `<article class="event"><div class="event-head"><div class="event-name">${e.name}</div><div class="time">${e.time||'時刻未定'}</div></div><div class="meta"><span class="tag i${e.importance}">${stars}</span><span class="tag">${e.category}</span><span class="tag">${e.source||'公式'}</span></div>${marketHtml(e)}<div class="analysis"><div class="impact up"><b>金利↑になりやすい</b><br>${e.up}</div><div class="impact down"><b>金利↓になりやすい</b><br>${e.down}</div><div class="impact stock"><b>株への見方</b><br>${e.impact}</div></div>${e.url?`<div class="source"><a href="${e.url}" target="_blank" rel="noopener">公式ソースを開く</a></div>`:''}</article>`}
+function eventHtml(e){const stars='★'.repeat(e.importance);return `<article class="event"><div class="event-head"><div class="event-name">${e.name}</div><div class="time">${e.time||'時刻未定'}</div></div><div class="meta"><span class="tag i${e.importance}">${stars}</span><span class="${categoryTagClass(e)}">${e.category}</span><span class="tag">${e.source||'公式'}</span></div>${marketHtml(e)}${eventAnalysisHtml(e)}${e.url?`<div class="source"><a href="${e.url}" target="_blank" rel="noopener">公式ソースを開く</a></div>`:''}</article>`}
 function renderDay(){const key=iso(selected),es=filtered().filter(e=>e.date===key).sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99'));$('selectedDate').textContent=`${selected.getMonth()+1}/${selected.getDate()} (${['日','月','火','水','木','金','土'][selected.getDay()]})`;$('dayEvents').innerHTML=es.length?es.map(eventHtml).join(''):'<div class="empty">この日の重要イベントはありません</div>'}
-function renderMonth(){const ym=`${view.getFullYear()}-${pad(view.getMonth()+1)}`,es=filtered().filter(e=>e.date.startsWith(ym)).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));$('count').textContent=`${es.length}件`;$('monthEvents').innerHTML=es.length?es.map(e=>`<article class="event"><div class="event-head"><div><div class="event-name">${Number(e.date.slice(8))}日　${e.name}</div><div class="meta"><span class="tag i${e.importance}">${'★'.repeat(e.importance)}</span><span class="tag">${e.category}</span></div></div><div class="time">${e.time||''}</div></div></article>`).join(''):'<div class="empty">該当イベントはありません</div>'}
+function renderMonth(){const ym=`${view.getFullYear()}-${pad(view.getMonth()+1)}`,es=filtered().filter(e=>e.date.startsWith(ym)).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));$('count').textContent=`${es.length}件`;$('monthEvents').innerHTML=es.length?es.map(e=>`<article class="event"><div class="event-head"><div><div class="event-name">${Number(e.date.slice(8))}日　${e.name}</div><div class="meta"><span class="tag i${e.importance}">${'★'.repeat(e.importance)}</span><span class="${categoryTagClass(e)}">${e.category}</span></div></div><div class="time">${e.time||''}</div></div></article>`).join(''):'<div class="empty">該当イベントはありません</div>'}
 $('prev').addEventListener('click',()=>{view=new Date(view.getFullYear(),view.getMonth()-1,1);selected=new Date(view);render()});$('next').addEventListener('click',()=>{view=new Date(view.getFullYear(),view.getMonth()+1,1);selected=new Date(view);render()});$('today').addEventListener('click',()=>{view=new Date();selected=new Date();render()});$('importance').addEventListener('change',render);$('category').addEventListener('change',render);$('refresh').addEventListener('click',()=>loadData(true));
 if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});loadData();
 </script>

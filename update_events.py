@@ -793,6 +793,63 @@ def set_missing_result_status(events):
             e["rate_signal"] = "missing"
             e["rate_signal_label"] = "結果未取得"
 
+
+CURATED_MARKET_EVENTS = [
+    {
+        "name": "NVIDIA 決算（FY2027 Q2）",
+        "date": "2026-08-27",
+        "time": "05:20",
+        "importance": 5,
+        "category": "大型決算",
+        "source": "NVIDIA",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Second-Quarter-Financial-Results/default.aspx",
+        "up": "売上・データセンター成長・粗利率・次四半期ガイダンスが市場期待を上回る",
+        "down": "AI需要、粗利率、ガイダンスが市場期待を下回る",
+        "impact": "AI・半導体セクター全体のセンチメントを大きく動かしやすい。アドバンテスト、キオクシア、SBGにも波及しやすい。"
+    },
+    {
+        "name": "ジャクソンホール経済政策シンポジウム",
+        "date": "2026-08-27",
+        "time": "終日",
+        "importance": 5,
+        "category": "世界イベント",
+        "source": "Kansas City Fed",
+        "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/",
+        "up": "FRB高官がインフレ警戒や利下げ慎重姿勢を示す",
+        "down": "景気下振れや利下げ余地を強調する",
+        "impact": "米長期金利・ドル・NASDAQを大きく動かす可能性。8月27〜29日開催。"
+    },
+    {
+        "name": "Broadcom 決算（FY2026 Q3）",
+        "date": "2026-09-03",
+        "time": "06:00",
+        "importance": 5,
+        "category": "大型決算",
+        "source": "Broadcom",
+        "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial",
+        "up": "AI半導体・ネットワーク・カスタムアクセラレータの売上とガイダンスが市場期待を上回る",
+        "down": "AI関連売上や次四半期ガイダンスが市場期待を下回る",
+        "impact": "AIインフラ・半導体セクターの需要確認イベント。アドバンテストやメモリ関連にも波及しやすい。"
+    },
+]
+
+def ensure_curated_market_events(events):
+    existing = {(e.get("name"), e.get("date")) for e in events if isinstance(e, dict)}
+    for item in CURATED_MARKET_EVENTS:
+        key = (item["name"], item["date"])
+        if key in existing:
+            continue
+        e = make_event(
+            item["name"], item["date"], item["time"],
+            item["importance"], item["category"],
+            item["source"], item["url"]
+        )
+        e["up"] = item["up"]
+        e["down"] = item["down"]
+        e["impact"] = item["impact"]
+        events.append(e)
+        existing.add(key)
+
 def main():
     previous_payload = load_previous_payload()
     events = []
