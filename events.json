@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T22:43:37.523012+00:00",
+  "updated_at": "2026-08-24T23:09:14.452002+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -3421,6 +3421,38 @@
       "rate_signal_label": "発表待ち"
     },
     {
+      "id": "0880195564c337f2",
+      "name": "NVIDIA 決算（FY2027 Q2）",
+      "date": "2026-08-27",
+      "time": "05:20",
+      "importance": 5,
+      "category": "大型決算",
+      "source": "NVIDIA",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Second-Quarter-Financial-Results/default.aspx",
+      "up": "売上・データセンター成長・粗利率・次四半期ガイダンスが市場期待を上回る",
+      "down": "AI需要、粗利率、ガイダンスが市場期待を下回る",
+      "impact": "AI・半導体セクター全体のセンチメントを大きく動かしやすい。アドバンテスト、キオクシア、SBGにも波及しやすい。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "7591801cc4d4b9e3",
+      "name": "ジャクソンホール経済政策シンポジウム",
+      "date": "2026-08-27",
+      "time": "終日",
+      "importance": 5,
+      "category": "世界イベント",
+      "source": "Kansas City Fed",
+      "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/",
+      "up": "FRB高官がインフレ警戒や利下げ慎重姿勢を示す",
+      "down": "景気下振れや利下げ余地を強調する",
+      "impact": "米長期金利・ドル・NASDAQを大きく動かす可能性。8月27〜29日開催。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
       "id": "803b10b4c70597da",
       "name": "JOLTS 求人件数",
       "date": "2026-09-01",
@@ -3443,6 +3475,22 @@
           "source": ""
         }
       ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "b09c023b901eee0a",
+      "name": "Broadcom 決算（FY2026 Q3）",
+      "date": "2026-09-03",
+      "time": "06:00",
+      "importance": 5,
+      "category": "大型決算",
+      "source": "Broadcom",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial",
+      "up": "AI半導体・ネットワーク・カスタムアクセラレータの売上とガイダンスが市場期待を上回る",
+      "down": "AI関連売上や次四半期ガイダンスが市場期待を下回る",
+      "impact": "AIインフラ・半導体セクターの需要確認イベント。アドバンテストやメモリ関連にも波及しやすい。",
+      "metrics": [],
       "rate_signal": "pending",
       "rate_signal_label": "発表待ち"
     },
