@@ -62,7 +62,7 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
 .result-stocks{margin-top:5px;font-weight:700}
 
 
-.legend-wrap{display:flex;gap:6px;align-items:center;justify-content:flex-end;flex-wrap:nowrap;white-space:nowrap}
+.legend-wrap{display:flex;gap:5px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
 .legend-chip{display:inline-flex;align-items:center;gap:2px;padding:5px 7px;border-radius:999px;font-size:11px;font-weight:700;line-height:1;border:1px solid transparent;white-space:nowrap;flex:0 0 auto}
 .legend-red{background:#fff1f2;color:#c62828;border-color:#fecdd3}
 .legend-orange{background:#fff7ed;color:#ea7a00;border-color:#fed7aa}
@@ -89,10 +89,10 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
   <div class="today-row"><button class="btn" id="today">今月へ戻る</button><div class="legend"><span class="legend-wrap">
   <span class="legend-chip legend-red">赤 ★★★★★</span>
   <span class="legend-chip legend-orange">橙 ★★★★</span>
-  <span class="legend-chip legend-blue">青 ★★★</span>
+  <span class="legend-chip legend-blue">青 ★★★</span><span class="legend-chip" style="background:#f3e8ff;color:#7e22ce;border-color:#d8b4fe">紫 大型決算</span><span class="legend-chip" style="background:#ecfdf3;color:#067647;border-color:#a7f3d0">緑 世界イベント</span>
 </span></div></div>
   <section class="weekly-watch">
-    <h2>今日〜7日以内の最重要イベント</h2>
+    <h2>今日〜7日以内の最重要イベント</h2><div style="font-size:10px;color:var(--muted);margin:-4px 0 8px">決算・世界イベント対応</div>
     <div id="weeklyWatch"></div>
   </section>
 
