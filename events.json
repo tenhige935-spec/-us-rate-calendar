@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T21:23:25.004591+00:00",
+  "updated_at": "2026-09-01T21:27:15.923340+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -53,10 +53,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.39%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.25%",
           "actual_first_seen": "0.25%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -68,8 +68,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "92fb5e8c4c8691cb",
@@ -225,10 +225,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.25%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.42%",
           "actual_first_seen": "0.42%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -240,8 +240,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "147844cc6d3578a6",
@@ -371,10 +371,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.42%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.28%",
           "actual_first_seen": "0.28%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -386,8 +386,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "02cd46bcd6a15588",
@@ -527,10 +527,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.42%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.28%",
           "actual_first_seen": "0.28%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -542,8 +542,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "01aefc984d10ffd5",
@@ -597,10 +597,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.28%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.47%",
           "actual_first_seen": "0.47%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -612,8 +612,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "210b1fa28fd27aa4",
@@ -769,10 +769,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.47%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.03%",
           "actual_first_seen": "0.03%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -784,8 +784,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "52625bff16739669",
@@ -973,10 +973,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.03%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.44%",
           "actual_first_seen": "0.44%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -988,8 +988,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "398ae217b07d3d09",
@@ -1145,10 +1145,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.44%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.22%",
           "actual_first_seen": "0.22%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -1160,8 +1160,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "1e205172139aeddc",
@@ -1301,10 +1301,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.22%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.30%",
           "actual_first_seen": "0.30%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -1316,8 +1316,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
     },
     {
       "id": "04d6ad89b69712a0",
@@ -1489,10 +1489,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.30%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.41%",
           "actual_first_seen": "0.41%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -1504,8 +1504,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "b7caf9b708ed1090",
@@ -1680,10 +1680,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.22%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.41%",
           "actual_first_seen": "0.41%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -1695,8 +1695,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "98d0ce0b994ef06d",
@@ -1801,10 +1801,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.41%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.41%",
           "actual_first_seen": "0.41%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -1816,8 +1816,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "d2f415911464420c",
@@ -1922,10 +1922,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.41%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.05%",
           "actual_first_seen": "0.05%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -1937,8 +1937,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "a5a7b4d36358f73d",
@@ -2145,10 +2145,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.05%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.35%",
           "actual_first_seen": "0.35%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -2160,8 +2160,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "4c98b9dcb9327a4c",
@@ -2291,10 +2291,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.35%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.32%",
           "actual_first_seen": "0.32%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -2306,8 +2306,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "08a1012e7f524482",
@@ -2489,10 +2489,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.32%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.21%",
           "actual_first_seen": "0.21%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -2504,8 +2504,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "b98520409d7255a6",
@@ -2619,10 +2619,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.32%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.21%",
           "actual_first_seen": "0.21%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -2634,8 +2634,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "e9475a785b03e0c7",
@@ -2705,10 +2705,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.21%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.16%",
           "actual_first_seen": "0.16%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -2720,8 +2720,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "73864c07fa8154c7",
@@ -2893,10 +2893,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.16%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.21%",
           "actual_first_seen": "0.21%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -2908,8 +2908,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "3b5b54658102a8e2",
@@ -3065,10 +3065,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.21%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.29%",
           "actual_first_seen": "0.29%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -3080,8 +3080,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "e4c772e04bba4bb5",
@@ -3237,10 +3237,10 @@
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.29%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.05%",
           "actual_first_seen": "0.05%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -3252,8 +3252,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "ccb773fecc35a5a8",
@@ -3475,8 +3475,8 @@
           "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "b09c023b901eee0a",
@@ -3535,11 +3535,11 @@
         {
           "label": "平均時給 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.10%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -3802,11 +3802,11 @@
         {
           "label": "平均時給 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.10%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -4053,11 +4053,11 @@
         {
           "label": "平均時給 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.10%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -4288,11 +4288,11 @@
         {
           "label": "平均時給 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.10%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "失業率",
@@ -4490,7 +4490,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-04/2026-10-15?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-05/2026-10-16?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
