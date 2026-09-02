@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T21:27:15.923340+00:00",
+  "updated_at": "2026-09-02T21:26:48.036369+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -44,10 +44,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "134K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "237K",
           "actual_first_seen": "237K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -56,20 +56,20 @@
           "forecast": "0.30%",
           "actual": "0.25%",
           "actual_first_seen": "0.25%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.2%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.1%",
           "actual_first_seen": "4.1%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "down",
-      "rate_signal_label": "金利低下方向"
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
     },
     {
       "id": "92fb5e8c4c8691cb",
@@ -216,10 +216,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "237K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "-48K",
           "actual_first_seen": "-48K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -228,16 +228,16 @@
           "forecast": "0.30%",
           "actual": "0.42%",
           "actual_first_seen": "0.42%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.1%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.0%",
           "actual_first_seen": "4.0%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "up",
@@ -362,10 +362,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-48K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "42K",
           "actual_first_seen": "42K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -374,16 +374,16 @@
           "forecast": "0.30%",
           "actual": "0.28%",
           "actual_first_seen": "0.28%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.0%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.2%",
           "actual_first_seen": "4.2%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -518,10 +518,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-48K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "42K",
           "actual_first_seen": "42K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -530,16 +530,16 @@
           "forecast": "0.30%",
           "actual": "0.28%",
           "actual_first_seen": "0.28%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.0%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.2%",
           "actual_first_seen": "4.2%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -588,10 +588,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "42K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "67K",
           "actual_first_seen": "67K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -600,16 +600,16 @@
           "forecast": "0.30%",
           "actual": "0.47%",
           "actual_first_seen": "0.47%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.2%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.2%",
           "actual_first_seen": "4.2%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "up",
@@ -760,10 +760,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "67K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "108K",
           "actual_first_seen": "108K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -772,16 +772,16 @@
           "forecast": "0.30%",
           "actual": "0.03%",
           "actual_first_seen": "0.03%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.2%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.2%",
           "actual_first_seen": "4.2%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -964,10 +964,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "108K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "13K",
           "actual_first_seen": "13K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -976,20 +976,20 @@
           "forecast": "0.30%",
           "actual": "0.44%",
           "actual_first_seen": "0.44%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.2%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "up",
-      "rate_signal_label": "金利上昇警戒"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "398ae217b07d3d09",
@@ -1136,10 +1136,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "13K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "-20K",
           "actual_first_seen": "-20K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -1148,16 +1148,16 @@
           "forecast": "0.30%",
           "actual": "0.22%",
           "actual_first_seen": "0.22%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.3%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.1%",
           "actual_first_seen": "4.1%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -1292,10 +1292,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-20K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "64K",
           "actual_first_seen": "64K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -1304,16 +1304,16 @@
           "forecast": "0.30%",
           "actual": "0.30%",
           "actual_first_seen": "0.30%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.1%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "neutral",
@@ -1480,10 +1480,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "64K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "-70K",
           "actual_first_seen": "-70K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -1492,20 +1492,20 @@
           "forecast": "0.30%",
           "actual": "0.41%",
           "actual_first_seen": "0.41%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.3%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "up",
-      "rate_signal_label": "金利上昇警戒"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "b7caf9b708ed1090",
@@ -1671,10 +1671,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "76K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "-140K",
           "actual_first_seen": "-140K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -1683,20 +1683,20 @@
           "forecast": "0.30%",
           "actual": "0.41%",
           "actual_first_seen": "0.41%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.4%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "",
           "actual_first_seen": "",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "up",
-      "rate_signal_label": "金利上昇警戒"
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
     },
     {
       "id": "98d0ce0b994ef06d",
@@ -1792,10 +1792,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-140K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "41K",
           "actual_first_seen": "41K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -1804,20 +1804,20 @@
           "forecast": "0.30%",
           "actual": "0.41%",
           "actual_first_seen": "0.41%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "4.10%",
+          "forecast": "4.10%",
           "actual": "4.5%",
           "actual_first_seen": "4.5%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "up",
-      "rate_signal_label": "金利上昇警戒"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "d2f415911464420c",
@@ -1913,10 +1913,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "41K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "-17K",
           "actual_first_seen": "-17K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -1925,16 +1925,16 @@
           "forecast": "0.30%",
           "actual": "0.05%",
           "actual_first_seen": "0.05%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.5%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.4%",
           "actual_first_seen": "4.4%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -2136,10 +2136,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-17K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "160K",
           "actual_first_seen": "160K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -2148,16 +2148,16 @@
           "forecast": "0.30%",
           "actual": "0.35%",
           "actual_first_seen": "0.35%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.4%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "up",
@@ -2282,10 +2282,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "160K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "-156K",
           "actual_first_seen": "-156K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -2294,20 +2294,20 @@
           "forecast": "0.30%",
           "actual": "0.32%",
           "actual_first_seen": "0.32%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.3%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.4%",
           "actual_first_seen": "4.4%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "up",
-      "rate_signal_label": "金利上昇警戒"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "08a1012e7f524482",
@@ -2480,10 +2480,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-156K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "214K",
           "actual_first_seen": "214K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -2492,16 +2492,16 @@
           "forecast": "0.30%",
           "actual": "0.21%",
           "actual_first_seen": "0.21%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.4%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -2610,10 +2610,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-156K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "214K",
           "actual_first_seen": "214K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -2622,16 +2622,16 @@
           "forecast": "0.30%",
           "actual": "0.21%",
           "actual_first_seen": "0.21%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.4%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -2696,10 +2696,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "214K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "148K",
           "actual_first_seen": "148K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -2708,16 +2708,16 @@
           "forecast": "0.30%",
           "actual": "0.16%",
           "actual_first_seen": "0.16%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.3%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -2884,10 +2884,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "148K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "63K",
           "actual_first_seen": "63K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -2896,16 +2896,16 @@
           "forecast": "0.30%",
           "actual": "0.21%",
           "actual_first_seen": "0.21%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.3%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -3056,10 +3056,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "63K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "20K",
           "actual_first_seen": "20K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -3068,16 +3068,16 @@
           "forecast": "0.30%",
           "actual": "0.29%",
           "actual_first_seen": "0.29%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.3%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.2%",
           "actual_first_seen": "4.2%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -3228,10 +3228,10 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "20K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "-23K",
           "actual_first_seen": "-23K",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "平均時給 前月比",
@@ -3240,16 +3240,16 @@
           "forecast": "0.30%",
           "actual": "0.05%",
           "actual_first_seen": "0.05%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.2%",
-          "forecast": "",
+          "forecast": "4.10%",
           "actual": "4.1%",
           "actual_first_seen": "4.1%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "down",
@@ -3491,8 +3491,8 @@
       "down": "AI関連売上や次四半期ガイダンスが市場期待を下回る",
       "impact": "AIインフラ・半導体セクターの需要確認イベント。アドバンテストやメモリ関連にも波及しやすい。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "70b5b0a2e28e53af",
@@ -3527,7 +3527,7 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-911K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "",
           "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
@@ -3544,11 +3544,11 @@
         {
           "label": "失業率",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "4.10%",
+          "forecast": "4.10%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -3794,7 +3794,7 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-911K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "",
           "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
@@ -3811,11 +3811,11 @@
         {
           "label": "失業率",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "4.10%",
+          "forecast": "4.10%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -4045,7 +4045,7 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-911K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "",
           "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
@@ -4062,11 +4062,11 @@
         {
           "label": "失業率",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "4.10%",
+          "forecast": "4.10%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -4280,7 +4280,7 @@
           "label": "非農業部門雇用者数",
           "unit": "K",
           "previous": "-911K",
-          "forecast": "",
+          "forecast": "58K",
           "actual": "",
           "actual_first_seen": "",
           "source": "公開経済カレンダー（補助）"
@@ -4297,11 +4297,11 @@
         {
           "label": "失業率",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "4.10%",
+          "forecast": "4.10%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -4490,7 +4490,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-05/2026-10-16?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-06/2026-10-17?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
