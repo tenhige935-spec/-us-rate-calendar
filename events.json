@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T21:26:48.036369+00:00",
+  "updated_at": "2026-09-03T21:26:57.720265+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -47,7 +47,7 @@
           "forecast": "58K",
           "actual": "237K",
           "actual_first_seen": "237K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -65,7 +65,7 @@
           "forecast": "4.10%",
           "actual": "4.1%",
           "actual_first_seen": "4.1%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "neutral",
@@ -219,7 +219,7 @@
           "forecast": "58K",
           "actual": "-48K",
           "actual_first_seen": "-48K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -237,7 +237,7 @@
           "forecast": "4.10%",
           "actual": "4.0%",
           "actual_first_seen": "4.0%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "up",
@@ -365,7 +365,7 @@
           "forecast": "58K",
           "actual": "42K",
           "actual_first_seen": "42K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -383,7 +383,7 @@
           "forecast": "4.10%",
           "actual": "4.2%",
           "actual_first_seen": "4.2%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -521,7 +521,7 @@
           "forecast": "58K",
           "actual": "42K",
           "actual_first_seen": "42K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -539,7 +539,7 @@
           "forecast": "4.10%",
           "actual": "4.2%",
           "actual_first_seen": "4.2%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -591,7 +591,7 @@
           "forecast": "58K",
           "actual": "67K",
           "actual_first_seen": "67K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -609,7 +609,7 @@
           "forecast": "4.10%",
           "actual": "4.2%",
           "actual_first_seen": "4.2%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "up",
@@ -763,7 +763,7 @@
           "forecast": "58K",
           "actual": "108K",
           "actual_first_seen": "108K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -781,7 +781,7 @@
           "forecast": "4.10%",
           "actual": "4.2%",
           "actual_first_seen": "4.2%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -967,7 +967,7 @@
           "forecast": "58K",
           "actual": "13K",
           "actual_first_seen": "13K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -985,7 +985,7 @@
           "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -1139,7 +1139,7 @@
           "forecast": "58K",
           "actual": "-20K",
           "actual_first_seen": "-20K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -1157,7 +1157,7 @@
           "forecast": "4.10%",
           "actual": "4.1%",
           "actual_first_seen": "4.1%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -1295,7 +1295,7 @@
           "forecast": "58K",
           "actual": "64K",
           "actual_first_seen": "64K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -1313,7 +1313,7 @@
           "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "neutral",
@@ -1483,7 +1483,7 @@
           "forecast": "58K",
           "actual": "-70K",
           "actual_first_seen": "-70K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -1501,7 +1501,7 @@
           "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -1674,7 +1674,7 @@
           "forecast": "58K",
           "actual": "-140K",
           "actual_first_seen": "-140K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -1795,7 +1795,7 @@
           "forecast": "58K",
           "actual": "41K",
           "actual_first_seen": "41K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -1813,7 +1813,7 @@
           "forecast": "4.10%",
           "actual": "4.5%",
           "actual_first_seen": "4.5%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -1916,7 +1916,7 @@
           "forecast": "58K",
           "actual": "-17K",
           "actual_first_seen": "-17K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -1934,7 +1934,7 @@
           "forecast": "4.10%",
           "actual": "4.4%",
           "actual_first_seen": "4.4%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -2139,7 +2139,7 @@
           "forecast": "58K",
           "actual": "160K",
           "actual_first_seen": "160K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -2157,7 +2157,7 @@
           "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "up",
@@ -2285,7 +2285,7 @@
           "forecast": "58K",
           "actual": "-156K",
           "actual_first_seen": "-156K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -2303,7 +2303,7 @@
           "forecast": "4.10%",
           "actual": "4.4%",
           "actual_first_seen": "4.4%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -2483,7 +2483,7 @@
           "forecast": "58K",
           "actual": "214K",
           "actual_first_seen": "214K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -2501,7 +2501,7 @@
           "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -2613,7 +2613,7 @@
           "forecast": "58K",
           "actual": "214K",
           "actual_first_seen": "214K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -2631,7 +2631,7 @@
           "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -2699,7 +2699,7 @@
           "forecast": "58K",
           "actual": "148K",
           "actual_first_seen": "148K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -2717,7 +2717,7 @@
           "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -2887,7 +2887,7 @@
           "forecast": "58K",
           "actual": "63K",
           "actual_first_seen": "63K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -2905,7 +2905,7 @@
           "forecast": "4.10%",
           "actual": "4.3%",
           "actual_first_seen": "4.3%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -3059,7 +3059,7 @@
           "forecast": "58K",
           "actual": "20K",
           "actual_first_seen": "20K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -3077,7 +3077,7 @@
           "forecast": "4.10%",
           "actual": "4.2%",
           "actual_first_seen": "4.2%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -3231,7 +3231,7 @@
           "forecast": "58K",
           "actual": "-23K",
           "actual_first_seen": "-23K",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
@@ -3249,7 +3249,7 @@
           "forecast": "4.10%",
           "actual": "4.1%",
           "actual_first_seen": "4.1%",
-          "source": "公開経済カレンダー（補助）"
+          "source": "BLS公式API"
         }
       ],
       "rate_signal": "down",
@@ -3507,8 +3507,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "3499bd34d8d2b3b4",
@@ -4490,7 +4490,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-06/2026-10-17?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-07/2026-10-18?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
