@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T21:26:57.720265+00:00",
+  "updated_at": "2026-09-04T21:26:48.821935+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -88,23 +88,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.10%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.41%",
           "actual_first_seen": "0.41%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "cc39f7411dac25b5",
@@ -295,23 +295,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.41%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.63%",
           "actual_first_seen": "0.63%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "f354b144c984cbaf",
@@ -467,23 +467,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.63%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.17%",
           "actual_first_seen": "0.17%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "2b173dee418b4ce1",
@@ -667,23 +667,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.17%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "-0.12%",
           "actual_first_seen": "-0.12%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "071cd24a3cd1e0dd",
@@ -855,23 +855,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "-0.12%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "-0.27%",
           "actual_first_seen": "-0.27%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "6aa36cfe3822c648",
@@ -1043,23 +1043,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "-0.27%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.34%",
           "actual_first_seen": "0.34%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "f9113b1fe3671a5d",
@@ -1215,23 +1215,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.34%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.16%",
           "actual_first_seen": "0.16%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "34fc3bc401d89cb0",
@@ -1387,23 +1387,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.16%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.81%",
           "actual_first_seen": "0.81%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "1ebe476b555b8871",
@@ -1524,23 +1524,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.81%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "-0.18%",
           "actual_first_seen": "-0.18%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "d952709c3d7dc2d7",
@@ -1715,23 +1715,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.61%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.13%",
           "actual_first_seen": "0.13%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "75a14ef9ea5981cd",
@@ -1992,23 +1992,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.41%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.36%",
           "actual_first_seen": "0.36%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "80387fa164226caf",
@@ -2059,23 +2059,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.41%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.36%",
           "actual_first_seen": "0.36%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "c206f2f7963386f1",
@@ -2215,23 +2215,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.36%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.58%",
           "actual_first_seen": "0.58%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "19d0e20aa86d432e",
@@ -2387,23 +2387,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.58%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.48%",
           "actual_first_seen": "0.48%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "05e7f179778e7677",
@@ -2559,23 +2559,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.48%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.78%",
           "actual_first_seen": "0.78%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "81aafbf044fdceaa",
@@ -2775,23 +2775,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.78%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "1.09%",
           "actual_first_seen": "1.09%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "e0a6b1d20790151c",
@@ -2963,23 +2963,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "1.09%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "0.45%",
           "actual_first_seen": "0.45%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "eb3f15e8e396ee8d",
@@ -3057,7 +3057,7 @@
           "unit": "K",
           "previous": "63K",
           "forecast": "58K",
-          "actual": "20K",
+          "actual": "31K",
           "actual_first_seen": "20K",
           "source": "BLS公式API"
         },
@@ -3066,7 +3066,7 @@
           "unit": "%",
           "previous": "0.21%",
           "forecast": "0.30%",
-          "actual": "0.29%",
+          "actual": "0.27%",
           "actual_first_seen": "0.29%",
           "source": "BLS公式API"
         },
@@ -3135,23 +3135,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "0.45%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "-0.11%",
           "actual_first_seen": "-0.11%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "3b6202c76bd22b27",
@@ -3229,7 +3229,7 @@
           "unit": "K",
           "previous": "20K",
           "forecast": "58K",
-          "actual": "-23K",
+          "actual": "21K",
           "actual_first_seen": "-23K",
           "source": "BLS公式API"
         },
@@ -3238,7 +3238,7 @@
           "unit": "%",
           "previous": "0.29%",
           "forecast": "0.30%",
-          "actual": "0.05%",
+          "actual": "0.16%",
           "actual_first_seen": "0.05%",
           "source": "BLS公式API"
         },
@@ -3307,23 +3307,23 @@
           "label": "PPI 前月比",
           "unit": "%",
           "previous": "-0.11%",
-          "forecast": "",
+          "forecast": "0.30%",
           "actual": "-0.03%",
           "actual_first_seen": "-0.03%",
-          "source": "BLS公式API"
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "no_forecast",
-      "rate_signal_label": "予想未取得・判定保留"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "06f750fc07308154",
@@ -3528,31 +3528,31 @@
           "unit": "K",
           "previous": "-911K",
           "forecast": "58K",
-          "actual": "",
-          "actual_first_seen": "",
-          "source": "公開経済カレンダー（補助）"
+          "actual": "162K",
+          "actual_first_seen": "162K",
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.10%",
           "forecast": "0.30%",
-          "actual": "",
-          "actual_first_seen": "",
-          "source": "公開経済カレンダー（補助）"
+          "actual": "0.27%",
+          "actual_first_seen": "0.27%",
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.10%",
           "forecast": "4.10%",
-          "actual": "",
-          "actual_first_seen": "",
-          "source": "公開経済カレンダー（補助）"
+          "actual": "4.1%",
+          "actual_first_seen": "4.1%",
+          "source": "BLS公式API"
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "neutral",
+      "rate_signal_label": "中立・まちまち"
     },
     {
       "id": "7ca8903c877d0651",
@@ -3570,20 +3570,20 @@
         {
           "label": "PPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -3872,20 +3872,20 @@
         {
           "label": "PPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -4123,20 +4123,20 @@
         {
           "label": "PPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -4374,20 +4374,20 @@
         {
           "label": "PPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "コアPPI 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         }
       ],
       "rate_signal": "pending",
@@ -4490,7 +4490,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-07/2026-10-18?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-08/2026-10-19?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
