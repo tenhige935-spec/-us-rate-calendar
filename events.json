@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T21:28:17.278675+00:00",
+  "updated_at": "2026-09-08T06:45:44.199711+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -24,6 +24,22 @@
           "source": "公開経済カレンダー（補助）"
         }
       ],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
+      "id": "6b302166b726e858",
+      "name": "マイナーSQ",
+      "date": "2025-01-10",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
       "rate_signal": "missing",
       "rate_signal_label": "結果未取得"
     },
@@ -314,6 +330,22 @@
       "rate_signal_label": "金利上昇警戒"
     },
     {
+      "id": "4264544cd64f1103",
+      "name": "マイナーSQ",
+      "date": "2025-02-14",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
       "id": "f354b144c984cbaf",
       "name": "輸出入物価指数",
       "date": "2025-02-14",
@@ -486,6 +518,22 @@
       "rate_signal_label": "金利低下方向"
     },
     {
+      "id": "7012be7cd2218c0e",
+      "name": "メジャーSQ",
+      "date": "2025-03-14",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
       "id": "2b173dee418b4ce1",
       "name": "輸出入物価指数",
       "date": "2025-03-18",
@@ -651,6 +699,22 @@
       "rate_signal_label": "金利低下方向"
     },
     {
+      "id": "9033b380012f0800",
+      "name": "マイナーSQ",
+      "date": "2025-04-11",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
       "id": "e7d148467c3daf44",
       "name": "米PPI",
       "date": "2025-04-11",
@@ -799,6 +863,22 @@
       "up": "強い結果は金利上昇要因",
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
+      "id": "124beeb46088e942",
+      "name": "マイナーSQ",
+      "date": "2025-05-09",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
       "metrics": [],
       "rate_signal": "missing",
       "rate_signal_label": "結果未取得"
@@ -1062,6 +1142,22 @@
       "rate_signal_label": "金利上昇警戒"
     },
     {
+      "id": "586211c56f3cd735",
+      "name": "メジャーSQ",
+      "date": "2025-06-13",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
       "id": "f9113b1fe3671a5d",
       "name": "輸出入物価指数",
       "date": "2025-06-17",
@@ -1162,6 +1258,22 @@
       ],
       "rate_signal": "down",
       "rate_signal_label": "金利低下方向"
+    },
+    {
+      "id": "f05176989950b8df",
+      "name": "マイナーSQ",
+      "date": "2025-07-11",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "1e205172139aeddc",
@@ -1331,6 +1443,22 @@
       "up": "強い結果は金利上昇要因",
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
+      "id": "3a9755f42517c5eb",
+      "name": "マイナーSQ",
+      "date": "2025-08-08",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
       "metrics": [],
       "rate_signal": "missing",
       "rate_signal_label": "結果未取得"
@@ -1578,6 +1706,22 @@
       "rate_signal_label": "金利上昇警戒"
     },
     {
+      "id": "d546f1adcfd4e5e6",
+      "name": "メジャーSQ",
+      "date": "2025-09-12",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
       "id": "c759d51920c4c8bb",
       "name": "輸出入物価指数",
       "date": "2025-09-16",
@@ -1620,6 +1764,22 @@
       "rate_signal_label": "結果未取得"
     },
     {
+      "id": "1dd8792b17d1bcde",
+      "name": "マイナーSQ",
+      "date": "2025-10-10",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
       "id": "ed9c67cf5d3e457b",
       "name": "米CPI・コアCPI",
       "date": "2025-10-24",
@@ -1653,6 +1813,22 @@
       ],
       "rate_signal": "up",
       "rate_signal_label": "金利上昇警戒"
+    },
+    {
+      "id": "b2549ff865a77ace",
+      "name": "マイナーSQ",
+      "date": "2025-11-14",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "baabdd9a4b8e64aa",
@@ -1776,6 +1952,22 @@
       "rate_signal_label": "結果未取得"
     },
     {
+      "id": "f7f178489fd23b0f",
+      "name": "メジャーSQ",
+      "date": "2025-12-12",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
       "id": "e3481f48eba3b18d",
       "name": "米雇用統計",
       "date": "2025-12-16",
@@ -1892,6 +2084,22 @@
       "up": "強い結果は金利上昇要因",
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
+      "id": "db517eb3a10ee9b4",
+      "name": "マイナーSQ",
+      "date": "2026-01-09",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
       "metrics": [],
       "rate_signal": "missing",
       "rate_signal_label": "結果未取得"
@@ -2164,6 +2372,22 @@
       "rate_signal_label": "金利上昇警戒"
     },
     {
+      "id": "772110d3301c18e9",
+      "name": "マイナーSQ",
+      "date": "2026-02-13",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
       "id": "4c98b9dcb9327a4c",
       "name": "米CPI・コアCPI",
       "date": "2026-02-13",
@@ -2345,6 +2569,22 @@
       "rate_signal_label": "金利上昇警戒"
     },
     {
+      "id": "4365f99b48ef1469",
+      "name": "メジャーSQ",
+      "date": "2026-03-13",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
       "id": "efa9f580a5c769e4",
       "name": "JOLTS 求人件数",
       "date": "2026-03-13",
@@ -2506,6 +2746,22 @@
       ],
       "rate_signal": "down",
       "rate_signal_label": "金利低下方向"
+    },
+    {
+      "id": "59d24fda160aa3e4",
+      "name": "マイナーSQ",
+      "date": "2026-04-10",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "b98520409d7255a6",
@@ -2675,6 +2931,22 @@
       "up": "強い結果は金利上昇要因",
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
+      "id": "0217404ca07b79fb",
+      "name": "マイナーSQ",
+      "date": "2026-05-08",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
       "metrics": [],
       "rate_signal": "missing",
       "rate_signal_label": "結果未取得"
@@ -2982,6 +3254,22 @@
       "rate_signal_label": "金利上昇警戒"
     },
     {
+      "id": "60d7dc3e68f7eda5",
+      "name": "メジャーSQ",
+      "date": "2026-06-12",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
+    },
+    {
       "id": "eb3f15e8e396ee8d",
       "name": "輸出入物価指数",
       "date": "2026-06-16",
@@ -3082,6 +3370,22 @@
       ],
       "rate_signal": "down",
       "rate_signal_label": "金利低下方向"
+    },
+    {
+      "id": "1bdaac35fe86ca5b",
+      "name": "マイナーSQ",
+      "date": "2026-07-10",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "e4c772e04bba4bb5",
@@ -3324,6 +3628,22 @@
       ],
       "rate_signal": "down",
       "rate_signal_label": "金利低下方向"
+    },
+    {
+      "id": "cb16a2557bbbfde5",
+      "name": "マイナーSQ",
+      "date": "2026-08-14",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "06f750fc07308154",
@@ -3590,6 +3910,22 @@
       "rate_signal_label": "発表待ち"
     },
     {
+      "id": "6398f3170dec56a3",
+      "name": "メジャーSQ",
+      "date": "2026-09-11",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
       "id": "9d00cc6d67757baa",
       "name": "米CPI・コアCPI",
       "date": "2026-09-11",
@@ -3818,6 +4154,22 @@
           "source": "公開経済カレンダー（補助）"
         }
       ],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "f22544d71ee584da",
+      "name": "マイナーSQ",
+      "date": "2026-10-09",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
       "rate_signal": "pending",
       "rate_signal_label": "発表待ち"
     },
@@ -4108,6 +4460,22 @@
       "rate_signal_label": "発表待ち"
     },
     {
+      "id": "6f577c931e9a33f0",
+      "name": "マイナーSQ",
+      "date": "2026-11-13",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
       "id": "50fecc42d05fbd12",
       "name": "米PPI",
       "date": "2026-11-13",
@@ -4359,6 +4727,22 @@
       "rate_signal_label": "発表待ち"
     },
     {
+      "id": "27f609b7d18d2fd7",
+      "name": "メジャーSQ",
+      "date": "2026-12-11",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
       "id": "dba8966471ff41fe",
       "name": "米PPI",
       "date": "2026-12-15",
@@ -4487,10 +4871,202 @@
       ],
       "rate_signal": "pending",
       "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "690868cf5b31b465",
+      "name": "マイナーSQ",
+      "date": "2027-01-08",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "73382863e56069b2",
+      "name": "マイナーSQ",
+      "date": "2027-02-12",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "9d79565a90387a8f",
+      "name": "メジャーSQ",
+      "date": "2027-03-12",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "9a12765d3a7f39c0",
+      "name": "マイナーSQ",
+      "date": "2027-04-09",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "bf177bfa581c8138",
+      "name": "マイナーSQ",
+      "date": "2027-05-14",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "4f99327c183e8bab",
+      "name": "メジャーSQ",
+      "date": "2027-06-11",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "a43752b978922141",
+      "name": "マイナーSQ",
+      "date": "2027-07-09",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "eb8c5212c9429f58",
+      "name": "マイナーSQ",
+      "date": "2027-08-13",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "eba9ffe67a093876",
+      "name": "メジャーSQ",
+      "date": "2027-09-10",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "0909160e44659bfe",
+      "name": "マイナーSQ",
+      "date": "2027-10-08",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "1cbf8afc05f9b13a",
+      "name": "マイナーSQ",
+      "date": "2027-11-12",
+      "time": "09:00",
+      "importance": 4,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
+    },
+    {
+      "id": "b5e5b2001892a78d",
+      "name": "メジャーSQ",
+      "date": "2027-12-10",
+      "time": "09:00",
+      "importance": 5,
+      "category": "SQ",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html",
+      "up": "先物・オプションの清算に伴う買い需要が強く出る",
+      "down": "清算に伴う売り需要やポジション解消が強く出る",
+      "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
+      "metrics": [],
+      "rate_signal": "pending",
+      "rate_signal_label": "発表待ち"
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-11/2026-10-22?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-12/2026-10-23?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
