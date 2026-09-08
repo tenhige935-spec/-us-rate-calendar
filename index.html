@@ -79,20 +79,23 @@ button,select{font:inherit}.btn{border:1px solid var(--line);background:#fff;col
 .marker-earnings{background:#9333ea!important}
 .marker-world{background:#12b76a!important}
 
+
+.tag-sq{background:#fffbeb!important;color:#b45309!important}
+.marker-sq{background:#f59e0b!important}
 </style>
 </head>
 <body>
 <header><div class="header-row"><div class="appname">米金利イベントカレンダー</div><div class="status" id="status">公式日程を確認中…</div></div></header>
 <main>
   <div class="controls"><button class="btn" id="prev" aria-label="前の月">‹</button><div class="month" id="month"></div><button class="btn" id="next" aria-label="次の月">›</button></div>
-  <div class="filters"><select id="importance"><option value="3">★★★以上</option><option value="4">★★★★以上</option><option value="5">★★★★★のみ</option><option value="1">すべて</option></select><select id="category"><option value="">全カテゴリ</option><option>インフレ</option><option>雇用</option><option>景気</option><option>FRB</option><option>国債</option><option>大型決算</option><option>世界イベント</option></select></div>
+  <div class="filters"><select id="importance"><option value="3">★★★以上</option><option value="4">★★★★以上</option><option value="5">★★★★★のみ</option><option value="1">すべて</option></select><select id="category"><option value="">全カテゴリ</option><option>インフレ</option><option>雇用</option><option>景気</option><option>FRB</option><option>国債</option><option>大型決算</option><option>世界イベント</option><option>SQ</option></select></div>
   <div class="today-row"><button class="btn" id="today">今月へ戻る</button><div class="legend"><span class="legend-wrap">
   <span class="legend-chip legend-red">赤 ★★★★★</span>
   <span class="legend-chip legend-orange">橙 ★★★★</span>
-  <span class="legend-chip legend-blue">青 ★★★</span><span class="legend-chip" style="background:#f3e8ff;color:#7e22ce;border-color:#d8b4fe">紫 大型決算</span><span class="legend-chip" style="background:#ecfdf3;color:#067647;border-color:#a7f3d0">緑 世界イベント</span>
+  <span class="legend-chip legend-blue">青 ★★★</span><span class="legend-chip" style="background:#f3e8ff;color:#7e22ce;border-color:#d8b4fe">紫 大型決算</span><span class="legend-chip" style="background:#ecfdf3;color:#067647;border-color:#a7f3d0">緑 世界イベント</span><span class="legend-chip" style="background:#fffbeb;color:#b45309;border-color:#fde68a">黄 SQ</span>
 </span></div></div>
   <section class="weekly-watch">
-    <h2>今日〜7日以内の最重要イベント</h2><div style="font-size:10px;color:var(--muted);margin:-4px 0 8px">決算・世界イベント対応</div>
+    <h2>今日〜7日以内の最重要イベント</h2><div style="font-size:10px;color:var(--muted);margin:-4px 0 8px">決算・世界イベント・SQ対応</div>
     <div id="weeklyWatch"></div>
   </section>
 
@@ -120,6 +123,26 @@ function cleanEvent(e){return {...e,importance:Number(e.importance||3),time:e.ti
 async function loadData(force=false){$('status').textContent='公式日程を確認中…';try{const r=await fetch(`events.json?${force?Date.now():'v=1'}`,{cache:force?'no-store':'default'});if(!r.ok)throw new Error();const d=await r.json();if(Array.isArray(d.events)&&d.events.length)events=d.events.map(cleanEvent);const updated=d.updated_at?new Date(d.updated_at):null;$('status').innerHTML=updated?`<strong>自動更新</strong><br>${updated.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}`:'<strong>自動更新データ</strong>'; }catch(e){events=FALLBACK;$('status').textContent='内蔵データで表示';}render();}
 function filtered(){const imp=+$('importance').value,cat=$('category').value;return events.filter(e=>e.importance>=imp&&(!cat||e.category===cat));}
 
+
+function displayEventName(e){
+  const name=(typeof e==="string") ? e : (e?.name||"");
+  const map={
+    "米PPI":"米PPI（生産者物価指数）",
+    "米CPI・コアCPI":"米CPI・コアCPI（消費者物価指数）",
+    "PCE・コアPCE / 個人所得・支出":"PCE・コアPCE（個人消費支出物価指数）/ 個人所得・支出",
+    "JOLTS 求人件数":"JOLTS（求人労働異動調査）求人件数",
+    "米GDP":"米GDP（国内総生産）",
+    "FOMC・政策金利発表":"FOMC（米連邦公開市場委員会）・政策金利発表",
+    "FRB議長会見":"FRB（米連邦準備制度理事会）議長会見",
+    "輸出入物価指数":"米輸出入物価指数",
+    "生産性・単位労働コスト":"米生産性・単位労働コスト",
+    "米雇用統計":"米雇用統計（非農業部門雇用者数・失業率など）",
+    "メジャーSQ":"メジャーSQ（特別清算指数）",
+    "マイナーSQ":"マイナーSQ（特別清算指数）"
+  };
+  return map[name] || name;
+}
+
 function clampStar(n){return Math.max(1,Math.min(5,Math.round(n)))}
 function starsOnly(n){return "★".repeat(clampStar(n))+"☆".repeat(5-clampStar(n))}
 function stockImpactStars(e){
@@ -135,6 +158,9 @@ function stockImpactStars(e){
   }
   if(cat==="世界イベント"){
     return {sbg:5,kioxia:4,adv:5};
+  }
+  if(cat==="SQ"){
+    return {sbg:4,kioxia:3,adv:4};
   }
 
   if(cat==="インフレ" || cat==="FRB"){
@@ -167,6 +193,9 @@ function weeklyConditionText(e){
   }
   if(e.category==="世界イベント"){
     return "タカ派発言 → 米金利↑ → SBG・半導体に逆風<br>ハト派発言 → 米金利↓ → グロース株に追い風";
+  }
+  if(e.category==="SQ"){
+    return "SQ算出は寄り付き価格を使うため、朝の需給が偏りやすい<br>方向性予想よりも寄り付き前後の急変・裁定解消に注意";
   }
   if(/CPI|PCE|PPI/.test(name)){
     return "予想より上振れ → インフレ警戒 → 米金利↑ → SBG・半導体に逆風<br>予想より下振れ → インフレ鈍化 → 米金利↓ → 追い風";
@@ -242,7 +271,7 @@ function renderWeeklyWatch(){
     const s=stockImpactStars(e);
     return `<div class="weekly-item">
       <div class="weekly-top">
-        <div class="weekly-name">${e.name}</div>
+        <div class="weekly-name">${displayEventName(e)}</div>
         <div class="weekly-date">${e.date.slice(5).replace("-","/")} ${e.time||""}</div>
       </div>
       ${weeklyResultSummary(e)}
@@ -260,19 +289,29 @@ function renderWeeklyWatch(){
 function categoryTagClass(e){
   if(e.category==="大型決算") return "tag tag-earnings";
   if(e.category==="世界イベント") return "tag tag-world";
+  if(e.category==="SQ") return "tag tag-sq";
   return "tag";
 }
 function markerClass(e){
   if(e.category==="大型決算") return "marker marker-earnings";
   if(e.category==="世界イベント") return "marker marker-world";
+  if(e.category==="SQ") return "marker marker-sq";
   return `marker m${Math.min(5,e.importance)}`;
 }
 function weeklyDirectionLabel(e){
   if(e.category==="大型決算") return "好決算なら↑";
   if(e.category==="世界イベント") return "タカ派なら↓";
+  if(e.category==="SQ") return "値動き注意";
   return "金利↑なら↓";
 }
 function eventAnalysisHtml(e){
+  if(e.category==="SQ"){
+    return `<div class="analysis">
+      <div class="impact stock"><b>SQで注意する点</b><br>${e.impact}</div>
+      <div class="impact up"><b>買い需給が強い場合</b><br>${e.up}</div>
+      <div class="impact down"><b>売り需給が強い場合</b><br>${e.down}</div>
+    </div>`;
+  }
   if(e.category==="大型決算"){
     return `<div class="analysis">
       <div class="impact down"><b>株高になりやすい</b><br>${e.up}</div>
@@ -309,7 +348,7 @@ function marketHtml(e){
     : '結果は初回取得値を保存します。市場予想を取得できない場合は判定を保留します。';
   return `<div class="market"><div class="market-title"><span>前回・予想・結果</span><span class="signal ${cls}">${e.rate_signal_label||'発表待ち'}</span></div><div class="metric metric-head"><div>項目</div><div class="val">前回</div><div class="val">予想</div><div class="val">結果</div></div>${rows}<div class="market-note">${note}</div></div>`;
 }
-function eventHtml(e){const stars='★'.repeat(e.importance);return `<article class="event"><div class="event-head"><div class="event-name">${e.name}</div><div class="time">${e.time||'時刻未定'}</div></div><div class="meta"><span class="tag i${e.importance}">${stars}</span><span class="${categoryTagClass(e)}">${e.category}</span><span class="tag">${e.source||'公式'}</span></div>${marketHtml(e)}${eventAnalysisHtml(e)}${e.url?`<div class="source"><a href="${e.url}" target="_blank" rel="noopener">公式ソースを開く</a></div>`:''}</article>`}
+function eventHtml(e){const stars='★'.repeat(e.importance);return `<article class="event"><div class="event-head"><div class="event-name">${displayEventName(e)}</div><div class="time">${e.time||'時刻未定'}</div></div><div class="meta"><span class="tag i${e.importance}">${stars}</span><span class="${categoryTagClass(e)}">${e.category}</span><span class="tag">${e.source||'公式'}</span></div>${marketHtml(e)}${eventAnalysisHtml(e)}${e.url?`<div class="source"><a href="${e.url}" target="_blank" rel="noopener">公式ソースを開く</a></div>`:''}</article>`}
 function renderDay(){const key=iso(selected),es=filtered().filter(e=>e.date===key).sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99'));$('selectedDate').textContent=`${selected.getMonth()+1}/${selected.getDate()} (${['日','月','火','水','木','金','土'][selected.getDay()]})`;$('dayEvents').innerHTML=es.length?es.map(eventHtml).join(''):'<div class="empty">この日の重要イベントはありません</div>'}
 function renderMonth(){const ym=`${view.getFullYear()}-${pad(view.getMonth()+1)}`,es=filtered().filter(e=>e.date.startsWith(ym)).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));$('count').textContent=`${es.length}件`;$('monthEvents').innerHTML=es.length?es.map(e=>`<article class="event"><div class="event-head"><div><div class="event-name">${Number(e.date.slice(8))}日　${e.name}</div><div class="meta"><span class="tag i${e.importance}">${'★'.repeat(e.importance)}</span><span class="${categoryTagClass(e)}">${e.category}</span></div></div><div class="time">${e.time||''}</div></div></article>`).join(''):'<div class="empty">該当イベントはありません</div>'}
 $('prev').addEventListener('click',()=>{view=new Date(view.getFullYear(),view.getMonth()-1,1);selected=new Date(view);render()});$('next').addEventListener('click',()=>{view=new Date(view.getFullYear(),view.getMonth()+1,1);selected=new Date(view);render()});$('today').addEventListener('click',()=>{view=new Date();selected=new Date();render()});$('importance').addEventListener('change',render);$('category').addEventListener('change',render);$('refresh').addEventListener('click',()=>loadData(true));
