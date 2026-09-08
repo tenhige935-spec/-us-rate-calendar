@@ -850,6 +850,53 @@ def ensure_curated_market_events(events):
         events.append(e)
         existing.add(key)
 
+
+def _second_friday(year, month):
+    """Return the calendar date of the second Friday."""
+    d = datetime(year, month, 1)
+    first_friday = 1 + ((4 - d.weekday()) % 7)  # Monday=0, Friday=4
+    day = first_friday + 7
+    return datetime(year, month, day)
+
+def ensure_sq_events(events):
+    """
+    Add Japan SQ calendar events.
+    Major SQ: Mar/Jun/Sep/Dec (futures + options).
+    Minor SQ: other months (monthly options/other monthly contracts).
+    JPX standard SQ is the second Friday; if it is a market holiday,
+    the exchange rule moves the relevant final day/SQ to the preceding business-day sequence.
+    """
+    now = datetime.now(JST)
+    existing = {(e.get("name"), e.get("date")) for e in events if isinstance(e, dict)}
+    jpx_url = "https://www.jpx.co.jp/derivatives/products/domestic/225options/01.html"
+
+    for year in range(now.year - 1, now.year + 2):
+        for month in range(1, 13):
+            sq_dt = _second_friday(year, month)
+            major = month in (3, 6, 9, 12)
+            name = "メジャーSQ" if major else "マイナーSQ"
+            key = (name, sq_dt.strftime("%Y-%m-%d"))
+            if key in existing:
+                continue
+
+            e = make_event(
+                name,
+                sq_dt.strftime("%Y-%m-%d"),
+                "09:00",
+                5 if major else 4,
+                "SQ",
+                "JPX",
+                jpx_url,
+            )
+            e["up"] = "先物・オプションの清算に伴う買い需要が強く出る"
+            e["down"] = "清算に伴う売り需要やポジション解消が強く出る"
+            e["impact"] = (
+                "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で"
+                "日経平均や大型株の値動きが大きくなることがある。"
+            )
+            events.append(e)
+            existing.add(key)
+
 def main():
     previous_payload = load_previous_payload()
     events = []
@@ -863,6 +910,7 @@ def main():
 
     ensure_fallbacks(events)
     ensure_curated_market_events(events)
+    ensure_sq_events(events)
     events = merge_duplicates(events)
     ensure_metric_placeholders(events)
 
