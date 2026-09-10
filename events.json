@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T21:28:16.095912+00:00",
+  "updated_at": "2026-09-10T21:26:33.264699+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -3048,7 +3048,7 @@
           "unit": "%",
           "previous": "0.78%",
           "forecast": "0.30%",
-          "actual": "1.09%",
+          "actual": "1.08%",
           "actual_first_seen": "1.09%",
           "source": "BLS公式API"
         },
@@ -3236,7 +3236,7 @@
           "unit": "%",
           "previous": "1.09%",
           "forecast": "0.30%",
-          "actual": "0.45%",
+          "actual": "0.51%",
           "actual_first_seen": "0.45%",
           "source": "BLS公式API"
         },
@@ -3440,7 +3440,7 @@
           "unit": "%",
           "previous": "0.45%",
           "forecast": "0.30%",
-          "actual": "-0.11%",
+          "actual": "-0.13%",
           "actual_first_seen": "-0.11%",
           "source": "BLS公式API"
         },
@@ -3612,7 +3612,7 @@
           "unit": "%",
           "previous": "-0.11%",
           "forecast": "0.30%",
-          "actual": "-0.03%",
+          "actual": "0.07%",
           "actual_first_seen": "-0.03%",
           "source": "BLS公式API"
         },
@@ -3892,9 +3892,9 @@
           "unit": "%",
           "previous": "0.20%",
           "forecast": "0.30%",
-          "actual": "",
-          "actual_first_seen": "",
-          "source": "公開経済カレンダー（補助）"
+          "actual": "0.40%",
+          "actual_first_seen": "0.40%",
+          "source": "BLS公式API"
         },
         {
           "label": "コアPPI 前月比",
@@ -3906,8 +3906,8 @@
           "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "6398f3170dec56a3",
@@ -5066,7 +5066,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-13/2026-10-24?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-14/2026-10-25?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
