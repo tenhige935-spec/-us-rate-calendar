@@ -897,6 +897,250 @@ def ensure_sq_events(events):
             events.append(e)
             existing.add(key)
 
+
+
+# ============================================================
+# 需給イベント（ETF分配金・指数リバランス・月末/四半期末）
+# ============================================================
+MSCI_REVIEW_URL = "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
+FTSE_GEIS_URL = "https://www.lseg.com/en/ftse-russell/indices/ftseall-world"
+TOPIX_REVIEW_URL = "https://www.jpx.co.jp/markets/indices/revisions-indices/02.html"
+ETF_DISTRIBUTION_URL = "https://www.nomura.co.jp/wealthstyle/article/0784/"
+
+# 2026年7月は市場で事前推計が出たため金額も表示する。
+# あくまで「推定売り需要」であり、確定売却額ではない。
+CURATED_FLOW_EVENTS = [
+    {
+        "name": "ETF分配金捻出売り（集中日①）",
+        "date": "2026-07-08",
+        "time": "15:30",
+        "importance": 4,
+        "category": "需給",
+        "source": "市場推計",
+        "url": ETF_DISTRIBUTION_URL,
+        "up": "分配金捻出売りを吸収する買い需要が強い、または事前に十分織り込まれている",
+        "down": "ETFの分配金支払いに備えた機械的な換金売りが大引け付近に集中する",
+        "impact": "推定売り需要は約5,500〜6,000億円。日経平均・TOPIX・大型株の短期需給に逆風。SBGも指数連動売買の影響に注意。業績悪化とは別の需給要因。",
+        "flow_estimate": "約5,500〜6,000億円の売り需要推計",
+    },
+    {
+        "name": "ETF分配金捻出売り（集中日②）",
+        "date": "2026-07-10",
+        "time": "15:30",
+        "importance": 5,
+        "category": "需給",
+        "source": "市場推計",
+        "url": ETF_DISTRIBUTION_URL,
+        "up": "分配金捻出売りを吸収する買い需要が強い、または事前に十分織り込まれている",
+        "down": "TOPIX型などのETFで分配金捻出の機械的な換金売りが大引け付近に集中する",
+        "impact": "推定売り需要は約9,000億円前後。7/8分と合わせ約1.5兆円規模との市場推計。日経平均・TOPIX・大型株の短期需給に注意。",
+        "flow_estimate": "約9,000億円前後の売り需要推計",
+    },
+]
+
+# MSCI公式発表（2026-02-10）に基づくReview日程。
+# effective date の直前営業日終値でリバランス売買が発生しやすい。
+MSCI_REVIEW_SCHEDULE = [
+    ("2026-05-12", "2026-06-01"),
+    ("2026-08-12", "2026-09-01"),
+    ("2026-11-11", "2026-12-01"),
+    ("2027-02-09", "2027-03-01"),
+    ("2027-05-10", "2027-05-28"),
+    ("2027-08-12", "2027-09-01"),
+    ("2027-11-11", "2027-12-01"),
+    ("2028-02-10", "2028-03-01"),
+]
+
+
+def _previous_weekday(d):
+    """Return previous Mon-Fri date. Exchange holidays are handled by curated overrides where known."""
+    d = d - timedelta(days=1)
+    while d.weekday() >= 5:
+        d -= timedelta(days=1)
+    return d
+
+
+def _last_weekday(year, month):
+    """Last Mon-Fri of month; Dec 31 is a JPX holiday, so December starts from Dec 30."""
+    if month == 12:
+        d = datetime(year, 12, 30)
+    else:
+        d = datetime(year, month + 1, 1) - timedelta(days=1)
+    while d.weekday() >= 5:
+        d -= timedelta(days=1)
+    return d
+
+
+def _third_friday(year, month):
+    d = datetime(year, month, 1)
+    first_friday = 1 + ((4 - d.weekday()) % 7)
+    return datetime(year, month, first_friday + 14)
+
+
+def _append_flow_event(events, item):
+    e = make_event(
+        item["name"], item["date"], item.get("time", "15:30"),
+        item.get("importance", 4), item.get("category", "需給"),
+        item.get("source", "需給イベント"), item.get("url", ""),
+    )
+    e["up"] = item.get("up", "買い需要が売り需要を上回る、または需給悪化が事前に織り込まれる")
+    e["down"] = item.get("down", "機械的な売り・指数連動売買が集中する")
+    e["impact"] = item.get("impact", "指数・大型株で一時的に需給要因の値動きが大きくなることがある。")
+    e["rate_signal"] = "not_applicable"
+    e["rate_signal_label"] = "需給イベント"
+    if item.get("flow_estimate"):
+        e["flow_estimate"] = item["flow_estimate"]
+    if item.get("note"):
+        e["note"] = item["note"]
+    events.append(e)
+
+
+def ensure_curated_flow_events(events):
+    existing = {(e.get("name"), e.get("date")) for e in events if isinstance(e, dict)}
+    for item in CURATED_FLOW_EVENTS:
+        key = (item["name"], item["date"])
+        if key not in existing:
+            _append_flow_event(events, item)
+            existing.add(key)
+
+
+def ensure_msci_rebalance_events(events):
+    existing = {(e.get("name"), e.get("date")) for e in events if isinstance(e, dict)}
+    for announcement, effective in MSCI_REVIEW_SCHEDULE:
+        ad = datetime.fromisoformat(announcement)
+        ed = datetime.fromisoformat(effective)
+        trade_day = _previous_weekday(ed)
+
+        # Review結果発表日：採用/除外銘柄に先回り売買が出やすい。
+        name_a = "MSCI指数レビュー結果発表"
+        key_a = (name_a, ad.strftime("%Y-%m-%d"))
+        if key_a not in existing:
+            _append_flow_event(events, {
+                "name": name_a,
+                "date": ad.strftime("%Y-%m-%d"),
+                "time": "時刻未定",
+                "importance": 4,
+                "category": "需給",
+                "source": "MSCI",
+                "url": MSCI_REVIEW_URL,
+                "up": "採用銘柄への先回り買い・パッシブ買い期待が強まる",
+                "down": "除外銘柄への先回り売り・パッシブ売り警戒が強まる",
+                "impact": "採用・除外銘柄や大型株の需給が変化。SBGが対象になった場合は個別インパクトが大きくなる。",
+            })
+            existing.add(key_a)
+
+        # 実際のリバランス日：原則としてeffective前営業日の終値。
+        name_r = "MSCI指数リバランス（大引け）"
+        key_r = (name_r, trade_day.strftime("%Y-%m-%d"))
+        if key_r not in existing:
+            _append_flow_event(events, {
+                "name": name_r,
+                "date": trade_day.strftime("%Y-%m-%d"),
+                "time": "15:30",
+                "importance": 5,
+                "category": "需給",
+                "source": "MSCI",
+                "url": MSCI_REVIEW_URL,
+                "up": "採用・ウェイト増銘柄にパッシブ買いが集中する",
+                "down": "除外・ウェイト減銘柄にパッシブ売りが集中する",
+                "impact": "大引けにかけて指数連動資金が集中し、個別銘柄・大型株の出来高と値動きが急増しやすい。",
+            })
+            existing.add(key_r)
+
+
+def ensure_ftse_geis_events(events):
+    """
+    FTSE GEIS / All-World は3・6・9・12月の第3金曜引け後にレビュー変更を実施。
+    公式ルールに基づき、現在年±1年をルール生成する。
+    """
+    now = datetime.now(JST)
+    existing = {(e.get("name"), e.get("date")) for e in events if isinstance(e, dict)}
+    for year in range(now.year - 1, now.year + 2):
+        for month in (3, 6, 9, 12):
+            d = _third_friday(year, month)
+            name = "FTSE GEIS 四半期リバランス（大引け）"
+            key = (name, d.strftime("%Y-%m-%d"))
+            if key in existing:
+                continue
+            _append_flow_event(events, {
+                "name": name,
+                "date": d.strftime("%Y-%m-%d"),
+                "time": "15:30",
+                "importance": 4,
+                "category": "需給",
+                "source": "FTSE Russell",
+                "url": FTSE_GEIS_URL,
+                "up": "採用・ウェイト増銘柄へのパッシブ買いが強まる",
+                "down": "除外・ウェイト減銘柄へのパッシブ売りが強まる",
+                "impact": "FTSE連動資金のリバランスで大引け付近の出来高が膨らみやすい。日本大型株・半導体・SBGも個別の採用/ウェイト変更に注意。",
+                "note": "通常は3・6・9・12月の第3金曜引け後。祝日等で変更される場合は公式日程を優先。",
+            })
+            existing.add(key)
+
+
+def ensure_topix_transition_events(events):
+    """次期TOPIXの初回定期入替と移行措置の四半期ウェイト低減。"""
+    schedule = [
+        ("2026-10-30", "TOPIX 初回定期入替・移行措置 第1段階", 5, "移行措置銘柄のウエイト×0.875"),
+        ("2027-01-29", "TOPIX 移行措置 第2段階", 4, "移行措置銘柄のウエイト×0.750"),
+        ("2027-04-30", "TOPIX 移行措置 第3段階", 4, "移行措置銘柄のウエイト×0.625"),
+        ("2027-07-30", "TOPIX 移行措置 第4段階", 4, "移行措置銘柄のウエイト×0.500"),
+        ("2027-10-29", "TOPIX 移行措置 再評価・第5段階", 5, "再評価後、対象銘柄は原則×0.375"),
+        ("2028-01-31", "TOPIX 移行措置 第6段階", 4, "移行措置銘柄のウエイト×0.250"),
+        ("2028-04-28", "TOPIX 移行措置 第7段階", 4, "移行措置銘柄のウエイト×0.125"),
+        ("2028-07-31", "TOPIX 移行措置 第8段階・除外", 5, "移行措置銘柄のウエイト×0"),
+    ]
+    existing = {(e.get("name"), e.get("date")) for e in events if isinstance(e, dict)}
+    for date, name, imp, detail in schedule:
+        key = (name, date)
+        if key in existing:
+            continue
+        _append_flow_event(events, {
+            "name": name,
+            "date": date,
+            "time": "15:30",
+            "importance": imp,
+            "category": "需給",
+            "source": "JPX",
+            "url": TOPIX_REVIEW_URL,
+            "up": "新規採用・ウェイト増銘柄に指数連動買いが入る",
+            "down": "除外・ウェイト低減銘柄に指数連動売りが出る",
+            "impact": f"{detail}。TOPIX連動資金の売買が大引けに集中しやすく、大型株の需給に影響。",
+        })
+        existing.add(key)
+
+
+def ensure_month_end_rebalance_events(events):
+    """
+    月末・四半期末の機関投資家リバランス警戒日。
+    これは公式の単一イベントではなくルールベースの注意喚起なので、重要度は抑える。
+    """
+    now = datetime.now(JST)
+    existing = {(e.get("name"), e.get("date")) for e in events if isinstance(e, dict)}
+    for year in range(now.year - 1, now.year + 2):
+        for month in range(1, 13):
+            d = _last_weekday(year, month)
+            quarter = month in (3, 6, 9, 12)
+            name = "四半期末リバランス警戒" if quarter else "月末リバランス警戒"
+            key = (name, d.strftime("%Y-%m-%d"))
+            if key in existing:
+                continue
+            _append_flow_event(events, {
+                "name": name,
+                "date": d.strftime("%Y-%m-%d"),
+                "time": "15:30",
+                "importance": 4 if quarter else 3,
+                "category": "需給",
+                "source": "需給カレンダー",
+                "url": "",
+                "up": "株式比率を戻すための機関投資家の買い・ショートカバーが優勢になる",
+                "down": "株式比率調整・利益確定・指数連動売りが優勢になる",
+                "impact": "方向は事前に固定できないが、月末・四半期末は機関投資家の資産配分調整で大引け付近の値動きが拡大することがある。",
+                "note": "祝日・休場で実際の最終取引日が前倒しされる場合あり。",
+            })
+            existing.add(key)
+
+
 def main():
     previous_payload = load_previous_payload()
     events = []
@@ -911,6 +1155,11 @@ def main():
     ensure_fallbacks(events)
     ensure_curated_market_events(events)
     ensure_sq_events(events)
+    ensure_curated_flow_events(events)
+    ensure_msci_rebalance_events(events)
+    ensure_ftse_geis_events(events)
+    ensure_topix_transition_events(events)
+    ensure_month_end_rebalance_events(events)
     events = merge_duplicates(events)
     ensure_metric_placeholders(events)
 
@@ -942,7 +1191,7 @@ def main():
         "events": events,
         "errors": errors,
         "data_sources": {
-            "schedule": ["BLS", "BEA", "Federal Reserve", "fixed fallback"],
+            "schedule": ["BLS", "BEA", "Federal Reserve", "JPX", "MSCI", "FTSE Russell", "fixed fallback", "flow calendar"],
             "market_values": ["BLS official API (historical actual/previous)", "Trading Economics", "public economic-calendar fallback"],
             "history_policy": "Captured values are retained for 365 days and are never erased by a later failed fetch.",
         },
