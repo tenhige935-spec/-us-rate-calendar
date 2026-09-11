@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T21:26:33.264699+00:00",
+  "updated_at": "2026-09-11T15:52:28.239276+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -3922,8 +3922,8 @@
       "down": "清算に伴う売り需要やポジション解消が強く出る",
       "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "9d00cc6d67757baa",
@@ -3943,22 +3943,22 @@
           "unit": "%",
           "previous": "0.20%",
           "forecast": "0.20%",
-          "actual": "",
-          "actual_first_seen": "",
-          "source": "公開経済カレンダー（補助）"
+          "actual": "0.29%",
+          "actual_first_seen": "0.29%",
+          "source": "BLS公式API"
         },
         {
           "label": "CPI 前月比",
           "unit": "%",
           "previous": "0.20%",
           "forecast": "0.20%",
-          "actual": "",
-          "actual_first_seen": "",
-          "source": "公開経済カレンダー（補助）"
+          "actual": "0.40%",
+          "actual_first_seen": "0.40%",
+          "source": "BLS公式API"
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "71a0a200f86486d4",
@@ -5066,7 +5066,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-14/2026-10-25?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-15/2026-10-26?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
