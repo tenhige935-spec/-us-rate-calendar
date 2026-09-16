@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T21:26:48.190378+00:00",
+  "updated_at": "2026-09-16T21:28:56.351481+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -4513,8 +4513,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "d446b7b715f92050",
@@ -4529,8 +4529,8 @@
       "down": "ハト派声明・利下げ余地を示唆",
       "impact": "米長期金利とNASDAQを大きく動かす最重要イベント。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "9387cd1eb7a0e85d",
@@ -4545,8 +4545,8 @@
       "down": "景気減速・利下げ余地を強調",
       "impact": "声明後に金利・株価の方向が反転することもある。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "1326b4ad50e67fad",
@@ -6300,7 +6300,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-19/2026-10-30?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-20/2026-10-31?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
