@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T21:27:08.405550+00:00",
+  "updated_at": "2026-09-18T21:27:46.113766+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -4561,8 +4561,8 @@
       "down": "除外・ウェイト減銘柄へのパッシブ売りが強まる",
       "impact": "FTSE連動資金のリバランスで大引け付近の出来高が膨らみやすい。日本大型株・半導体・SBGも個別の採用/ウェイト変更に注意。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち",
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得",
       "note": "通常は3・6・9・12月の第3金曜引け後。祝日等で変更される場合は公式日程を優先。"
     },
     {
@@ -6300,7 +6300,8 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-21/2026-11-01?c=guest%3Aguest&f=json"
+    "BLS API: HTTPSConnectionPool(host='api.bls.gov', port=443): Read timed out. (read timeout=30)",
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-22/2026-11-02?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
