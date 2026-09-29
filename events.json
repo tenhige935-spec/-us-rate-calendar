@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T23:49:35.870605+00:00",
+  "updated_at": "2026-09-29T01:00:55.025216+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -4184,11 +4184,11 @@
         {
           "label": "コアPCE 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "PCE 前月比",
@@ -4624,11 +4624,11 @@
         {
           "label": "コアPCE 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "PCE 前月比",
@@ -4849,11 +4849,11 @@
         {
           "label": "コアPCE 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "PCE 前月比",
@@ -5165,11 +5165,11 @@
         {
           "label": "コアPCE 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "PCE 前月比",
@@ -5482,11 +5482,11 @@
         {
           "label": "コアPCE 前月比",
           "unit": "%",
-          "previous": "",
-          "forecast": "",
+          "previous": "0.20%",
+          "forecast": "0.30%",
           "actual": "",
           "actual_first_seen": "",
-          "source": ""
+          "source": "公開経済カレンダー（補助）"
         },
         {
           "label": "PCE 前月比",
@@ -6300,7 +6300,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-03-31/2026-11-11?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-01/2026-11-12?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
