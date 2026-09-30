@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T01:00:55.025216+00:00",
+  "updated_at": "2026-09-30T00:30:18.453231+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -4588,8 +4588,8 @@
           "source": "公開経済カレンダー（補助）"
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "91ddb9cb8c9f6a7a",
@@ -6300,7 +6300,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-01/2026-11-12?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-02/2026-11-13?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
