@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T00:49:28.062293+00:00",
+  "updated_at": "2026-10-03T00:32:08.567907+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -4024,7 +4024,7 @@
           "unit": "K",
           "previous": "20K",
           "forecast": "58K",
-          "actual": "21K",
+          "actual": "-10K",
           "actual_first_seen": "-23K",
           "source": "BLS公式API"
         },
@@ -4033,7 +4033,7 @@
           "unit": "%",
           "previous": "0.29%",
           "forecast": "0.30%",
-          "actual": "0.16%",
+          "actual": "0.13%",
           "actual_first_seen": "0.05%",
           "source": "BLS公式API"
         },
@@ -4388,7 +4388,7 @@
           "unit": "K",
           "previous": "-911K",
           "forecast": "58K",
-          "actual": "162K",
+          "actual": "133K",
           "actual_first_seen": "162K",
           "source": "BLS公式API"
         },
@@ -4397,7 +4397,7 @@
           "unit": "%",
           "previous": "0.10%",
           "forecast": "0.30%",
-          "actual": "0.27%",
+          "actual": "0.32%",
           "actual_first_seen": "0.27%",
           "source": "BLS公式API"
         },
@@ -4411,8 +4411,8 @@
           "source": "BLS公式API"
         }
       ],
-      "rate_signal": "neutral",
-      "rate_signal_label": "中立・まちまち"
+      "rate_signal": "up",
+      "rate_signal_label": "金利上昇警戒"
     },
     {
       "id": "7ca8903c877d0651",
@@ -4705,31 +4705,31 @@
           "unit": "K",
           "previous": "-911K",
           "forecast": "58K",
-          "actual": "",
-          "actual_first_seen": "",
-          "source": "公開経済カレンダー（補助）"
+          "actual": "29K",
+          "actual_first_seen": "29K",
+          "source": "BLS公式API"
         },
         {
           "label": "平均時給 前月比",
           "unit": "%",
           "previous": "0.10%",
           "forecast": "0.30%",
-          "actual": "",
-          "actual_first_seen": "",
-          "source": "公開経済カレンダー（補助）"
+          "actual": "0.13%",
+          "actual_first_seen": "0.13%",
+          "source": "BLS公式API"
         },
         {
           "label": "失業率",
           "unit": "%",
           "previous": "4.10%",
           "forecast": "4.10%",
-          "actual": "",
-          "actual_first_seen": "",
-          "source": "公開経済カレンダー（補助）"
+          "actual": "4.2%",
+          "actual_first_seen": "4.2%",
+          "source": "BLS公式API"
         }
       ],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "down",
+      "rate_signal_label": "金利低下方向"
     },
     {
       "id": "f22544d71ee584da",
@@ -6300,7 +6300,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-04/2026-11-15?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-05/2026-11-16?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
