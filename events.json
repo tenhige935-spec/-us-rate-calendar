@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T23:57:54.921206+00:00",
+  "updated_at": "2026-10-06T01:46:18.405052+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -6300,7 +6300,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-07/2026-11-18?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-08/2026-11-19?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
