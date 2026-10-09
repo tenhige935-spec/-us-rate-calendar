@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T01:02:17.831635+00:00",
+  "updated_at": "2026-10-09T01:14:28.819236+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -4744,8 +4744,8 @@
       "down": "清算に伴う売り需要やポジション解消が強く出る",
       "impact": "方向性を決めるイベントというより、寄り付き前後の需給・裁定取引で日経平均や大型株の値動きが大きくなることがある。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "6757539c6a0eccdb",
@@ -6300,7 +6300,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-10/2026-11-21?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-11/2026-11-22?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
