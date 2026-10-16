@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T23:41:55.114651+00:00",
+  "updated_at": "2026-10-16T23:38:00.532547+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -4830,8 +4830,8 @@
       "down": "弱い結果は金利低下要因",
       "impact": "米長期金利の変化を確認。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "dc05e26738cf9603",
@@ -6300,7 +6300,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-18/2026-11-29?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-04-19/2026-11-30?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
