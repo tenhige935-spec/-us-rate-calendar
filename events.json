@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T01:03:53.321183+00:00",
+  "updated_at": "2026-10-31T00:49:04.384628+00:00",
   "events": [
     {
       "id": "23f1f4f47b7390cb",
@@ -4925,8 +4925,8 @@
       "down": "除外・ウェイト低減銘柄に指数連動売りが出る",
       "impact": "移行措置銘柄のウエイト×0.875。TOPIX連動資金の売買が大引けに集中しやすく、大型株の需給に影響。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち"
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得"
     },
     {
       "id": "fab68ed49325e34c",
@@ -4941,8 +4941,8 @@
       "down": "株式比率調整・利益確定・指数連動売りが優勢になる",
       "impact": "方向は事前に固定できないが、月末・四半期末は機関投資家の資産配分調整で大引け付近の値動きが拡大することがある。",
       "metrics": [],
-      "rate_signal": "pending",
-      "rate_signal_label": "発表待ち",
+      "rate_signal": "missing",
+      "rate_signal_label": "結果未取得",
       "note": "祝日・休場で実際の最終取引日が前倒しされる場合あり。"
     },
     {
@@ -6300,7 +6300,7 @@
     }
   ],
   "errors": [
-    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-05-02/2026-12-13?c=guest%3Aguest&f=json"
+    "TradingEconomics: 410 Client Error: Gone for url: https://api.tradingeconomics.com/calendar/country/united%20states/2026-05-03/2026-12-14?c=guest%3Aguest&f=json"
   ],
   "data_sources": {
     "schedule": [
